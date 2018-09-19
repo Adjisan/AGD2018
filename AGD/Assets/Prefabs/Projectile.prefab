@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPull: 5
-  force: 10
+  force: 5
 --- !u!212 &212274542491951094
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Projectile2 : MonoBehaviour {
     private Vector2 initialPos;
     public int maxPull = 10;
-    public int force = 10;
+    public float force = 10;
     private bool shot = false;
 	// Use this for initialization
 	void Start () {

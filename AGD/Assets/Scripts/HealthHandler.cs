@@ -9,8 +9,9 @@ public class HealthHandler : MonoBehaviour {
 	void Start () {
         int counter = Globals.lives;
         for (int i = 0; i < counter; i++) {
-            GameObject clone = Instantiate(healthIndicator, new Vector3(transform.position.x+i, transform.position.y, transform.position.z), transform.rotation);
+            GameObject clone = Instantiate(healthIndicator, new Vector3(transform.position.x + i*transform.localScale.x, transform.position.y, transform.position.z), transform.rotation);
             clone.transform.parent = gameObject.transform;
+            clone.transform.localScale = Vector3.one;
         }
 	}
 	

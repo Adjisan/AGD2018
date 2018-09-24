@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
     public GameObject projectile;
-
+    public GameObject parent;
     private void OnMouseDown() {
-        Instantiate(projectile, transform.position, transform.rotation);
+        GameObject obj = Instantiate(projectile, transform.position, transform.rotation);
+        obj.transform.parent = parent.transform;
     }
 }

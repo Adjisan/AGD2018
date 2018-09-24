@@ -11,7 +11,7 @@ public class Target : MonoBehaviour {
         if (collision.transform.tag == "projectile" && open) {
             
             amountNeeded--;
-            if (amountNeeded <= 1) {
+            if (amountNeeded < 1) {
                 open = false;
                 triggerAnimation();
             }

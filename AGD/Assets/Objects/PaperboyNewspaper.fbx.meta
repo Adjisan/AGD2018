@@ -1,48 +1,26 @@
 fileFormatVersion: 2
-guid: 1ea787a1d25397b4a82d89c33c1ad8c5
+guid: 13a4bc03b43d5e548a5320505965ad88
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Cube.001
-    100002: Cube.002
-    100004: //RootNode
-    400000: Cube.001
-    400002: Cube.002
-    400004: //RootNode
-    2100000: Material.002
-    2100002: Material.001
-    2100004: Material.004
-    2100006: Material.003
-    2300000: Cube.001
-    2300002: Cube.002
-    2300004: //RootNode
-    3300000: Cube.001
-    3300002: Cube.002
-    3300004: //RootNode
+    100000: //RootNode
+    400000: //RootNode
+    2100000: Material.001
+    2100002: Material.002
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: Cube
-    4300002: Cube.001
-    4300004: Cube.002
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.001
-    second: {fileID: 2100000, guid: 63510a3ac5eb65c4d8ab8ab8f499ad28, type: 2}
+    second: {fileID: 2100000, guid: d81a4af46e05b204092d5b1a557f5176, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.002
-    second: {fileID: 2100000, guid: 940a45e48f0880049b7d5c17d6007ee7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.003
-    second: {fileID: 2100000, guid: 944c1c0e8f912044992cd22fb3e287a2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.004
-    second: {fileID: 2100000, guid: 0f8dff3421ce1a24ca60ce08a8c71eb7, type: 2}
+    second: {fileID: 2100000, guid: ac4c31837dd5b6348bee16688490a358, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -73,7 +51,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.5
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1

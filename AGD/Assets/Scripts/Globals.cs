@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Globals : MonoBehaviour {
 
-    public static float speed = 0.2f;
+    public static float speed = 40f;
     public static int lives = 3;
     public static int score = 0;
-
 }

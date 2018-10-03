@@ -302,7 +302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickMask:
     serializedVersion: 2
-    m_Bits: 23
+    m_Bits: 1024
   maxPull: 10
   force: 10
   controltype: 0

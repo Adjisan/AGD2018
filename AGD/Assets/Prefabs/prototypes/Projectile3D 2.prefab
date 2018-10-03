@@ -233,6 +233,7 @@ MonoBehaviour:
     m_Bits: 55
   maxPull: 10
   force: 10
+  controltype: 0
 --- !u!198 &198392681044683634
 ParticleSystem:
   m_ObjectHideFlags: 1

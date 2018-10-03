@@ -8,8 +8,9 @@ public class NextLevelScript : MonoBehaviour {
 
     public void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.name == "PlayerDrag")
+        if (collision.gameObject.tag == "playerObj")
         {
+            Debug.Log("LevelReached: " + levelToUnlock);
             PlayerPrefs.SetInt("levelReached", levelToUnlock);
         }
     }

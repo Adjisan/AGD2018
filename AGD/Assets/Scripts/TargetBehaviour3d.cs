@@ -7,9 +7,9 @@ public class TargetBehaviour3d : MonoBehaviour {
 
     void Update() {
         if (foreward) {
-            transform.Translate(Vector3.forward * Globals.speed, Space.World);
+            transform.Translate(Vector3.forward * (Globals.speed * Time.deltaTime), Space.World);
         } else {
-            transform.Translate(-Vector3.forward * Globals.speed, Space.World);
+            transform.Translate(-Vector3.forward * (Globals.speed * Time.deltaTime), Space.World);
         }
         
     }

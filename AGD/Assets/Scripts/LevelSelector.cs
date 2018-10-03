@@ -16,6 +16,7 @@ public class LevelSelector : MonoBehaviour {
         {
             if (i + 1 > levelReached)
             {
+                Debug.Log(levelReached);
                 levelButtons[i].interactable = false;
             }
         }	

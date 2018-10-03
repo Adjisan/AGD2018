@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class NextLevelScript : MonoBehaviour {
 
+    /*public int levelToUnlock; 
+
     public void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.name == "PlayerDrag")
         {
-        Debug.Log("LevelWOn");
+            Debug.Log(levelToUnlock);
+            //PlayerPrefs.SetInt("levelReached", levelToUnlock);
         }
-    }
+    }*/
 }

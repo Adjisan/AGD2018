@@ -11,7 +11,8 @@ public class SpawnEnemy : MonoBehaviour {
     private GameObject enemyPrefab;
     [SerializeField]
     private float Delay;
-	
+    private bool collide = false;
+
 	// Update is called once per frame
 	private void Update ()
     {
@@ -19,14 +20,30 @@ public class SpawnEnemy : MonoBehaviour {
         {
             Spawn();
         }
+        collide = false;
 	}
     private void Spawn()
     {
         nextSpawnTime = Time.time + Delay;
-        Instantiate(enemyPrefab, transform.position, transform.rotation);
+
+        if (collide == true)
+        {
+            Instantiate(enemyPrefab, transform.position, transform.rotation);
+        }
     }
+
     private bool ShouldSpawn()
     {
+
         return Time.time > nextSpawnTime;
     }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "projectile")
+        {
+            collide = true;
+        }
+    }
+
 }

@@ -11,6 +11,8 @@ public class Projectile3d : MonoBehaviour {
     private bool shot = false;
     public int controltype = 0;
     Transform parentTransform;
+    private GameObject gameManager;
+
     //swipe control variables
     Vector2 startPos, endPos, direction; // touch start position, touch end position, swipe direction
     float touchTimeStart, touchTimeFinish, timeInterval; // to calculate swipe time to sontrol throw force in Z direction
@@ -67,7 +69,9 @@ public class Projectile3d : MonoBehaviour {
         transform.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         transform.gameObject.GetComponent<TrailRenderer>().enabled = true;
         transform.gameObject.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 1, 1 * (force * Vector3.Distance(transform.position, initialPos))), ForceMode.Impulse);
-        
+        gameManager = GameObject.Find("GameManager");
+        gameManager.GetComponent<GameManagerScript>().DepleteAmmo(1);
+        gameManager.GetComponent<GameManagerScript>().ammoCountText();
     }
     public void PullBack() {
         Vector3 clickposition = -Vector3.one;

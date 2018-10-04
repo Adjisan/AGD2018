@@ -7,8 +7,10 @@ public class GameManagerScript : MonoBehaviour {
 	private int scoreCount;
     public Text scoreCountText;
 	public int maxScoreCount;
-    public int ammo = 30;
+
+    public int ammo;
     public Text ammoText;
+    public int noAmmoCount;
 
 	// Use this for initialization
 	void Start () {
@@ -20,12 +22,8 @@ public class GameManagerScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		levelCompleteCheck();
+        onAmmoDepletionCheck();
 	}
-
-    public void ammoCountText()
-    {
-        ammoText.text = ammo.ToString();
-    }
 
 	public void setScoreCountText(){
         scoreCountText.text = scoreCount.ToString() + "/" +  maxScoreCount; 
@@ -33,10 +31,27 @@ public class GameManagerScript : MonoBehaviour {
     public void incrementScore(int score){
         scoreCount = scoreCount += score;
     }
+
+    public void ammoCountText()
+    {
+        ammoText.text = ammo.ToString();
+    }
+    public void DepleteAmmo(int decreaseAmmo)
+    {
+        ammo = ammo -= decreaseAmmo;
+    }
 	// check win condition
 	public void levelCompleteCheck(){
 		if(scoreCount == maxScoreCount){
 			scoreCountText.text = "You Win!";
 		}
 	}
+
+    public void onAmmoDepletionCheck()
+    {
+        if(ammo == noAmmoCount)
+        {
+            ammoText.text = "You ran out of newspaper! :(";
+        }
+    }
 }

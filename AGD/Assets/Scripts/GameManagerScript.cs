@@ -7,16 +7,26 @@ public class GameManagerScript : MonoBehaviour {
 	private int scoreCount;
     public Text scoreCountText;
 	public int maxScoreCount;
+    public int ammo = 30;
+    public Text ammoText;
+
 	// Use this for initialization
 	void Start () {
 		scoreCount = 0;
         setScoreCountText();
+        ammoCountText();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		levelCompleteCheck();
 	}
+
+    public void ammoCountText()
+    {
+        ammoText.text = ammo.ToString();
+    }
+
 	public void setScoreCountText(){
         scoreCountText.text = scoreCount.ToString() + "/" +  maxScoreCount; 
     }

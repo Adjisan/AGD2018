@@ -34,7 +34,6 @@ public class SpawnEnemy : MonoBehaviour {
 
     private bool ShouldSpawn()
     {
-
         return Time.time > nextSpawnTime;
     }
 

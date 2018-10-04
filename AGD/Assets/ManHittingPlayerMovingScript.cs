@@ -17,4 +17,13 @@ public class ManHittingPlayerMovingScript : MonoBehaviour {
 	void Update () {
         nav.SetDestination(player.position);
 	}
+
+    void OnCollisionEnter(Collision other)
+    {
+      if (other.gameObject.tag == "projectile")
+      {
+                Debug.Log("destroy");
+                Destroy(gameObject);
+      }
+    }
 }

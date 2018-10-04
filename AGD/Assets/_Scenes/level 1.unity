@@ -1086,6 +1086,16 @@ Prefab:
       propertyPath: m_PlaneDistance
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 224971812255138424, guid: faf623ad26b207e4393f2d764f87d6fc,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -35.840088
+      objectReference: {fileID: 0}
+    - target: {fileID: 224971812255138424, guid: faf623ad26b207e4393f2d764f87d6fc,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -14.339844
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: faf623ad26b207e4393f2d764f87d6fc, type: 2}
   m_IsPrefabAsset: 0
@@ -1878,6 +1888,7 @@ GameObject:
   - component: {fileID: 683997995}
   - component: {fileID: 683997997}
   - component: {fileID: 683997996}
+  - component: {fileID: 683997998}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1943,6 +1954,19 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 683997994}
   m_CullTransparentMesh: 0
+--- !u!114 &683997998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 683997994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da3ac4dca5a4c3c40b3f16b01db319c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammo: 30
+  uitext: {fileID: 683997996}
 --- !u!1 &761122625
 GameObject:
   m_ObjectHideFlags: 0

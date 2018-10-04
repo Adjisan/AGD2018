@@ -15,7 +15,7 @@ public class GameManagerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		levelCompleteCheck();
 	}
 	public void setScoreCountText(){
         scoreCountText.text = scoreCount.ToString() + "/" +  maxScoreCount; 
@@ -23,4 +23,10 @@ public class GameManagerScript : MonoBehaviour {
     public void incrementScore(int score){
         scoreCount = scoreCount += score;
     }
+	// check win condition
+	public void levelCompleteCheck(){
+		if(scoreCount == maxScoreCount){
+			scoreCountText.text = "You Win!";
+		}
+	}
 }

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class NewBehaviourScript : MonoBehaviour {
+
+public class AmmoCounter : MonoBehaviour {
 
     public int ammo = 30;
     public Text uitext;
@@ -14,6 +15,9 @@ public class NewBehaviourScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(uitext != null)
+        {
+            uitext.text = ammo.ToString();
+        }
 	}
 }

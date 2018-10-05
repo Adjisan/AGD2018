@@ -6,24 +6,37 @@ public class ManHittingPlayerMovingScript : MonoBehaviour {
     
     Transform player;
     UnityEngine.AI.NavMeshAgent nav;
+    GameObject mailBox;
 
 	// Use this for initialization
 	void Awake () {
         player = GameObject.FindGameObjectWithTag("playerObj").transform;
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
-	}
+        mailBox = GameObject.FindGameObjectWithTag("MailBox");
+        Physics.IgnoreCollision(mailBox.GetComponentInChildren<Collider>(), GetComponent<Collider>(), true);
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        nav.SetDestination(player.position);
+        
+        if(gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled == true)
+        {
+            nav.SetDestination(player.position);
+        }
+
 	}
 
     void OnCollisionEnter(Collision other)
     {
-      if (other.gameObject.tag == "projectile")
-      {
-                Debug.Log("destroy");
-                Destroy(gameObject);
-      }
+        if (other.gameObject.tag == "projectile")
+        {
+            Debug.Log("destroy");
+            gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
+            Destroy(other.gameObject);
+        }
+        else
+        {
+            Debug.Log(other.gameObject);
+        }
     }
 }

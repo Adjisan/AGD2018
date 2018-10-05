@@ -13,6 +13,7 @@ public class SpawnEnemy : MonoBehaviour {
     private float Delay;
     private bool collide = false;
 
+
 	// Update is called once per frame
 	private void Update ()
     {
@@ -28,7 +29,10 @@ public class SpawnEnemy : MonoBehaviour {
 
         if (collide == true)
         {
-            Instantiate(enemyPrefab, transform.position, transform.rotation);
+           GameObject enemy = Instantiate(enemyPrefab, transform.position, transform.rotation);
+           enemy.transform.parent = gameObject.transform.parent;
+            //gameObject.GetComponent<Rigidbody>().constraints= RigidbodyConstraints.FreezeAll;
+
         }
     }
 

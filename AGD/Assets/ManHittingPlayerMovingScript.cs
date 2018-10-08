@@ -13,7 +13,7 @@ public class ManHittingPlayerMovingScript : MonoBehaviour {
         player = GameObject.FindGameObjectWithTag("playerObj").transform;
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
         mailBox = GameObject.FindGameObjectWithTag("MailBox");
-        Physics.IgnoreCollision(mailBox.GetComponentInChildren<Collider>(), GetComponent<Collider>(), true);
+        //Physics.IgnoreCollision(mailBox.GetComponentInChildren<Collider>(), GetComponent<Collider>(), true);
     }
 	
 	// Update is called once per frame

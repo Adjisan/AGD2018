@@ -31,7 +31,6 @@ public class SpawnEnemy : MonoBehaviour {
         {
            GameObject enemy = Instantiate(enemyPrefab, transform.position, transform.rotation);
            enemy.transform.parent = gameObject.transform.parent;
-            //gameObject.GetComponent<Rigidbody>().constraints= RigidbodyConstraints.FreezeAll;
 
         }
     }

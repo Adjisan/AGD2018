@@ -7,22 +7,10 @@ ShaderVariantCollection:
   m_PrefabInternal: {fileID: 0}
   m_Name: NewShaderVariants
   m_Shaders:
-  - first: {fileID: 66, guid: 0000000000000000f000000000000000, type: 0}
+  - first: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
     second:
       variants:
-      - keywords: 
-        passType: 0
-  - first: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    second:
-      variants:
-      - keywords: DIRECTIONAL
-        passType: 4
-      - keywords: SHADOWS_DEPTH
-        passType: 8
-  - first: {fileID: 207, guid: 0000000000000000f000000000000000, type: 0}
-    second:
-      variants:
-      - keywords: 
+      - keywords: _SUNDISK_SIMPLE
         passType: 0
   - first: {fileID: 9000, guid: 0000000000000000f000000000000000, type: 0}
     second:
@@ -34,32 +22,10 @@ ShaderVariantCollection:
       variants:
       - keywords: 
         passType: 0
-  - first: {fileID: 9002, guid: 0000000000000000f000000000000000, type: 0}
-    second:
-      variants:
-      - keywords: 
-        passType: 0
-  - first: {fileID: 9003, guid: 0000000000000000f000000000000000, type: 0}
-    second:
-      variants:
-      - keywords: 
-        passType: 0
-  - first: {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
-    second:
-      variants:
-      - keywords: 
-        passType: 0
-  - first: {fileID: 4800000, guid: fe393ace9b354375a9cb14cdbbc28be4, type: 3}
-    second:
-      variants:
-      - keywords: OUTLINE_ON
-        passType: 0
   - first: {fileID: 4800000, guid: 0f854b35a0cf61a429bd5dcfea30eddd, type: 3}
     second:
       variants:
       - keywords: 
-        passType: 0
-      - keywords: _SHADOWS_SOFT
         passType: 0
   - first: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
     second:
@@ -68,47 +34,7 @@ ShaderVariantCollection:
         passType: 8
       - keywords: 
         passType: 13
-      - keywords: _ADDITIONAL_LIGHTS
-        passType: 13
-      - keywords: _SHADOWS_ENABLED
-        passType: 13
-      - keywords: _SHADOWS_CASCADE
-        passType: 13
       - keywords: _SHADOWS_CASCADE _SHADOWS_ENABLED
-        passType: 13
-      - keywords: _ADDITIONAL_LIGHTS _SHADOWS_CASCADE _SHADOWS_ENABLED
-        passType: 13
-      - keywords: _ADDITIONAL_LIGHTS _SHADOWS_CASCADE _SHADOWS_ENABLED _VERTEX_LIGHTS
-        passType: 13
-      - keywords: _SHADOWS_CASCADE _SHADOWS_ENABLED _SHADOWS_SOFT
-        passType: 13
-      - keywords: _ADDITIONAL_LIGHTS _SPECULAR_SETUP
-        passType: 13
-      - keywords: _ADDITIONAL_LIGHTS _GLOSSYREFLECTIONS_OFF _SPECULAR_SETUP
-        passType: 13
-      - keywords: _ADDITIONAL_LIGHTS _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
-          _SPECULAR_SETUP
-        passType: 13
-      - keywords: _ADDITIONAL_LIGHTS _EMISSION _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
-          _SPECULAR_SETUP
-        passType: 13
-      - keywords: _SHADOWS_CASCADE _SPECULAR_SETUP
-        passType: 13
-      - keywords: _GLOSSYREFLECTIONS_OFF _SHADOWS_CASCADE _SPECULARHIGHLIGHTS_OFF
-          _SPECULAR_SETUP
-        passType: 13
-      - keywords: _EMISSION _GLOSSYREFLECTIONS_OFF _SHADOWS_CASCADE _SPECULARHIGHLIGHTS_OFF
-          _SPECULAR_SETUP
-        passType: 13
-      - keywords: _SHADOWS_CASCADE _SHADOWS_ENABLED _SPECULAR_SETUP
-        passType: 13
-      - keywords: _GLOSSYREFLECTIONS_OFF _SHADOWS_CASCADE _SHADOWS_ENABLED _SPECULAR_SETUP
-        passType: 13
-      - keywords: _GLOSSYREFLECTIONS_OFF _SHADOWS_CASCADE _SHADOWS_ENABLED _SPECULARHIGHLIGHTS_OFF
-          _SPECULAR_SETUP
-        passType: 13
-      - keywords: _EMISSION _GLOSSYREFLECTIONS_OFF _SHADOWS_CASCADE _SHADOWS_ENABLED
-          _SPECULARHIGHLIGHTS_OFF _SPECULAR_SETUP
         passType: 13
   - first: {fileID: 4800000, guid: c17132b1f77d20942aa75f8429c0f8bc, type: 3}
     second:
@@ -120,20 +46,3 @@ ShaderVariantCollection:
       variants:
       - keywords: _DEPTH_NO_MSAA
         passType: 0
-  - first: {fileID: 4800000, guid: 20c3bcdeff0d91c4196b46819519a766, type: 3}
-    second:
-      variants:
-      - keywords: 
-        passType: 8
-      - keywords: 
-        passType: 13
-      - keywords: _ADDITIONAL_LIGHTS
-        passType: 13
-      - keywords: _SHADOWS_CASCADE
-        passType: 13
-      - keywords: _SHADOWS_CASCADE _SHADOWS_ENABLED
-        passType: 13
-      - keywords: _ADDITIONAL_LIGHTS _SHADOWS_CASCADE _SHADOWS_ENABLED
-        passType: 13
-      - keywords: _ADDITIONAL_LIGHTS _SHADOWS_CASCADE _SHADOWS_ENABLED _VERTEX_LIGHTS
-        passType: 13

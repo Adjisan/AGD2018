@@ -13,7 +13,7 @@ public class Projectile3d : MonoBehaviour {
     Transform parentTransform;
     //swipe control variables
     Vector2 startPos, endPos, direction; // touch start position, touch end position, swipe direction
-    float touchTimeStart, touchTimeFinish, timeInterval; // to calculate swipe time to sontrol throw force in Z direction
+    float touchTimeStart, touchTimeFinish; // to calculate swipe time to sontrol throw force in Z direction
 
     void Start() {
         initialPos = transform.position;
@@ -113,38 +113,38 @@ public class Projectile3d : MonoBehaviour {
     }
 
     public void SwipeControl() {
-        // if you touch the screen
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
-            Debug.Log("touch");
-            // getting touch position and marking time when you touch the screen
-            touchTimeStart = Time.time;
-            startPos = Input.GetTouch(0).position;
-        }
+        /* // if you touch the screen
+         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
+             Debug.Log("touch");
+             // getting touch position and marking time when you touch the screen
+             touchTimeStart = Time.time;
+             startPos = Input.GetTouch(0).position;
+         }
 
-        // if you release your finger
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended) {
-            Debug.Log("dragg");
-            // marking time when you release it
-            touchTimeFinish = Time.time;
+         // if you release your finger
+         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended) {
+             Debug.Log("dragg");
+             // marking time when you release it
+             touchTimeFinish = Time.time;
 
-            // calculate swipe time interval 
-            timeInterval = touchTimeFinish - touchTimeStart;
+             // calculate swipe time interval 
+             //timeInterval = touchTimeFinish - touchTimeStart;
 
-            // getting release finger position
-            endPos = Input.GetTouch(0).position;
+             // getting release finger position
+             endPos = Input.GetTouch(0).position;
 
-            // calculating swipe direction in 2D space
-            direction = startPos - endPos;
+             // calculating swipe direction in 2D space
+             direction = startPos - endPos;
 
-            // add force to balls rigidbody in 3D space depending on swipe time, direction and throw forces
-            if (shot) { return; }
-            shot = true;
-            transform.gameObject.GetComponent<Rigidbody>().isKinematic = false;
-            transform.gameObject.GetComponent<TrailRenderer>().enabled = true;
-            transform.parent = parentTransform;
-            transform.rotation = Quaternion.FromToRotation(-Vector3.forward, new Vector3(direction.x,0,direction.y));
-            transform.gameObject.GetComponent<Rigidbody>().AddRelativeForce( new Vector3(0, 1, 1 * 100), ForceMode.Impulse);
-        }
+             // add force to balls rigidbody in 3D space depending on swipe time, direction and throw forces
+             if (shot) { return; }
+             shot = true;
+             transform.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+             transform.gameObject.GetComponent<TrailRenderer>().enabled = true;
+             transform.parent = parentTransform;
+             transform.rotation = Quaternion.FromToRotation(-Vector3.forward, new Vector3(direction.x,0,direction.y));
+             transform.gameObject.GetComponent<Rigidbody>().AddRelativeForce( new Vector3(0, 1, 1 * 100), ForceMode.Impulse);
+         }*/
     }
 
     private void OnCollisionEnter(Collision collision) {

@@ -29,7 +29,7 @@ public class SpawnEnemy : MonoBehaviour {
 
         if (collide == true)
         {
-           GameObject enemy = Instantiate(enemyPrefab, transform.position, transform.rotation);
+           GameObject enemy = Instantiate(enemyPrefab, transform.position, this.transform.rotation);
            enemy.transform.parent = gameObject.transform.parent;
 
         }
@@ -45,6 +45,7 @@ public class SpawnEnemy : MonoBehaviour {
         if (other.gameObject.tag == "projectile")
         {
             collide = true;
+            Destroy(other.gameObject);
         }
     }
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManagerScript : MonoBehaviour {
 	private int scoreCount;
@@ -34,7 +35,7 @@ public class GameManagerScript : MonoBehaviour {
 
     public void ammoCountText()
     {
-        ammoText.text = ammo.ToString();
+        ammoText.text = /*"Newspapers left: " +*/ ammo.ToString();
     }
     public void DepleteAmmo(int decreaseAmmo)
     {
@@ -52,6 +53,7 @@ public class GameManagerScript : MonoBehaviour {
         if(ammo == noAmmoCount)
         {
             ammoText.text = "You ran out of newspaper! :(";
+            SceneManager.LoadScene("LevelSelectScene");
         }
     }
 }

@@ -17,7 +17,7 @@ public class AmmoCounter : MonoBehaviour {
 	void Update () {
 		if(uitext != null)
         {
-            uitext.text = ammo.ToString();
+            uitext.text = "Ammo left: " + ammo.ToString();
         }
 	}
 }

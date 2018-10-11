@@ -7,6 +7,6 @@ public class Player : MonoBehaviour {
     public GameObject parent;
     private void OnMouseDown() {
         GameObject obj = Instantiate(projectile, transform.position, transform.rotation);
-        obj.transform.parent = parent.transform;
+        obj.transform.parent = gameObject.transform;
     }
 }

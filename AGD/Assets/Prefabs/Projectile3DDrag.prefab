@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 54448805394925564}
   - component: {fileID: 114565260195365886}
   - component: {fileID: 96178995792063274}
+  - component: {fileID: 114960969217843626}
   m_Layer: 8
   m_Name: Projectile3DDrag
   m_TagString: projectile
@@ -295,7 +296,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1645145057163146}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd6260a08e0d5ad4c84a80786b8a1e02, type: 3}
   m_Name: 
@@ -306,3 +307,19 @@ MonoBehaviour:
   maxPull: 10
   force: 10
   controltype: 0
+--- !u!114 &114960969217843626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1645145057163146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f83d0a3ddb4afa46a87b256a1fe1ff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  maxPull: 10
+  force: 10

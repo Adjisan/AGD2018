@@ -11,6 +11,7 @@ public class Projectile3d : MonoBehaviour {
     private bool shot = false;
     public int controltype = 0;
     Transform parentTransform;
+
     //swipe control variables
     Vector2 startPos, endPos, direction; // touch start position, touch end position, swipe direction
     float touchTimeStart, touchTimeFinish; // to calculate swipe time to sontrol throw force in Z direction

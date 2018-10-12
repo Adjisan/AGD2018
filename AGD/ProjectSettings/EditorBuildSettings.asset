@@ -12,21 +12,24 @@ EditorBuildSettings:
     path: Assets/Prefabs/Menu.unity
     guid: 484e4a12b7979f644940bd1f8a0156a4
   - enabled: 0
-    path: Assets/_Scenes/3DPrototypeDragging.unity
+    path: Assets/_Scenes/Prototypes/3DPrototypeDragging.unity
     guid: f4046d2a1ebe7ef45bb820f6b22440b4
   - enabled: 0
-    path: Assets/_Scenes/3DPrototypeTapBack.unity
+    path: Assets/_Scenes/Prototypes/3DPrototypeTapBack.unity
     guid: cc78592a6906fb04c984599bd006d84e
   - enabled: 0
-    path: Assets/_Scenes/3DPrototypeTarget.unity
+    path: Assets/_Scenes/Prototypes/3DPrototypeTarget.unity
     guid: 96bd3ac0cd273684bbd652b2a35a6674
   - enabled: 0
-    path: Assets/_Scenes/3DPrototypeSwipe.unity
+    path: Assets/_Scenes/Prototypes/3DPrototypeSwipe.unity
     guid: ca8a294d3a6f34946a99bb50bca81598
   - enabled: 1
     path: Assets/_Scenes/LevelSelectScene.unity
     guid: cddb6d68b9626b44b958a632dc47eea2
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/ProgressSampleScene.unity
     guid: 7a8668ba6d2fc934d945d923dd9c4aec
+  - enabled: 1
+    path: Assets/_Scenes/TestScenes/ManHittingPlayerobjScene.unity
+    guid: b820fc1101d25fa4da304416a0b1a665
   m_configObjects: {}

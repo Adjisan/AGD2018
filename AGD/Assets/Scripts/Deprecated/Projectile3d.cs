@@ -9,7 +9,7 @@ public class Projectile3d : MonoBehaviour {
     public int maxPull = 10;
     public int force = 10;
     private bool shot = false;
-    public int controltype = 0;
+    public int controltype = 2;
     Transform parentTransform;
 
     //swipe control variables

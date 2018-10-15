@@ -7,18 +7,27 @@ public class ProjectileHandler : MonoBehaviour {
     public LayerMask clickMask;
     public int maxPull = 10;
     public int force = 10;
+    public bool demoProjectile = false;
 
     private bool shot = false;
     Transform parentTransform;
 
     void Start() {
         parentTransform = gameObject.transform.parent;
+        if (demoProjectile) {
+            shot = true;
+            transform.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            transform.gameObject.GetComponent<TrailRenderer>().enabled = true;
+            transform.gameObject.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 1, (1 * (force * 10)) * Globals.speed / 50), ForceMode.Impulse);
+            transform.parent = null;
+        }
     }
 
     void Update() {
-                DragControl();
+        //DragControl();
+        TapTargetControl();
     }
-
+    
     public void DragControl() {
         if (Input.GetMouseButton(0)) {
             if (!shot) {
@@ -72,4 +81,28 @@ public class ProjectileHandler : MonoBehaviour {
             yield return 0;
         }
     }
+    
+    public void TapTargetControl() {
+        if (Input.GetMouseButton(0)) {
+            if (!shot) {
+                Vector3 clickposition = -Vector3.one;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+
+                //check position on (whatever layermask is checked)
+                if (Physics.Raycast(ray, out hit, 1000f, clickMask)) {
+                    clickposition = hit.point;
+                    clickposition.y = 0;
+                    transform.LookAt(clickposition);
+                }
+            }
+            if (shot) { return; }
+            shot = true;
+            transform.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            transform.gameObject.GetComponent<TrailRenderer>().enabled = true;
+            transform.gameObject.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 1, (1 * (force * 10)) * Globals.speed / 50), ForceMode.Impulse);
+            transform.parent = null;
+        }
+    }
+
 }

@@ -8300,6 +8300,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114075969279916420
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8314,6 +8316,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114078413619965752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8328,6 +8332,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114079133853575158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8342,6 +8348,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114102672633071406
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8356,6 +8364,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114110985471126020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8370,6 +8380,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114128727867726786
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8384,6 +8396,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114137155702449330
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8398,6 +8412,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114302651380117210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8412,6 +8428,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114462189606540526
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8426,6 +8444,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114513791294802610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8440,6 +8460,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114677408596059192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8454,6 +8476,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114681231076532612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8468,6 +8492,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114746629124038796
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8482,6 +8508,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114766515825697226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8496,6 +8524,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114841208253011478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8510,6 +8540,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114862312745958714
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8524,6 +8556,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114900213069994158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8538,6 +8572,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114913545210337618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8552,3 +8588,5 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1

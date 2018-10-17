@@ -4093,7 +4093,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d1045698dbe7b874082d2b8239eb493a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5227,6 +5227,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114095262849660972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5241,6 +5243,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 0
 --- !u!114 &114299846116784724
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5255,6 +5259,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 0
 --- !u!114 &114378829160298596
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5269,6 +5275,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114403724567803024
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5283,6 +5291,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114508438074837432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5297,6 +5307,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114595915371253548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5311,6 +5323,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 0
 --- !u!114 &114714180219310696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5325,6 +5339,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 0
 --- !u!114 &114749247409789032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5339,6 +5355,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114767359421203388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5353,6 +5371,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 1
 --- !u!114 &114847658751784872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5367,6 +5387,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 0
 --- !u!114 &114887703286811306
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5381,6 +5403,8 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 0
 --- !u!114 &114978139444065840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5395,3 +5419,5 @@ MonoBehaviour:
   open: 1
   closeAnimationTrigger: Hit
   amountNeeded: 1
+  textPrefab: {fileID: 0}
+  left: 0

@@ -294,21 +294,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1007857529813640, guid: d6dd0852992ec6949974d965d23b0803,
     type: 2}
   m_PrefabInternal: {fileID: 951967630}
---- !u!111 &188115793
-Animation:
+--- !u!95 &188115793
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 188115788}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 1fc3d82ecd0e55b4daa7884b4efc9fd5, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 1fc3d82ecd0e55b4daa7884b4efc9fd5, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 181de8b942fca89479de3f1a36c41765, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &265716111
 Prefab:
   m_ObjectHideFlags: 0
@@ -601,23 +604,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4484475353980378, guid: d6dd0852992ec6949974d965d23b0803, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.089
-      objectReference: {fileID: 0}
-    - target: {fileID: 4484475353980378, guid: d6dd0852992ec6949974d965d23b0803, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.16158903
-      objectReference: {fileID: 0}
-    - target: {fileID: 4484475353980378, guid: d6dd0852992ec6949974d965d23b0803, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.2196
-      objectReference: {fileID: 0}
-    - target: {fileID: 4484475353980378, guid: d6dd0852992ec6949974d965d23b0803, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.14113371
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114971031773754058, guid: d6dd0852992ec6949974d965d23b0803, type: 2}
+    - {fileID: 111420198941251520, guid: d6dd0852992ec6949974d965d23b0803, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: d6dd0852992ec6949974d965d23b0803, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &958724373 stripped

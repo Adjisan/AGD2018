@@ -13,6 +13,9 @@ public class SpawnEnemy : MonoBehaviour {
     private float Delay;
     private bool collide = false;
 
+    [SerializeField]
+    AudioSource glass;
+
 
 	// Update is called once per frame
 	private void Update ()
@@ -44,6 +47,7 @@ public class SpawnEnemy : MonoBehaviour {
     {
         if (other.gameObject.tag == "projectile")
         {
+            glass.Play();
             collide = true;
             Destroy(other.gameObject);
         }

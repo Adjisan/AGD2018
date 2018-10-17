@@ -8,5 +8,6 @@ public class Walkingdog : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.Translate(Vector3.forward * ((speed + Globals.speed) * Time.deltaTime), Space.Self);
+        //transform.Translate(Vector3.forward * (speed * Time.deltaTime), Space.Self);
     }
 }

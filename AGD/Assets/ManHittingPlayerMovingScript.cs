@@ -7,13 +7,15 @@ public class ManHittingPlayerMovingScript : MonoBehaviour {
     Transform player;
     UnityEngine.AI.NavMeshAgent nav;
     GameObject mailBox;
+    public Animator animator;
 
-	// Use this for initialization
-	void Awake () {
+    // Use this for initialization
+    void Awake () {
         player = GameObject.FindGameObjectWithTag("playerObj").transform;
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
         mailBox = GameObject.FindGameObjectWithTag("MailBox");
-        //Physics.IgnoreCollision(mailBox.GetComponentInChildren<Collider>(), GetComponent<Collider>(), true);
+        animator = this.GetComponentInChildren<Animator>();
+        animator.SetBool("IsConfused", false);
     }
 	
 	// Update is called once per frame
@@ -30,12 +32,14 @@ public class ManHittingPlayerMovingScript : MonoBehaviour {
     {
         if (other.gameObject.tag == "projectile")
         {
+            animator.SetBool("IsConfused", true);
             Debug.Log("destroy");
             gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
             Destroy(other.gameObject);
         }
         else
         {
+
             Debug.Log(other.gameObject);
         }
     }

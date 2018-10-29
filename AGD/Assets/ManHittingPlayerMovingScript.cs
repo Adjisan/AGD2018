@@ -7,13 +7,16 @@ public class ManHittingPlayerMovingScript : MonoBehaviour {
     Transform player;
     UnityEngine.AI.NavMeshAgent nav;
     GameObject mailBox;
+    public GameObject stars;
+    public GameObject angrySign;
 
-	// Use this for initialization
-	void Awake () {
+    // Use this for initialization
+    void Awake () {
         player = GameObject.FindGameObjectWithTag("playerObj").transform;
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
         mailBox = GameObject.FindGameObjectWithTag("MailBox");
-        //Physics.IgnoreCollision(mailBox.GetComponentInChildren<Collider>(), GetComponent<Collider>(), true);
+        stars.SetActive(false);
+        angrySign.SetActive(true);
     }
 	
 	// Update is called once per frame
@@ -29,8 +32,10 @@ public class ManHittingPlayerMovingScript : MonoBehaviour {
     void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "projectile")
-        {
+        { 
             Debug.Log("destroy");
+            stars.SetActive(true);
+            angrySign.SetActive(false);
             gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
             Destroy(other.gameObject);
         }

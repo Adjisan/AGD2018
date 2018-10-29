@@ -92,7 +92,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e8ad5073362a82f41882744f73d85558, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -127,7 +127,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: d81a4af46e05b204092d5b1a557f5176, type: 2}
+  - {fileID: 2100000, guid: e8ad5073362a82f41882744f73d85558, type: 2}
   - {fileID: 2100000, guid: ac4c31837dd5b6348bee16688490a358, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -321,5 +321,7 @@ MonoBehaviour:
   clickMask:
     serializedVersion: 2
     m_Bits: 1024
-  maxPull: 10
-  force: 10
+  maxPull: 20
+  force: 20
+  demoProjectile: 0
+  tap: 0

@@ -1,20 +1,17 @@
 fileFormatVersion: 2
-guid: 1a8c7001936919445aa74386002e7885
+guid: afa0ed8acc472284096756e5c28e5d03
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: HedgeGrass
+    2100000: Sidewalk
+    2100002: Bricks
+    2100004: Road
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Hedge.001
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: HedgeGrass
-    second: {fileID: 2100000, guid: 1b60cd16f11f9a944a3b72ec5dd5f83a, type: 2}
+    4300000: Cube.001
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0

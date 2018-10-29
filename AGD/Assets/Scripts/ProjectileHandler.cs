@@ -8,7 +8,7 @@ public class ProjectileHandler : MonoBehaviour {
     public int maxPull = 10;
     public int force = 10;
     public bool demoProjectile = false;
-
+    public bool tap = false;
     private bool shot = false;
     Transform parentTransform;
 
@@ -24,8 +24,11 @@ public class ProjectileHandler : MonoBehaviour {
     }
 
     void Update() {
-        //DragControl();
-        TapTargetControl();
+        if (tap) {
+            TapTargetControl();
+        } else {
+            DragControl();
+        }
     }
     
     public void DragControl() {
@@ -41,10 +44,12 @@ public class ProjectileHandler : MonoBehaviour {
         }
     }
     public void Release() {
+        
         shot = true;
         transform.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         transform.gameObject.GetComponent<TrailRenderer>().enabled = true;
         transform.gameObject.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 1, (1 * (force * Vector3.Distance(transform.position, parentTransform.position))) * Globals.speed/50), ForceMode.Impulse);
+        transform.gameObject.GetComponent<Rigidbody>().AddTorque(new Vector3 (0, Random.Range(-1440f, 1440f), 0), ForceMode.Impulse);
         transform.parent = null;
     }
     public void PullBack() {
@@ -55,11 +60,12 @@ public class ProjectileHandler : MonoBehaviour {
         //check position on (whatever layermask is checked)
         if (Physics.Raycast(ray, out hit, 1000f, clickMask)) {
             clickposition = hit.point;
-            clickposition.y = 0;
+            clickposition.y = 2;
             transform.position = clickposition;
         }
 
         //look to the center
+        parentTransform.position = new Vector3(parentTransform.position.x, clickposition.y, parentTransform.position.z);
         transform.LookAt(parentTransform);
 
         //force max range
@@ -69,6 +75,8 @@ public class ProjectileHandler : MonoBehaviour {
     }
 
     private void OnCollisionEnter(Collision collision) {
+        //Explode();
+        //Destroy(collision.gameObject);
         transform.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         StartCoroutine(SlowTrailDisable());
     }
@@ -80,6 +88,7 @@ public class ProjectileHandler : MonoBehaviour {
             trail.time -= rate;
             yield return 0;
         }
+        //Destroy(gameObject);
     }
     
     public void TapTargetControl() {
@@ -104,5 +113,16 @@ public class ProjectileHandler : MonoBehaviour {
             transform.parent = null;
         }
     }
-
+    void Explode() {
+        Debug.Log("Boom");
+        float radius = 10f;
+        float explosionForce = 5000f;
+        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
+        foreach (Collider nearbyObject in colliders) {
+            Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
+            if (rb != null) {
+                rb.AddExplosionForce(explosionForce, transform.position, radius, 10);
+            }
+        }
+    }
 }

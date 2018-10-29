@@ -1,20 +1,44 @@
 fileFormatVersion: 2
-guid: 1a8c7001936919445aa74386002e7885
+guid: 3aa7f4046d054e14a82265224f4dc5db
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: HedgeGrass
+    2100000: Roof
+    2100002: Bricks
+    2100004: WoodFrame
+    2100006: Door
+    2100008: Grass
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Hedge.001
+    4300000: Cube.007
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HedgeGrass
-    second: {fileID: 2100000, guid: 1b60cd16f11f9a944a3b72ec5dd5f83a, type: 2}
+      name: Bricks
+    second: {fileID: 2100000, guid: 72f1782d3ab113a42a31c0511e5d8c86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door
+    second: {fileID: 2100000, guid: d3a714e9b67b4b94c8a4072bdba5caf5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass
+    second: {fileID: 2100000, guid: 6c0fc0b653c00874fb7b169dfe746ca4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof
+    second: {fileID: 2100000, guid: dd2f9357501a15d4f9aced426a2c8f79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WoodFrame
+    second: {fileID: 2100000, guid: c67b728dfd5ed564d9029fd969c64ade, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -45,7 +69,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.8
     meshCompression: 0
     addColliders: 0
     importVisibility: 1

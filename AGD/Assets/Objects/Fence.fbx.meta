@@ -1,20 +1,26 @@
 fileFormatVersion: 2
-guid: 1a8c7001936919445aa74386002e7885
+guid: cb0e9e98a92ab6544b7f43b6b2dd4720
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: HedgeGrass
+    2100000: WoodFrame
+    2100002: Fence
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Hedge.001
+    4300000: Fence.003
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HedgeGrass
-    second: {fileID: 2100000, guid: 1b60cd16f11f9a944a3b72ec5dd5f83a, type: 2}
+      name: Fence
+    second: {fileID: 2100000, guid: 72f1782d3ab113a42a31c0511e5d8c86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WoodFrame
+    second: {fileID: 2100000, guid: c67b728dfd5ed564d9029fd969c64ade, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

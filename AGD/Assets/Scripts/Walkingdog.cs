@@ -1,0 +1,16 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Walkingdog : MonoBehaviour {
+    public float speed;
+
+	// Update is called once per frame
+	void Update () {
+        Move();
+    }
+    void Move() {
+        transform.Translate(Vector3.forward * ((speed + Globals.speed) * Time.deltaTime), Space.Self);
+        //transform.Translate(Vector3.forward * (speed * Time.deltaTime), Space.Self);
+    }
+}

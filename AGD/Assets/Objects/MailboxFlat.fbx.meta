@@ -1,20 +1,32 @@
 fileFormatVersion: 2
-guid: 1a8c7001936919445aa74386002e7885
+guid: a0bc2b33f74181148b451c9d5ec453bd
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: HedgeGrass
+    2100000: Material.005
+    2100002: Material.002
+    2100004: Material.004
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Hedge.001
+    4300000: Cube.008
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HedgeGrass
-    second: {fileID: 2100000, guid: 1b60cd16f11f9a944a3b72ec5dd5f83a, type: 2}
+      name: Material.002
+    second: {fileID: 2100000, guid: 14722897578cb1542bdcdb3a60b39a87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 68ca7c6831c6f0a48a1a326494ae35c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: 45336bd27f075624e889acac9d6af96c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -45,7 +57,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.8
     meshCompression: 0
     addColliders: 0
     importVisibility: 1

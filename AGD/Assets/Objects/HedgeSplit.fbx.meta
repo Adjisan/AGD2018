@@ -1,14 +1,29 @@
 fileFormatVersion: 2
-guid: 1a8c7001936919445aa74386002e7885
+guid: e407793c05a5d404b96ec35f1caaced4
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Hedge.001
+    100002: Hedge.007
+    100004: Hedge.008
+    100006: //RootNode
+    400000: Hedge.001
+    400002: Hedge.007
+    400004: Hedge.008
+    400006: //RootNode
     2100000: HedgeGrass
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Hedge.001
+    2300000: Hedge.001
+    2300002: Hedge.007
+    2300004: Hedge.008
+    2300006: //RootNode
+    3300000: Hedge.001
+    3300002: Hedge.007
+    3300004: Hedge.008
+    3300006: //RootNode
+    4300000: Hedge.006
+    4300002: Hedge.007
+    4300004: Hedge.008
+    4300006: Hedge.001
   externalObjects:
   - first:
       type: UnityEngine:Material

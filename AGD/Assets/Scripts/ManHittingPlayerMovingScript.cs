@@ -18,7 +18,7 @@ public class ManHittingPlayerMovingScript : MonoBehaviour {
         stars = GameObject.FindGameObjectWithTag("Rotator");
         angrySign = GameObject.FindGameObjectWithTag("AngrySign");
         stars.SetActive(false);
-        angrySign.SetActive(true);
+        //angrySign.SetActive(true);
     }
 	
 	// Update is called once per frame

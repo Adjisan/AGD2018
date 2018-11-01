@@ -15,6 +15,8 @@ public class ManHittingPlayerMovingScript : MonoBehaviour {
         player = GameObject.FindGameObjectWithTag("playerObj").transform;
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
         mailBox = GameObject.FindGameObjectWithTag("MailBox");
+        stars = GameObject.FindGameObjectWithTag("Rotator");
+        angrySign = GameObject.FindGameObjectWithTag("AngrySign");
         stars.SetActive(false);
         angrySign.SetActive(true);
     }

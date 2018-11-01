@@ -10,6 +10,8 @@ TagManager:
   - Ground
   - MailBox
   - Enemy
+  - Rotator
+  - AngrySign
   layers:
   - Default
   - TransparentFX

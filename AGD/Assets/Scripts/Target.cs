@@ -24,17 +24,20 @@ public class Target : MonoBehaviour {
         }
     }
 
+    private GameObject gameManager;
     private void OnCollisionEnter(Collision collision) {
         if (collision.transform.tag == "projectile" && open) {
             
             amountNeeded--;
             textObject.GetComponent<TextMeshPro>().SetText("" + amountNeeded);
+            updateScore();
             if (amountNeeded < 1) {
                 open = false;
                 triggerAnimation();
                 textObject.transform.SetParent(null);
                 textObject.transform.localScale = new Vector3(1, 1, 1);
                 textObject.GetComponent<Animator>().enabled = true;
+                triggerAnimation();                
             }
             Destroy(collision.gameObject);
         }
@@ -42,7 +45,11 @@ public class Target : MonoBehaviour {
     public void triggerAnimation() {
         if (gameObject.GetComponent<Animator>() != null) {
             gameObject.GetComponent<Animator>().SetTrigger(closeAnimationTrigger);
-        }
-        
+        }    
+    }
+    public void updateScore(){
+        gameManager = GameObject.Find("GameManager");
+        gameManager.GetComponent<GameManagerScript>().incrementScore(1);
+        gameManager.GetComponent<GameManagerScript>().setScoreCountText();
     }
 }

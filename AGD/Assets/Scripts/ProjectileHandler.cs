@@ -9,6 +9,8 @@ public class ProjectileHandler : MonoBehaviour {
     public int force = 10;
     public bool demoProjectile = false;
     public bool tap = false;
+    public GameObject GameManager;
+
     private bool shot = false;
     Transform parentTransform;
 
@@ -20,6 +22,7 @@ public class ProjectileHandler : MonoBehaviour {
             transform.gameObject.GetComponent<TrailRenderer>().enabled = true;
             transform.gameObject.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 1, (1 * (force * 10)) * Globals.speed / 50), ForceMode.Impulse);
             transform.parent = null;
+        
         }
     }
 
@@ -51,6 +54,10 @@ public class ProjectileHandler : MonoBehaviour {
         transform.gameObject.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 1, (1 * (force * Vector3.Distance(transform.position, parentTransform.position))) * Globals.speed/50), ForceMode.Impulse);
         transform.gameObject.GetComponent<Rigidbody>().AddTorque(new Vector3 (0, Random.Range(-1440f, 1440f), 0), ForceMode.Impulse);
         transform.parent = null;
+
+        GameManager = GameObject.Find("GameManager");
+        GameManager.GetComponent<GameManagerScript>().DepleteAmmo(1);
+        GameManager.GetComponent<GameManagerScript>().ammoCountText();
     }
     public void PullBack() {
         Vector3 clickposition = -Vector3.one;

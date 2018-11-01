@@ -757,7 +757,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ed653f76da7b644b3f6a07d0c5f8fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stars: {fileID: 1545182003703452}
+  star1: {fileID: 1615947842100270}
+  star2: {fileID: 1152575610987540}
+  star3: {fileID: 1416691886067374}
+  star4: {fileID: 1778408851390632}
   angrySign: {fileID: 1007857529813640}
 --- !u!135 &135360776404945450
 SphereCollider:

@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1900339151824406}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.6999998, y: 0.14, z: -0.08}
+  m_LocalPosition: {x: 0.6999998, y: 0.092999995, z: 0.03}
   m_LocalScale: {x: 0.107999936, y: 0.97100025, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -204,7 +204,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd430d5cc4242c4aaa59302945692d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 1106152281473468, guid: d6dd0852992ec6949974d965d23b0803,
-    type: 2}
+  enemyPrefab: {fileID: 0}
   Delay: 0
   glass: {fileID: 82792513890625262}

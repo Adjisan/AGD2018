@@ -7,7 +7,10 @@ public class ManHittingPlayerMovingScript : MonoBehaviour {
     Transform player;
     UnityEngine.AI.NavMeshAgent nav;
     GameObject mailBox;
-    public GameObject stars;
+    public GameObject star1;
+    public GameObject star2;
+    public GameObject star3;
+    public GameObject star4;
     public GameObject angrySign;
 
     // Use this for initialization
@@ -15,12 +18,21 @@ public class ManHittingPlayerMovingScript : MonoBehaviour {
         player = GameObject.FindGameObjectWithTag("playerObj").transform;
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
         mailBox = GameObject.FindGameObjectWithTag("MailBox");
-        stars = GameObject.FindGameObjectWithTag("Rotator");
+        //stars = GameObject.FindGameObjectWithTag("star");
         angrySign = GameObject.FindGameObjectWithTag("AngrySign");
-        stars.SetActive(false);
+        star1.SetActive(false);
+        star2.SetActive(false);
+        star3.SetActive(false);
+        star4.SetActive(false);
         //angrySign.SetActive(true);
     }
-	
+    public void Reset()
+    {
+        star1.SetActive(false);
+        star2.SetActive(false);
+        star3.SetActive(false);
+        star4.SetActive(false);
+    }
 	// Update is called once per frame
 	void Update () {
         
@@ -36,7 +48,10 @@ public class ManHittingPlayerMovingScript : MonoBehaviour {
         if (other.gameObject.tag == "projectile")
         { 
             Debug.Log("destroy");
-            stars.SetActive(true);
+            star1.SetActive(true);
+            star2.SetActive(true);
+            star3.SetActive(true);
+            star4.SetActive(true);
             angrySign.SetActive(false);
             gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
             Destroy(other.gameObject);

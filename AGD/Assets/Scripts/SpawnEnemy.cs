@@ -22,6 +22,7 @@ public class SpawnEnemy : MonoBehaviour {
     {
         if (ShouldSpawn())
         {
+            GameObject.Find("Capsule").GetComponent<ManHittingPlayerMovingScript>().Reset();
             Spawn();
         }
         collide = false;

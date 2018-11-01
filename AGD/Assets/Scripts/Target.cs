@@ -31,7 +31,7 @@ public class Target : MonoBehaviour {
             
             amountNeeded--;
             textObject.GetComponent<TextMeshPro>().SetText("" + amountNeeded);
-            updateScore();
+          //  updateScore();
             if (amountNeeded < 1) {
                 open = false;
                 triggerAnimation();
@@ -48,11 +48,11 @@ public class Target : MonoBehaviour {
             gameObject.GetComponent<Animator>().SetTrigger(closeAnimationTrigger);
         }    
     }
-    public void updateScore(){
+    /*public void updateScore(){
         if (GameObject.Find("GameManager") != null) {
             GameObject gameManager = GameObject.Find("GameManager");
             gameManager.GetComponent<GameManagerScript>().incrementScore(1);
             gameManager.GetComponent<GameManagerScript>().setScoreCountText();
         }
-    }
+    }*/
 }

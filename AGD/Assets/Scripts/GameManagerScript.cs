@@ -22,12 +22,12 @@ public class GameManagerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		levelCompleteCheck();
+	//	levelCompleteCheck();
         onAmmoDepletionCheck();
 	}
 
 	public void setScoreCountText(){
-        scoreCountText.text = scoreCount.ToString() + "/" +  maxScoreCount; 
+     //   scoreCountText.text = scoreCount.ToString() + "/" +  maxScoreCount; 
     }
     public void incrementScore(int score){
         scoreCount = scoreCount += score;
@@ -42,18 +42,18 @@ public class GameManagerScript : MonoBehaviour {
         ammo = ammo -= decreaseAmmo;
     }
 	// check win condition
-	public void levelCompleteCheck(){
+	/*public void levelCompleteCheck(){
 		if(scoreCount == maxScoreCount){
 			scoreCountText.text = "You Win!";
 		}
-	}
+	}*/
 
     public void onAmmoDepletionCheck()
     {
         if(ammo == noAmmoCount)
         {
             ammoText.text = "You ran out of newspaper! :(";
-            SceneManager.LoadScene("LevelSelectScene");
+            SceneManager.LoadScene("level Feature");
         }
     }
 }

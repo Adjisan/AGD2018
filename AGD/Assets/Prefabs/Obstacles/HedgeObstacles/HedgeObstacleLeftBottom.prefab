@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 114014818329738888}
   - component: {fileID: 95006685514867004}
   m_Layer: 0
-  m_Name: Mailbox
+  m_Name: MailboxL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -24,11 +24,11 @@ GameObject:
   - component: {fileID: 95946846066071032}
   m_Layer: 11
   m_Name: AngrySign
-  m_TagString: Untagged
+  m_TagString: AngrySign
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1106152281473468
 GameObject:
   m_ObjectHideFlags: 0
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 96594900571329884}
   m_Layer: 11
   m_Name: Star 2
-  m_TagString: Untagged
+  m_TagString: star
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 96909132985407692}
   m_Layer: 11
   m_Name: Star 3
-  m_TagString: Untagged
+  m_TagString: star
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 114424559133501376}
   m_Layer: 11
   m_Name: RotateAround
-  m_TagString: Untagged
+  m_TagString: Rotator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 96310382393133788}
   m_Layer: 11
   m_Name: Star 1
-  m_TagString: Untagged
+  m_TagString: star
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 96458426775245452}
   m_Layer: 11
   m_Name: Star 3 (1)
-  m_TagString: Untagged
+  m_TagString: star
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -757,6 +757,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ed653f76da7b644b3f6a07d0c5f8fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stars: {fileID: 1545182003703452}
+  angrySign: {fileID: 1007857529813640}
 --- !u!135 &135360776404945450
 SphereCollider:
   m_ObjectHideFlags: 1

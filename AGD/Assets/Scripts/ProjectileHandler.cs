@@ -9,20 +9,17 @@ public class ProjectileHandler : MonoBehaviour {
     public int force = 10;
     public bool demoProjectile = false;
     public bool tap = false;
-    public GameObject GameManager;
 
     private bool shot = false;
     Transform parentTransform;
+    Rigidbody rigBody;
 
     void Start() {
+        rigBody = transform.gameObject.GetComponent<Rigidbody>();
         parentTransform = gameObject.transform.parent;
+
         if (demoProjectile) {
-            shot = true;
-            transform.gameObject.GetComponent<Rigidbody>().isKinematic = false;
-            transform.gameObject.GetComponent<TrailRenderer>().enabled = true;
-            transform.gameObject.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 1, (1 * (force * 10)) * Globals.speed / 50), ForceMode.Impulse);
-            transform.parent = null;
-        
+            DemoBehaviour();
         }
     }
 
@@ -47,17 +44,14 @@ public class ProjectileHandler : MonoBehaviour {
         }
     }
     public void Release() {
-        
         shot = true;
-        transform.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        rigBody.isKinematic = false;
         transform.gameObject.GetComponent<TrailRenderer>().enabled = true;
-        transform.gameObject.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 1, (1 * (force * Vector3.Distance(transform.position, parentTransform.position))) * Globals.speed/50), ForceMode.Impulse);
-        transform.gameObject.GetComponent<Rigidbody>().AddTorque(new Vector3 (0, Random.Range(-1440f, 1440f), 0), ForceMode.Impulse);
+        rigBody.AddRelativeForce(new Vector3(0, 1, (1 * (force * Vector3.Distance(transform.position, parentTransform.position))) * Globals.speed/50), ForceMode.Impulse);
+        rigBody.AddTorque(new Vector3 (0, Random.Range(-1440f, 1440f), 0), ForceMode.Impulse);
         transform.parent = null;
 
-        GameManager = GameObject.Find("GameManager");
-        GameManager.GetComponent<GameManagerScript>().DepleteAmmo(1);
-        GameManager.GetComponent<GameManagerScript>().ammoCountText();
+        AmmoHandler();
     }
     public void PullBack() {
         Vector3 clickposition = -Vector3.one;
@@ -84,7 +78,7 @@ public class ProjectileHandler : MonoBehaviour {
     private void OnCollisionEnter(Collision collision) {
         //Explode();
         //Destroy(collision.gameObject);
-        transform.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        rigBody.constraints = RigidbodyConstraints.None;
         StartCoroutine(SlowTrailDisable());
     }
 
@@ -114,9 +108,9 @@ public class ProjectileHandler : MonoBehaviour {
             }
             if (shot) { return; }
             shot = true;
-            transform.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            rigBody.isKinematic = false;
             transform.gameObject.GetComponent<TrailRenderer>().enabled = true;
-            transform.gameObject.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 1, (1 * (force * 10)) * Globals.speed / 50), ForceMode.Impulse);
+            rigBody.AddRelativeForce(new Vector3(0, 1, (1 * (force * 10)) * Globals.speed / 50), ForceMode.Impulse);
             transform.parent = null;
         }
     }
@@ -130,6 +124,25 @@ public class ProjectileHandler : MonoBehaviour {
             if (rb != null) {
                 rb.AddExplosionForce(explosionForce, transform.position, radius, 10);
             }
+        }
+    }
+
+    void DemoBehaviour() {
+       
+        shot = true;
+        rigBody.isKinematic = false;
+        transform.gameObject.GetComponent<TrailRenderer>().enabled = true;
+        rigBody.AddRelativeForce(new Vector3(0, 1, (1 * (force * 10)) * Globals.speed / 50), ForceMode.Impulse);
+        rigBody.AddTorque(new Vector3(0, Random.Range(-1440f, 1440f), 0), ForceMode.Impulse);
+        transform.parent = null;
+    }
+
+    void AmmoHandler() {
+        if (GameObject.Find("GameManager") != null) {
+            GameManagerScript gameManager = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+
+            gameManager.DepleteAmmo(1);
+            gameManager.ammoCountText();
         }
     }
 }

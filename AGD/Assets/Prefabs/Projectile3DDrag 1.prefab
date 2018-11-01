@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 114960969217843626}
   - component: {fileID: 120240538752355034}
   m_Layer: 8
-  m_Name: Projectile3DDrag
+  m_Name: Projectile3DDrag 1
   m_TagString: projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

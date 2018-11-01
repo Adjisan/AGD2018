@@ -10,6 +10,7 @@ public class Target : MonoBehaviour {
     public GameObject textPrefab;
     public bool left = true;
     private GameObject textObject;
+   
 
     private void Start() {
         if (textPrefab != null) {
@@ -24,7 +25,7 @@ public class Target : MonoBehaviour {
         }
     }
 
-    private GameObject gameManager;
+   
     private void OnCollisionEnter(Collision collision) {
         if (collision.transform.tag == "projectile" && open) {
             
@@ -48,8 +49,10 @@ public class Target : MonoBehaviour {
         }    
     }
     public void updateScore(){
-        gameManager = GameObject.Find("GameManager");
-        gameManager.GetComponent<GameManagerScript>().incrementScore(1);
-        gameManager.GetComponent<GameManagerScript>().setScoreCountText();
+        if (GameObject.Find("GameManager") != null) {
+            GameObject gameManager = GameObject.Find("GameManager");
+            gameManager.GetComponent<GameManagerScript>().incrementScore(1);
+            gameManager.GetComponent<GameManagerScript>().setScoreCountText();
+        }
     }
 }

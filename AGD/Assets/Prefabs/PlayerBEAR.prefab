@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114121084000479046}
   - component: {fileID: 114603623020318770}
   m_Layer: 9
-  m_Name: Player 1
+  m_Name: PlayerBEAR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1609,7 +1609,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1014272062665834}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8760d8826e31944aa12f661e6fcb77c, type: 3}
   m_Name: 

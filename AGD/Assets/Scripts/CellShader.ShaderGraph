@@ -28,7 +28,7 @@
             "typeInfo": {
                 "fullName": "UnityEditor.ShaderGraph.Vector1ShaderProperty"
             },
-            "JSONnodeData": "{\n    \"m_Value\": -65.80000305175781,\n    \"m_Name\": \"Rotation\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"c22b76ec-c63f-4f35-8c73-2f8ef05a3229\"\n    },\n    \"m_OverrideReferenceName\": \"\",\n    \"m_FloatType\": 1,\n    \"m_RangeValues\": {\n        \"x\": -360.0,\n        \"y\": 360.0\n    }\n}"
+            "JSONnodeData": "{\n    \"m_Value\": -89.0,\n    \"m_Name\": \"Rotation\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"c22b76ec-c63f-4f35-8c73-2f8ef05a3229\"\n    },\n    \"m_OverrideReferenceName\": \"\",\n    \"m_FloatType\": 1,\n    \"m_RangeValues\": {\n        \"x\": -89.0,\n        \"y\": -66.0\n    }\n}"
         }
     ],
     "m_GUID": {

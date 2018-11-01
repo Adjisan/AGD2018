@@ -38,7 +38,7 @@ MonoBehaviour:
   m_KeepSoftShadowVariants: 1
   m_ResourcesAsset: {fileID: 11400000, guid: 157daa093fc4e96458f2dc6be5d8f7b6, type: 2}
   m_SavedXRConfig:
-    renderScale: 4
+    renderScale: 1
     viewportScale: 1
     useOcclusionMesh: 1
     occlusionMaskScale: 1

@@ -12,11 +12,18 @@ public class AmmoBus : MonoBehaviour
     int currentWaypoint = 0;
     public float speed;
     float waypointRadius = 1;
+    private GameObject gameManager;
+
+    public int ammoAmount = 10;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         speed = waypointSpeed[currentWaypointSpeed];
+
+        if (GameObject.Find("GameManager") != null) {
+            gameManager = GameObject.Find("GameManager");
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -24,6 +31,7 @@ public class AmmoBus : MonoBehaviour
         if (collision.transform.tag == "projectile" && open)
         {
             Debug.Log("Gained Ammo");
+            gameManager.GetComponent<GameManagerScript>().ammo += ammoAmount;
             open = false;
             Destroy(collision.gameObject);
         }

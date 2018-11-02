@@ -41,7 +41,6 @@ GameObject:
   - component: {fileID: 4809930663246408}
   - component: {fileID: 33579915640054500}
   - component: {fileID: 23036048064931022}
-  - component: {fileID: 54205281541077236}
   - component: {fileID: 65408945744574500}
   m_Layer: 0
   m_Name: Fence
@@ -183,7 +182,6 @@ GameObject:
   - component: {fileID: 4710869129690248}
   - component: {fileID: 33310278185356288}
   - component: {fileID: 23787907386687796}
-  - component: {fileID: 54874333224126842}
   - component: {fileID: 65769835695317056}
   m_Layer: 0
   m_Name: Fence
@@ -251,7 +249,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1618098999933702}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 92.49349, y: -1.2999995, z: -852.1677}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4847833020457392}
@@ -733,36 +731,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!54 &54205281541077236
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1108937565135236}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!54 &54874333224126842
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1904656261050530}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &65058045612660554
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -877,6 +845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uponCollisionWith: projectile
+  impulse: 1
 --- !u!114 &114856988436573044
 MonoBehaviour:
   m_ObjectHideFlags: 1

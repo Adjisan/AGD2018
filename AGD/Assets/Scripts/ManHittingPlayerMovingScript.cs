@@ -25,6 +25,7 @@ public class ManHittingPlayerMovingScript : MonoBehaviour {
         if(gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled == true)
         {
             nav.SetDestination(player.position);
+            Debug.Log("walking");
         }
 
 	}

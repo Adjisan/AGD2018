@@ -10,7 +10,7 @@ public class Projectile3d : MonoBehaviour {
     public int force = 10;
     private bool shot = false;
     public int controltype = 2;
-    Transform parentTransform;
+    //Transform parentTransform;
 
     //swipe control variables
     Vector2 startPos, endPos, direction; // touch start position, touch end position, swipe direction
@@ -18,11 +18,10 @@ public class Projectile3d : MonoBehaviour {
 
     void Start() {
         initialPos = transform.position;
-        if (controltype == 3) {
+        /*if (controltype == 3) {
             parentTransform = transform.parent;
             transform.parent = null;
-        }
-        
+        }*/
     }
 
     void Update() {

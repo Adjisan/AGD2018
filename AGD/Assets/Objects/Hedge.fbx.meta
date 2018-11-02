@@ -14,7 +14,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: HedgeGrass
-    second: {fileID: 2100000, guid: 549bbc2e4367f994aa9f3106ef89b943, type: 2}
+    second: {fileID: 2100000, guid: 1b60cd16f11f9a944a3b72ec5dd5f83a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

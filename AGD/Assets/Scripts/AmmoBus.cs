@@ -54,5 +54,10 @@ public class AmmoBus : MonoBehaviour
             speed = waypointSpeed[currentWaypointSpeed];
         }
         transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypoint].transform.position, Time.deltaTime * speed);
+
+        Vector3 relativePos = waypoints[currentWaypoint].transform.position - transform.position;
+        // the second argument, upwards, defaults to Vector3.up
+        Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
+        transform.rotation = rotation;
     }
 }

@@ -12,17 +12,24 @@ public class SpawnEnemy : MonoBehaviour {
     [SerializeField]
     private float Delay;
     private bool collide = false;
+    private int spawnOne = 0;
 
     [SerializeField]
     AudioSource glass;
 
+    private void Start()
+    {
+        spawnOne = 0;
+    }
 
 	// Update is called once per frame
 	private void Update ()
     {
         if (ShouldSpawn())
         {
-            Spawn();
+                Spawn();
+                Debug.Log(spawnOne);
+          
         }
         collide = false;
 	}
@@ -30,17 +37,19 @@ public class SpawnEnemy : MonoBehaviour {
     {
         nextSpawnTime = Time.time + Delay;
 
-        if (collide == true)
+        if (collide == true && spawnOne == 0)
         {
            GameObject enemy = Instantiate(enemyPrefab, transform.position, this.transform.rotation);
            enemy.transform.parent = gameObject.transform.parent;
-
+           spawnOne = 1;
+            Debug.Log("SpawnOne: " + spawnOne);
         }
     }
 
     private bool ShouldSpawn()
     {
-        return Time.time > nextSpawnTime;
+
+            return Time.time > nextSpawnTime;
     }
 
     void OnCollisionEnter(Collision other)

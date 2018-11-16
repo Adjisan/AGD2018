@@ -13,6 +13,7 @@ TagManager:
   - Rotator
   - AngrySign
   - Bridge
+  - FenceDoor
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - Player
   - Ground
   - Shootable
-  - 
+  - Fence
   - 
   - 
   - 

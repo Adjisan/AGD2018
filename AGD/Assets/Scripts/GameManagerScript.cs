@@ -12,6 +12,7 @@ public class GameManagerScript : MonoBehaviour {
     public int ammo;
     public Text ammoText;
     public int noAmmoCount;
+    public int Levelindex;
 
 	// Use this for initialization
 	void Start () {
@@ -53,7 +54,7 @@ public class GameManagerScript : MonoBehaviour {
         if(ammo == noAmmoCount)
         {
             ammoText.text = "You ran out of newspaper! :(";
-            SceneManager.LoadScene("level Feature");
+            SceneManager.LoadScene(Levelindex);
         }
     }
 }

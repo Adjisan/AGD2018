@@ -6,6 +6,8 @@ public class AmmoHandler : MonoBehaviour {
     public int ammo;
     public bool collidesWithTrigger = false;
     public string collidesWithTag = "Player";
+    public bool onlyOnce = true;
+    public bool destroy = false;
 
     private bool triggered = false;
     private GameManagerScript gmScript;
@@ -25,7 +27,12 @@ public class AmmoHandler : MonoBehaviour {
         if (other.transform.tag == collidesWithTag && !triggered) {
             gmScript.DepleteAmmo(ammo);
             gmScript.ammoCountText();
-            triggered = true;
+            if (onlyOnce) {
+                triggered = true;
+            }
+            if (destroy) {
+                Destroy(other.gameObject);
+            }
         }
     }
     private void OnCollisionEnter(Collision other) {
@@ -34,7 +41,12 @@ public class AmmoHandler : MonoBehaviour {
         if (other.transform.tag == collidesWithTag && !triggered) {
             gmScript.DepleteAmmo(ammo);
             gmScript.ammoCountText();
-            triggered = true;
+            if (onlyOnce) {
+                triggered = true;
+            }
+            if (destroy) {
+                Destroy(other.gameObject);
+            }
         }
     }
 }

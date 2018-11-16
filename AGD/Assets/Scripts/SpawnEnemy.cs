@@ -6,6 +6,7 @@ using UnityEngine;
 public class SpawnEnemy : MonoBehaviour {
 
     private float nextSpawnTime;
+    public int spawnAmount = 1;
 
     [SerializeField]
     private GameObject enemyPrefab;
@@ -32,9 +33,10 @@ public class SpawnEnemy : MonoBehaviour {
 
         if (collide == true)
         {
-           GameObject enemy = Instantiate(enemyPrefab, transform.position, this.transform.rotation);
-           enemy.transform.parent = gameObject.transform.parent;
-
+            for (int i = 0; i < spawnAmount; i++) {
+                GameObject enemy = Instantiate(enemyPrefab, transform.position, this.transform.rotation);
+                enemy.transform.parent = gameObject.transform.parent;
+            }
         }
     }
 

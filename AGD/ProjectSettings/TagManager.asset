@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - Rotator
   - AngrySign
+  - Bridge
   layers:
   - Default
   - TransparentFX

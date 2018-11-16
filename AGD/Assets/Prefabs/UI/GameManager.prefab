@@ -55,3 +55,4 @@ MonoBehaviour:
   maxScoreCount: 0
   ammo: 30
   ammoText: {fileID: 0}
+  noAmmoCount: 0

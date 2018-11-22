@@ -12,14 +12,16 @@ public class SpawnEnemy : MonoBehaviour {
     [SerializeField]
     private float Delay;
     private bool collide = false;
-    private int spawnOne = 0;
+    private int spawned = 0;
+    public int spawnAmount = 0;
+
 
     [SerializeField]
     AudioSource glass;
 
     private void Start()
     {
-        spawnOne = 0;
+        spawned = 0;
     }
 
 	// Update is called once per frame
@@ -28,27 +30,29 @@ public class SpawnEnemy : MonoBehaviour {
         if (ShouldSpawn())
         {
                 Spawn();
-                Debug.Log(spawnOne);
-          
+                Debug.Log(spawned);  
         }
         collide = false;
 	}
     private void Spawn()
     {
-        nextSpawnTime = Time.time + Delay;
 
-        if (collide == true && spawnOne == 0)
+        if (collide == true && spawned < spawnAmount)
         {
-           GameObject enemy = Instantiate(enemyPrefab, transform.position, this.transform.rotation);
-           enemy.transform.parent = gameObject.transform.parent;
-           spawnOne = 1;
-            Debug.Log("SpawnOne: " + spawnOne);
+            for (int i = 0; i < spawnAmount; i++)
+            {
+                GameObject enemy = Instantiate(enemyPrefab, transform.position, this.transform.rotation);
+                enemy.transform.parent = gameObject.transform.parent;
+                nextSpawnTime = Time.time + Delay;
+                spawned++;
+            }
+           Debug.Log("SpawnOne: " + spawned + " spawnAmount: " + spawnAmount);
+           glass.Play();
         }
     }
 
     private bool ShouldSpawn()
     {
-
             return Time.time > nextSpawnTime;
     }
 
@@ -56,7 +60,6 @@ public class SpawnEnemy : MonoBehaviour {
     {
         if (other.gameObject.tag == "projectile")
         {
-            glass.Play();
             collide = true;
             Destroy(other.gameObject);
         }

@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 114971031773754058}
   - component: {fileID: 114707657977815266}
   m_Layer: 11
-  m_Name: Capsule
+  m_Name: AngryWindowBear
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -277,7 +277,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1106152281473468}
   m_LocalRotation: {x: -0, y: 0.99992234, z: -0, w: -0.01246281}
-  m_LocalPosition: {x: 72.75, y: 10.25, z: 2.14}
+  m_LocalPosition: {x: -93.27643, y: 7.840705, z: 2.14}
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children:
   - {fileID: 4395045071810258}

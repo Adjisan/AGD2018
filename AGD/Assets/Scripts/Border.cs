@@ -3,14 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Border : MonoBehaviour {
-
-    private void OnCollisionEnter(Collision collision) {
-            Destroy(collision.gameObject); 
+    public string[] tags;
+    private void OnCollisionEnter(Collision other) {
+        for (int i = 0; i < tags.Length; i++) {
+            if (other.gameObject.tag == tags[i]) {
+                Destroy(other.gameObject);
+            }
+        }
     }
     private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.tag != "Ground" && other.gameObject.tag != "Border") {
-            Destroy(other.gameObject);
+        for (int i = 0; i < tags.Length; i++) {
+            if (other.gameObject.tag == tags[i]) {
+                Destroy(other.gameObject);
+            }
         }
-       
     }
 }

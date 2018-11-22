@@ -6,6 +6,7 @@ using UnityEngine;
 public class SpawnEnemy : MonoBehaviour {
 
     private float nextSpawnTime;
+    public int spawnAmount = 1;
 
     [SerializeField]
     private GameObject enemyPrefab;

@@ -14,7 +14,6 @@ public class SpawnEnemy : MonoBehaviour {
     private float Delay;
     private bool collide = false;
     private int spawned = 0;
-    public int spawnAmount = 0;
 
 
     [SerializeField]
@@ -28,35 +27,30 @@ public class SpawnEnemy : MonoBehaviour {
 	// Update is called once per frame
 	private void Update ()
     {
-        if (ShouldSpawn())
-        {
-                Spawn();
-                Debug.Log(spawned);  
-        }
+        Spawn();
+        Debug.Log(spawned);  
         collide = false;
 	}
     private void Spawn()
     {
-
         if (collide == true && spawned < spawnAmount)
         {
             for (int i = 0; i < spawnAmount; i++)
             {
-                GameObject enemy = Instantiate(enemyPrefab, transform.position, this.transform.rotation);
+                GameObject enemy = Instantiate(enemyPrefab, transform.position + new Vector3(5,30,0), this.transform.rotation);
                 enemy.transform.parent = gameObject.transform.parent;
-                nextSpawnTime = Time.time + Delay;
                 spawned++;
+                StartCoroutine(Wait());
             }
            Debug.Log("SpawnOne: " + spawned + " spawnAmount: " + spawnAmount);
            glass.Play();
         }
     }
 
-    private bool ShouldSpawn()
+    IEnumerator Wait()
     {
-            return Time.time > nextSpawnTime;
+        yield return new WaitForSeconds(5);
     }
-
     void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "projectile")

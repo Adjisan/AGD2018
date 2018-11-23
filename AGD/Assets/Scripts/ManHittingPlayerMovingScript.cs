@@ -23,5 +23,6 @@ public class ManHittingPlayerMovingScript : AIParentScript {
         {
             Debug.Log(other.gameObject);
         }
+        Physics.IgnoreCollision(GameObject.Find("FlatEnemySpawner").GetComponent<Collider>(), this.gameObject.GetComponent<Collider>());
     }
 }

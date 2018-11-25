@@ -9,6 +9,7 @@ public class AmmoBus : MonoBehaviour
     public bool BusCanBeHit = true;
     public int ammoAmountGained = 10;
     public bool loop = true;
+    public bool moving = true;
     public Color BusPathColor = Color.white;
     public Rigidbody rb;
     public List<GameObject> waypoints;
@@ -18,18 +19,20 @@ public class AmmoBus : MonoBehaviour
     int currentWaypointSpeed = 0;
     int currentWaypoint = 0;
     private float waypointRadius = 1;
-  
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        speed = waypointSpeed[currentWaypointSpeed];
+        if(moving)
+        {
+            speed = waypointSpeed[currentWaypointSpeed];
+        } 
         GetComponent<AudioSource>().playOnAwake = false;
     }
 
     void OnDrawGizmos()
     {
         Gizmos.color = BusPathColor;
-        if (loop)
+        if (loop && moving)
         {
             for (int i = 0; i <= waypoints.Count - 1; i++)
             {
@@ -44,7 +47,7 @@ public class AmmoBus : MonoBehaviour
                 waypoints[i].GetComponent<Waypoint>().colorGizmo(BusPathColor);
             }
         }
-        else
+        else if(!loop && moving)
         {
             for (int i = 0; i < waypoints.Count - 1; i++)
             {
@@ -73,6 +76,7 @@ public class AmmoBus : MonoBehaviour
 
     void Update()
     {
+        if(moving){
         if (Vector3.Distance(waypoints[currentWaypoint].transform.position, transform.position) < waypointRadius)
         {
             currentWaypoint++;
@@ -91,15 +95,14 @@ public class AmmoBus : MonoBehaviour
             if (currentWaypointSpeed == waypoints.Count)
             {
                 currentWaypointSpeed = 0;
-            }
-            
+            } 
         }
         transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypoint].transform.position, Time.deltaTime * speed);
-
         // rotation
         Vector3 relativePos = waypoints[currentWaypoint].transform.position - transform.position;
         Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
         transform.rotation = rotation;
+        }
     }
 }
 

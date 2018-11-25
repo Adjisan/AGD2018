@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ManHittingPlayerMovingScript : AIParentScript {
 
+    public bool death = true;
+
     // Use this for initialization
     void Awake () {
         stars.SetActive(false);
@@ -21,7 +23,7 @@ public class ManHittingPlayerMovingScript : AIParentScript {
         }
         else
         {
-            Debug.Log(other.gameObject);
+           // Debug.Log(other.gameObject);
         }
         Physics.IgnoreCollision(GameObject.Find("FlatEnemySpawner").GetComponent<Collider>(), this.gameObject.GetComponent<Collider>());
     }

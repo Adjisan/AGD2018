@@ -28,7 +28,6 @@ public class SpawnEnemy : MonoBehaviour {
 	private void Update ()
     {
         Spawn();
-        Debug.Log(spawned);  
         collide = false;
 	}
     private void Spawn()

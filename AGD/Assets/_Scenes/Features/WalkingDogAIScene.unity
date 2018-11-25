@@ -9838,7 +9838,7 @@ GameObject:
   - component: {fileID: 468157230}
   - component: {fileID: 468157229}
   m_Layer: 0
-  m_Name: FlatEnemySpawnerLeft
+  m_Name: FlatEnemySpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -974,6 +974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stars: {fileID: 1545182003703452}
   angrySign: {fileID: 1007857529813640}
+  death: 0
 --- !u!135 &135360776404945450
 SphereCollider:
   m_ObjectHideFlags: 1

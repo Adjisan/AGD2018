@@ -19,7 +19,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4205870624676730}
-  - component: {fileID: 33709106008431572}
   - component: {fileID: 23759538224547810}
   - component: {fileID: 65150644657507954}
   - component: {fileID: 114303405081239684}
@@ -37,8 +36,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1805724088155242}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 44.199963, y: -1.3, z: 224}
+  m_LocalRotation: {x: -0, y: -0.7071069, z: -0, w: 0.70710665}
+  m_LocalPosition: {x: 14.399991, y: 10.7, z: 27}
   m_LocalScale: {x: 1, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,13 +78,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33709106008431572
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1805724088155242}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!65 &65150644657507954
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -96,8 +88,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 4.75308, z: 2.8863707}
+  m_Center: {x: 2.4079382e-13, y: 1.876537, z: 0.52951115}
 --- !u!82 &82201875401236262
 AudioSource:
   m_ObjectHideFlags: 1
@@ -204,6 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd430d5cc4242c4aaa59302945692d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnAmount: 2
   enemyPrefab: {fileID: 1106152281473468, guid: d6dd0852992ec6949974d965d23b0803,
     type: 2}
   Delay: 0

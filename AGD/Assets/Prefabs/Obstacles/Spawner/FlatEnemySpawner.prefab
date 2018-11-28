@@ -9,32 +9,32 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1900339151824406}
+  m_RootGameObject: {fileID: 1057197606194328}
   m_IsPrefabAsset: 1
---- !u!1 &1900339151824406
+--- !u!1 &1057197606194328
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4587573425347094}
-  - component: {fileID: 65390575129297500}
-  - component: {fileID: 114421105336673648}
-  - component: {fileID: 82792513890625262}
+  - component: {fileID: 4406508639168954}
+  - component: {fileID: 65815328577863150}
+  - component: {fileID: 114987542875382220}
+  - component: {fileID: 82856381058748540}
   m_Layer: 0
-  m_Name: HouseEnemySpawnerLeft
+  m_Name: FlatEnemySpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
---- !u!4 &4587573425347094
+--- !u!4 &4406508639168954
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1900339151824406}
+  m_GameObject: {fileID: 1057197606194328}
   m_LocalRotation: {x: 0.016620211, y: 0.70691144, z: 0.016620211, w: 0.70691144}
   m_LocalPosition: {x: 4.8, y: 10.2, z: 30.2}
   m_LocalScale: {x: 0.0124999955, y: 18.750002, z: 16.249994}
@@ -42,24 +42,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 2.6940002}
---- !u!65 &65390575129297500
+--- !u!65 &65815328577863150
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1900339151824406}
+  m_GameObject: {fileID: 1057197606194328}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 5.139171, z: 3.0275598}
   m_Center: {x: -0.00019006303, y: 2.0695822, z: -0.4791011}
---- !u!82 &82792513890625262
+--- !u!82 &82856381058748540
 AudioSource:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1900339151824406}
+  m_GameObject: {fileID: 1057197606194328}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -149,12 +149,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &114421105336673648
+--- !u!114 &114987542875382220
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1900339151824406}
+  m_GameObject: {fileID: 1057197606194328}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbd430d5cc4242c4aaa59302945692d6, type: 3}
@@ -164,4 +164,4 @@ MonoBehaviour:
   enemyPrefab: {fileID: 1106152281473468, guid: d6dd0852992ec6949974d965d23b0803,
     type: 2}
   Delay: 0
-  glass: {fileID: 82792513890625262}
+  glass: {fileID: 82856381058748540}

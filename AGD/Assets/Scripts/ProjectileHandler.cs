@@ -47,7 +47,7 @@ public class ProjectileHandler : MonoBehaviour {
         shot = true;
         rigBody.isKinematic = false;
         transform.gameObject.GetComponent<TrailRenderer>().enabled = true;
-        rigBody.AddRelativeForce(new Vector3(0, 1, (1 * (force * Vector3.Distance(transform.position, parentTransform.position))) * Globals.speed/50), ForceMode.Impulse);
+        rigBody.AddRelativeForce(new Vector3(0, 1, (1 * (force * Vector3.Distance(transform.position, parentTransform.position))) * Globals.speed/100), ForceMode.Impulse);
         rigBody.AddTorque(new Vector3 (0, Random.Range(-1440f, 1440f), 0), ForceMode.Impulse);
         transform.parent = null;
 
@@ -140,9 +140,7 @@ public class ProjectileHandler : MonoBehaviour {
     void AmmoHandler() {
         if (GameObject.Find("GameManager") != null) {
             GameManagerScript gameManager = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
-
-            gameManager.DepleteAmmo(1);
-            gameManager.ammoCountText();
+            gameManager.SubtractAmmo(1);
         }
     }
 }

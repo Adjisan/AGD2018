@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BearWalkingDogAI : AIParentScript {
     public bool AlreadyHit = false;
+    public float destroyTime = 3;
 	// Use this for initialization
 	void Awake () {
         AlreadyHit = false;
@@ -31,6 +32,7 @@ public class BearWalkingDogAI : AIParentScript {
             angrySign.SetActive(false);
             this.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
             Destroy(other.gameObject);
+            Destroy(gameObject, destroyTime);
         }
         if (other.gameObject.tag == "Player")
         {
@@ -39,6 +41,7 @@ public class BearWalkingDogAI : AIParentScript {
             stars.SetActive(true);
             angrySign.SetActive(false);
             this.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
+            Destroy(gameObject, destroyTime);
         }
         else
         {

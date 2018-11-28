@@ -3535,7 +3535,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 42
   m_CollisionDetection: 0
 --- !u!1 &128657021
 GameObject:
@@ -5848,19 +5848,6 @@ Prefab:
     - target: {fileID: 4742766032299268, guid: d6dd0852992ec6949974d965d23b0803, type: 2}
       propertyPath: m_RootOrder
       value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1106152281473468, guid: d6dd0852992ec6949974d965d23b0803, type: 2}
-      propertyPath: m_Name
-      value: AngryWindowBear
-      objectReference: {fileID: 0}
-    - target: {fileID: 195750145487106154, guid: d6dd0852992ec6949974d965d23b0803,
-        type: 2}
-      propertyPath: m_AutoTraverseOffMeshLink
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1106152281473468, guid: d6dd0852992ec6949974d965d23b0803, type: 2}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6dd0852992ec6949974d965d23b0803, type: 2}
@@ -32482,7 +32469,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 42
   m_CollisionDetection: 0
 --- !u!4 &1371896337 stripped
 Transform:
@@ -33354,7 +33341,12 @@ Prefab:
     - target: {fileID: 114026118844906628, guid: 09423aee1782fcc4384581fa77bc3d47,
         type: 2}
       propertyPath: foreward
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114026118844906628, guid: 09423aee1782fcc4384581fa77bc3d47,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09423aee1782fcc4384581fa77bc3d47, type: 2}
@@ -34665,7 +34657,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c33751d1ffb26f944a64f27153940efb, type: 3}
       propertyPath: m_Name
-      value: FenceDoorHalf (5)
+      value: FenceDoor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c33751d1ffb26f944a64f27153940efb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -37801,7 +37793,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c33751d1ffb26f944a64f27153940efb, type: 3}
       propertyPath: m_Name
-      value: FenceDoorHalf (4)
+      value: FenceDoor
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c33751d1ffb26f944a64f27153940efb, type: 3}
       propertyPath: m_StaticEditorFlags

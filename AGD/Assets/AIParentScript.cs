@@ -7,6 +7,7 @@ public class AIParentScript : MonoBehaviour {
     public GameObject angrySign;
     protected UnityEngine.AI.NavMeshAgent nav;
     protected Transform player;
+    public float destroyTime = 3;
 
     // Use this for initialization
     void Start () {

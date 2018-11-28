@@ -20,6 +20,7 @@ public class ManHittingPlayerMovingScript : AIParentScript {
             angrySign.SetActive(false);
             gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
             Destroy(other.gameObject);
+            Destroy(gameObject, destroyTime);
         }
         if (other.gameObject.tag == "Player")
         {
@@ -27,6 +28,7 @@ public class ManHittingPlayerMovingScript : AIParentScript {
             stars.SetActive(true);
             angrySign.SetActive(false);
             gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
+            Destroy(gameObject, destroyTime);
         }
         else
         {

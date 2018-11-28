@@ -32,7 +32,7 @@ public class BearWalkingDogAI : AIParentScript {
             this.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
             Destroy(other.gameObject);
         }
-        if (other.gameObject.tag == "Bike")
+        if (other.gameObject.tag == "Player")
         {
             Debug.Log("Death or salary decrease");
             AlreadyHit = true;

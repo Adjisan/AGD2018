@@ -31,6 +31,14 @@ public class BearWalkingDogAI : AIParentScript {
             gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
             Destroy(other.gameObject);
         }
+        if (other.gameObject.tag == "Bike")
+        {
+            Debug.Log("Death or salary decrease");
+            AlreadyHit = true;
+            stars.SetActive(true);
+            angrySign.SetActive(false);
+            gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
+        }
         else
         {
             Debug.Log(other.gameObject);

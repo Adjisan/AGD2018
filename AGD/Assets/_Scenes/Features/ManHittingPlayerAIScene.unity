@@ -8584,7 +8584,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c33751d1ffb26f944a64f27153940efb, type: 3}
       propertyPath: m_Name
-      value: FenceDoorHalf (3)
+      value: FenceDoor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c33751d1ffb26f944a64f27153940efb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -14396,11 +14396,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c33751d1ffb26f944a64f27153940efb, type: 3}
       propertyPath: m_Name
-      value: FenceDoorHalf (6)
+      value: FenceDoor
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c33751d1ffb26f944a64f27153940efb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c33751d1ffb26f944a64f27153940efb, type: 3}
+      propertyPath: m_TagString
+      value: FenceDoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c33751d1ffb26f944a64f27153940efb, type: 3}
@@ -24870,7 +24874,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c33751d1ffb26f944a64f27153940efb, type: 3}
       propertyPath: m_Name
-      value: FenceDoorHalf (2)
+      value: FenceDoor
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c33751d1ffb26f944a64f27153940efb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -37591,6 +37595,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0955d5e3068f01044998f8ae1e028ffe, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0955d5e3068f01044998f8ae1e028ffe, type: 3}
+      propertyPath: m_TagString
+      value: FenceDoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0955d5e3068f01044998f8ae1e028ffe, type: 3}

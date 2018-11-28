@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class BearWalkingDogAI : AIParentScript {
     public bool AlreadyHit = false;
-	// Use this for initialization
-	void Awake () {
+    public float destroyTime = 3;
+    // Use this for initialization
+    void Awake () {
+        AlreadyHit = false;
         stars.SetActive(false);
         angrySign.SetActive(false);
-        gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
+        this.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
     }
 
     public void Chase()
@@ -17,7 +19,7 @@ public class BearWalkingDogAI : AIParentScript {
         {
             angrySign.SetActive(true);
             stars.SetActive(false);
-            gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = true;
+            this.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = true;
         }
     }
 	
@@ -28,8 +30,18 @@ public class BearWalkingDogAI : AIParentScript {
             AlreadyHit = true;
             stars.SetActive(true);
             angrySign.SetActive(false);
-            gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
+            this.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
             Destroy(other.gameObject);
+            Destroy(gameObject, destroyTime);
+        }
+        if (other.gameObject.tag == "Player")
+        {
+            Debug.Log("Death or salary decrease");
+            AlreadyHit = true;
+            stars.SetActive(true);
+            angrySign.SetActive(false);
+            this.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
+            Destroy(gameObject, destroyTime);
         }
         else
         {

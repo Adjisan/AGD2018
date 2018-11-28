@@ -5,8 +5,8 @@ using UnityEngine;
 public class BearWalkingDogAI : AIParentScript {
     public bool AlreadyHit = false;
     public float destroyTime = 3;
-	// Use this for initialization
-	void Awake () {
+    // Use this for initialization
+    void Awake () {
         AlreadyHit = false;
         stars.SetActive(false);
         angrySign.SetActive(false);

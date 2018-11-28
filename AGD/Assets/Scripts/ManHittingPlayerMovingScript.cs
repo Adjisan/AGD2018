@@ -5,7 +5,7 @@ using UnityEngine;
 public class ManHittingPlayerMovingScript : AIParentScript {
 
     public bool death = true;
-
+    public float destroyTime = 3;
     // Use this for initialization
     void Awake () {
         stars.SetActive(false);

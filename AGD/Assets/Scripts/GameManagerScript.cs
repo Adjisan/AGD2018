@@ -54,7 +54,7 @@ public class GameManagerScript : MonoBehaviour {
         if(ammo == noAmmoCount)
         {
             ammoText.text = "You ran out of newspaper! :(";
-            SceneManager.LoadScene(Levelindex);
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }

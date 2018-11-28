@@ -45,6 +45,9 @@ EditorBuildSettings:
     path: Assets/_Scenes/Features/WalkingDogAIScene.unity
     guid: d063ef76c4ca16d4eb5af4e459191b0a
   - enabled: 1
+    path: Assets/_Scenes/MainMenu.unity
+    guid: 7093bceab60c2a24394bd42108f0deec
+  - enabled: 1
     path: Assets/_Scenes/Level_Tut.unity
     guid: 5459222f0f67b2e48ae135a76be04f37
   - enabled: 1

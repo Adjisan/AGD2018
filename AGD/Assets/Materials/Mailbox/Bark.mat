@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Tree
+  m_Name: Bark
   m_Shader: {fileID: 4800000, guid: 20c3bcdeff0d91c4196b46819519a766, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -71,8 +71,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_331FA76: -89
-    - Vector1_E3B53C44: 0.274
+    - Vector1_331FA76: -65
+    - Vector1_E3B53C44: 0.931
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -95,7 +95,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Vector3_306261DD: {r: 0.0184002, g: 0.29718402, b: -0.005728156, a: 0}
-    - _Color: {r: 0, g: 0.133, b: 0.035945956, a: 1}
+    - _Color: {r: 0.301, g: 0.0876699, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _ViewDir: {r: 23.9, g: 42.7, b: -27.8, a: 0}
+    - _ViewDir: {r: 56.8, g: 110.77, b: -9.5, a: 0}

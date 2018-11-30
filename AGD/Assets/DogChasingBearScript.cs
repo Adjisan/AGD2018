@@ -2,15 +2,45 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DogChasingBearScript : MonoBehaviour {
+public class DogChasingBearScript : AIParentScript {
+    public bool AlreadyHit = false;
+    public float destroyTime = 3;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Awake()
+    {
+        stars.SetActive(false);
+        angrySign.SetActive(false);
+        gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "playerObj" || other.gameObject.tag == "Player" && AlreadyHit == false)
+        {
+            gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = true;
+            angrySign.SetActive(true);
+        }
+    }
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "projectile")
+        {
+            stars.SetActive(true);
+            angrySign.SetActive(false);
+            gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
+            Destroy(other.gameObject);
+            Destroy(gameObject, destroyTime);
+            AlreadyHit = true;
+        }
+        if (other.gameObject.tag == "Player")
+        {
+            Debug.Log("Death or salary decrease");
+            stars.SetActive(true);
+            angrySign.SetActive(false);
+            gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
+            AlreadyHit = true;
+            Destroy(gameObject, destroyTime);
+        }
+        Physics.IgnoreCollision(GameObject.Find("FenceDoor").GetComponent<Collider>(), this.gameObject.GetComponent<Collider>());
+        Physics.IgnoreCollision(GameObject.Find("FlatEnemySpawner").GetComponent<Collider>(), this.gameObject.GetComponent<Collider>());
+    }
 }

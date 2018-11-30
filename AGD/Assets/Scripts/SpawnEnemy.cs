@@ -13,43 +13,47 @@ public class SpawnEnemy : MonoBehaviour {
     [SerializeField]
     private float Delay;
     private bool collide = false;
+    private int spawned = 0;
+
 
     [SerializeField]
     AudioSource glass;
 
+    private void Start()
+    {
+        spawned = 0;
+    }
 
 	// Update is called once per frame
 	private void Update ()
     {
-        if (ShouldSpawn())
-        {
-            Spawn();
-        }
+        Spawn();
         collide = false;
 	}
     private void Spawn()
     {
-        nextSpawnTime = Time.time + Delay;
-
-        if (collide == true)
+        if (collide == true && spawned < spawnAmount)
         {
-            for (int i = 0; i < spawnAmount; i++) {
-                GameObject enemy = Instantiate(enemyPrefab, transform.position, this.transform.rotation);
+            for (int i = 0; i < spawnAmount; i++)
+            {
+                GameObject enemy = Instantiate(enemyPrefab, transform.position + new Vector3(5,30,0), this.transform.rotation);
                 enemy.transform.parent = gameObject.transform.parent;
+                spawned++;
+                StartCoroutine(Wait());
             }
+           Debug.Log("SpawnOne: " + spawned + " spawnAmount: " + spawnAmount);
+           glass.Play();
         }
     }
 
-    private bool ShouldSpawn()
+    IEnumerator Wait()
     {
-        return Time.time > nextSpawnTime;
+        yield return new WaitForSeconds(5);
     }
-
     void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "projectile")
         {
-            glass.Play();
             collide = true;
             Destroy(other.gameObject);
         }

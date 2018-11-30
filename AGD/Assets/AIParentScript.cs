@@ -8,6 +8,7 @@ public class AIParentScript : MonoBehaviour {
     protected UnityEngine.AI.NavMeshAgent nav;
     protected Transform player;
 
+
     // Use this for initialization
     void Start () {
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();

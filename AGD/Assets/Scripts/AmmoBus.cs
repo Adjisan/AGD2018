@@ -10,6 +10,8 @@ public class AmmoBus : MonoBehaviour
     public int ammoAmountGained = 10;
     public bool loop = true;
     public bool moving = true;
+    public float timeLeft = 1;
+    public float wobbleSpeed = 1;
     public Color BusPathColor = Color.white;
     public Rigidbody rb;
     public List<GameObject> waypoints;
@@ -18,17 +20,17 @@ public class AmmoBus : MonoBehaviour
     public AudioClip hitSound;
     int currentWaypointSpeed = 0;
     int currentWaypoint = 0;
-    private float waypointRadius = 1;
+    private float waypointRadius = 3;    
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        if(moving)
+        if (moving)
         {
             speed = waypointSpeed[currentWaypointSpeed];
-        } 
-        GetComponent<AudioSource>().playOnAwake = false;
+        }
+        //        GetComponent<AudioSource>().playOnAwake = false;
+     GameObject.Find("Bike").GetComponent<Animator>().SetFloat("wobbleSpeed", wobbleSpeed);        
     }
-
     void OnDrawGizmos()
     {
         Gizmos.color = BusPathColor;
@@ -47,7 +49,7 @@ public class AmmoBus : MonoBehaviour
                 waypoints[i].GetComponent<Waypoint>().colorGizmo(BusPathColor);
             }
         }
-        else if(!loop && moving)
+        else if (!loop && moving)
         {
             for (int i = 0; i < waypoints.Count - 1; i++)
             {
@@ -56,7 +58,7 @@ public class AmmoBus : MonoBehaviour
             }
         }
     }
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.tag == "projectile" && BusCanBeHit)
         {
@@ -68,40 +70,50 @@ public class AmmoBus : MonoBehaviour
                 gameManager.ammoCountText();
                 BusCanBeHit = false;
                 GetComponent<AudioSource>().clip = hitSound;
-                GetComponent<AudioSource>().Play ();
+                GetComponent<AudioSource>().Play();
                 Destroy(collision.gameObject);
             }
         }
     }
-
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.tag == "Bike")
+        {
+            Debug.Log("Bike Collision");
+        }
+    }
     void Update()
     {
-        if(moving){
-        if (Vector3.Distance(waypoints[currentWaypoint].transform.position, transform.position) < waypointRadius)
+        if (moving)
         {
-            currentWaypoint++;
-            if (currentWaypoint >= waypoints.Count && !loop)
+            if (Vector3.Distance(waypoints[currentWaypoint].transform.position, transform.position) < waypointRadius)
             {
-                currentWaypoint = 0;
-                currentWaypointSpeed = 0;
-                Destroy(this.gameObject);
+                wobbleSpeed = 1 + (Globals.speed/100);
+                GameObject.Find("Bike").GetComponent<Animator>().SetFloat("wobbleSpeed", wobbleSpeed);
+
+                currentWaypoint++;
+                if (currentWaypoint >= waypoints.Count && !loop)
+                {
+                    currentWaypoint = 0;
+                    currentWaypointSpeed = 0;
+                    Destroy(this.gameObject);
+                }
+                else if (currentWaypoint >= waypoints.Count && loop)
+                {
+                    currentWaypoint = 0;
+                }
+                speed = waypointSpeed[currentWaypointSpeed];
+                currentWaypointSpeed++;
+                if (currentWaypointSpeed == waypoints.Count)
+                {
+                    currentWaypointSpeed = 0;
+                }
             }
-            else if (currentWaypoint >= waypoints.Count && loop)
-            {
-                currentWaypoint = 0;
-            }
-            speed = waypointSpeed[currentWaypointSpeed];
-            currentWaypointSpeed++;
-            if (currentWaypointSpeed == waypoints.Count)
-            {
-                currentWaypointSpeed = 0;
-            } 
-        }
-        transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypoint].transform.position, Time.deltaTime * speed);
-        // rotation
-        Vector3 relativePos = waypoints[currentWaypoint].transform.position - transform.position;
-        Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
-        transform.rotation = rotation;
+            transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypoint].transform.position, Time.deltaTime * (Globals.speed + speed));
+            // Smooth rotation
+            Vector3 relativePos = waypoints[currentWaypoint].transform.position - transform.position;
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(relativePos, Vector3.up), Time.deltaTime * 2);
+
         }
     }
 }

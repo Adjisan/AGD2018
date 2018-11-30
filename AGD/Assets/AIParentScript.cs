@@ -24,7 +24,6 @@ public class AIParentScript : MonoBehaviour {
             nav.SetDestination(player.position);
             Debug.Log("walking");
         }
-
     }
 
 

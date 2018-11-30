@@ -18,6 +18,7 @@ public class DogChasingBearScript : AIParentScript {
         {
             gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = true;
             angrySign.SetActive(true);
+            angrySign.transform.localScale = new Vector3(1, 1);
         }
     }
     void OnCollisionEnter(Collision other)

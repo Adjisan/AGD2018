@@ -8,6 +8,7 @@ public class AIParentScript : MonoBehaviour {
     protected UnityEngine.AI.NavMeshAgent nav;
     protected Transform player;
 
+
     // Use this for initialization
     void Start () {
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -23,7 +24,6 @@ public class AIParentScript : MonoBehaviour {
             nav.SetDestination(player.position);
             Debug.Log("walking");
         }
-
     }
 
 

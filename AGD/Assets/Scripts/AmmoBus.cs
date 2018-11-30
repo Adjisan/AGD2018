@@ -66,8 +66,7 @@ public class AmmoBus : MonoBehaviour
             {
                 GameManagerScript gameManager = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
                 Debug.Log("Gained Ammo");
-                gameManager.ammo += ammoAmountGained;
-                gameManager.ammoCountText();
+                gameManager.AddAmmo(ammoAmountGained);
                 BusCanBeHit = false;
                 GetComponent<AudioSource>().clip = hitSound;
                 GetComponent<AudioSource>().Play();

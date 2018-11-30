@@ -25,28 +25,24 @@ public class AmmoHandler : MonoBehaviour {
         if (!collidesWithTrigger)
             return;
         if (other.transform.tag == collidesWithTag && !triggered) {
-            gmScript.DepleteAmmo(ammo);
-            gmScript.ammoCountText();
-            if (onlyOnce) {
-                triggered = true;
-            }
-            if (destroy) {
-                Destroy(other.gameObject);
-            }
+            HandleAmmo(other.gameObject);
         }
     }
     private void OnCollisionEnter(Collision other) {
         if (collidesWithTrigger)
             return;
         if (other.transform.tag == collidesWithTag && !triggered) {
-            gmScript.DepleteAmmo(ammo);
-            gmScript.ammoCountText();
-            if (onlyOnce) {
-                triggered = true;
-            }
-            if (destroy) {
-                Destroy(other.gameObject);
-            }
+            HandleAmmo(other.gameObject);
+        }
+    }
+
+    void HandleAmmo(GameObject other) {
+        gmScript.SubtractAmmo(ammo);
+        if (onlyOnce) {
+            triggered = true;
+        }
+        if (destroy) {
+            Destroy(other);
         }
     }
 }

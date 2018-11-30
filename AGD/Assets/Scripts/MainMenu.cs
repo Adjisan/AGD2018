@@ -6,11 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
-    //public Button ButtonPlay;
-    //public Button ButtonLevelSelect;
-    //public Button ButtonExit;
-    //public string newGameSceneName;
-    //public GameObject loadLevelMenu; 
 
     public void LoadByIndex(int sceneIndex)
     {

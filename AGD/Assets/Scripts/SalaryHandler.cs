@@ -12,18 +12,22 @@ public class SalaryHandler : MonoBehaviour {
     public string collidesWithTag = "projectile";
     public bool onlyOnce = true;
     private bool triggered = false;
+    public bool isMultiplierObject = false;
+    public bool loseMultiplier = false;
+
     // Use this for initialization
     void Start () {
         gmScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
     }
-    void Update() {
 
-    }
     void HandleSalary() {
         if (increase) {
             gmScript.AddSalary(SalaryAmount);
         } else {
             gmScript.SubtractSalary(SalaryAmount);
+        }
+        if (isMultiplierObject) {
+            gmScript.IncreaseMultiplier();
         }
     }
 

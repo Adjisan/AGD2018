@@ -75,7 +75,7 @@ public class playerMove : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypoint].transform.position, Time.deltaTime * speed);
             // rotation
             Vector3 relativePos = waypoints[currentWaypoint].transform.position - transform.position;
-            Quaternion rotation = Quaternion.LookRotation(Vector3.forward);
+            Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
             transform.rotation = rotation;
         }
     }

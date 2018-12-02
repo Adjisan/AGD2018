@@ -36,18 +36,21 @@ EditorBuildSettings:
     path: Assets/_Scenes/Features/WalkingDog.unity
     guid: 9afe7ff923405fe4f9d08caede9e1bc5
   - enabled: 0
-    path: Assets/_Scenes/level 1.unity
+    path: Assets/_Scenes/Level Monday/Level_old/level 1.unity
     guid: 6a12658bea64d6741b9f3224d3e6e85f
   - enabled: 0
-    path: Assets/_Scenes/Level Feature.unity
+    path: Assets/_Scenes/Level Monday/Level_old/Level Feature.unity
     guid: 40912fccbbda6d64a8a2447913db1d94
   - enabled: 0
     path: Assets/_Scenes/Features/WalkingDogAIScene.unity
     guid: d063ef76c4ca16d4eb5af4e459191b0a
-  - enabled: 1
-    path: Assets/_Scenes/Level_Tut.unity
+  - enabled: 0
+    path: Assets/_Scenes/Level Monday/Level_Tut.unity
     guid: 5459222f0f67b2e48ae135a76be04f37
-  - enabled: 1
-    path: Assets/_Scenes/Level one.unity
+  - enabled: 0
+    path: Assets/_Scenes/Level Monday/Level one.unity
     guid: 8d0dbc64dd90a3344912079a0c8850c7
+  - enabled: 1
+    path: Assets/_Scenes/Level Monday/NEW level one.unity
+    guid: 613b5bdca26dd9742becd01b09016fe9
   m_configObjects: {}

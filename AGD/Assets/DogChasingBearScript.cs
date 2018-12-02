@@ -32,7 +32,7 @@ public class DogChasingBearScript : AIParentScript {
             Destroy(gameObject, destroyTime);
             AlreadyHit = true;
         }
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" || other.gameObject.tag == "playerObj")
         {
             Debug.Log("Death or salary decrease");
             stars.SetActive(true);
@@ -42,6 +42,6 @@ public class DogChasingBearScript : AIParentScript {
             Destroy(gameObject, destroyTime);
         }
         Physics.IgnoreCollision(GameObject.Find("FenceDoor").GetComponent<Collider>(), this.gameObject.GetComponent<Collider>());
-        Physics.IgnoreCollision(GameObject.Find("FlatEnemySpawner").GetComponent<Collider>(), this.gameObject.GetComponent<Collider>());
+     //   Physics.IgnoreCollision(GameObject.Find("FlatEnemySpawner").GetComponent<Collider>(), this.gameObject.GetComponent<Collider>());
     }
 }

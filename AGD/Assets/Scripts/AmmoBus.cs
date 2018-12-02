@@ -76,7 +76,7 @@ public class AmmoBus : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.transform.tag == "Bike")
+        if (other.transform.tag == "Player")
         {
             Debug.Log("Bike Collision");
         }

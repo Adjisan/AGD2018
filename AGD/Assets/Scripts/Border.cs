@@ -4,17 +4,23 @@ using UnityEngine;
 
 public class Border : MonoBehaviour {
     public string[] tags;
+
     private void OnCollisionEnter(Collision other) {
-        for (int i = 0; i < tags.Length; i++) {
-            if (other.gameObject.tag == tags[i]) {
-                Destroy(other.gameObject);
-            }
-        }
+        CollisionHandler(other.gameObject);
     }
     private void OnTriggerEnter(Collider other) {
+        CollisionHandler(other.gameObject);
+    }
+    private void CollisionHandler(GameObject other) {
         for (int i = 0; i < tags.Length; i++) {
-            if (other.gameObject.tag == tags[i]) {
-                Destroy(other.gameObject);
+            if (other.tag == tags[i]) {
+                if (other.GetComponent<SalaryHandler>() != null && 
+                    other.GetComponent<SalaryHandler>().loseMultiplier && 
+                    other.GetComponent<Target>().open) {
+                    GameManagerScript gmScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+                    gmScript.ResetMultiplier();
+                }
+                Destroy(other);
             }
         }
     }

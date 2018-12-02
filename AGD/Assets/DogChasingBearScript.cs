@@ -42,6 +42,6 @@ public class DogChasingBearScript : AIParentScript {
             Destroy(gameObject, destroyTime);
         }
         Physics.IgnoreCollision(GameObject.Find("FenceDoor").GetComponent<Collider>(), this.gameObject.GetComponent<Collider>());
-     //   Physics.IgnoreCollision(GameObject.Find("FlatEnemySpawner").GetComponent<Collider>(), this.gameObject.GetComponent<Collider>());
+        Physics.IgnoreCollision(GameObject.Find("FlatEnemySpawner").GetComponent<Collider>(), this.gameObject.GetComponent<Collider>());
     }
 }

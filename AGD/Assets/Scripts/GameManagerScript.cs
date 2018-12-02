@@ -6,23 +6,31 @@ using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameManagerScript : MonoBehaviour {
+    private float baseSpeed;
 	public float salary;
     public TextMeshProUGUI salaryText;
+    public TextMeshProUGUI multiplierText;
 
     private float multiplier;
-    public float[] multiplierOptions = {1,2,3,4,5};
+    public float timesHit = 0;
+
+    public float[] multiplierOptions;
+    public float[] hitsNeeded;
+    public float[] speedAdded;
     private int multiplierIndex = 0;
 
     public int ammo;
     public Text ammoText;
     public int Levelindex;
-
+    //check index foir amount of hits needed
+    //if  times hit == amount of hits needed level +
 	// Use this for initialization
 	void Start () {
 		salary = 0f;
         multiplier = multiplierOptions[multiplierIndex];
         SetSalaryText();
         SetAmmoText();
+        baseSpeed = Globals.speed;
 	}
 	
 	// Update is called once per frame
@@ -50,16 +58,29 @@ public class GameManagerScript : MonoBehaviour {
     }
 
     public void IncreaseMultiplier() {
-        if (multiplierIndex < (multiplierOptions.Length - 1)){
-            multiplierIndex += 1;
-            multiplier = multiplierOptions[multiplierIndex];
+        if (timesHit < hitsNeeded[multiplierIndex]) {
+            timesHit += 1;
+        } else {
+            if (multiplierIndex < (multiplierOptions.Length - 1)) {
+                multiplierIndex += 1;
+                Globals.speed = baseSpeed + speedAdded[multiplierIndex];
+                multiplier = multiplierOptions[multiplierIndex];
+                SetMultiplierText();
+            }
+            timesHit = 0;
         }
     }
     public void ResetMultiplier() {
+        Debug.Log("ResetMultiplier");
         multiplierIndex = 0;
         multiplier = multiplierOptions[multiplierIndex];
+        timesHit = 0;
+        SetMultiplierText();
+        Globals.speed = baseSpeed;
     }
-
+    public void SetMultiplierText() {
+        multiplierText.SetText(multiplierOptions[multiplierIndex].ToString() + "x");
+    }
     public void SetAmmoText(){
         if (ammoText != null) {
             ammoText.text = /*"Newspapers left: " +*/ ammo.ToString();

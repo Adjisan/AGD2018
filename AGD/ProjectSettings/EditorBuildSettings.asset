@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Scenes/Menu.unity
     guid: 484e4a12b7979f644940bd1f8a0156a4
   - enabled: 0
@@ -44,10 +44,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Scenes/Features/WalkingDogAIScene.unity
     guid: d063ef76c4ca16d4eb5af4e459191b0a
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Level_Tut.unity
     guid: 5459222f0f67b2e48ae135a76be04f37
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Level one.unity
     guid: 8d0dbc64dd90a3344912079a0c8850c7
+  - enabled: 1
+    path: Assets/_Scenes/Features/SalarySystem.unity
+    guid: 227940a196f7d144db0c5a46b7b2682e
   m_configObjects: {}

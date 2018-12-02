@@ -30,7 +30,7 @@ public class GameManagerScript : MonoBehaviour {
         multiplier = multiplierOptions[multiplierIndex];
         SetSalaryText();
         SetAmmoText();
-        baseSpeed = Globals.speed;
+        Globals.speed = Globals.baseSpeed;
 	}
 	
 	// Update is called once per frame
@@ -63,7 +63,7 @@ public class GameManagerScript : MonoBehaviour {
         } else {
             if (multiplierIndex < (multiplierOptions.Length - 1)) {
                 multiplierIndex += 1;
-                Globals.speed = baseSpeed + speedAdded[multiplierIndex];
+                Globals.speed = Globals.baseSpeed + speedAdded[multiplierIndex];
                 multiplier = multiplierOptions[multiplierIndex];
                 SetMultiplierText();
             }
@@ -76,7 +76,7 @@ public class GameManagerScript : MonoBehaviour {
         multiplier = multiplierOptions[multiplierIndex];
         timesHit = 0;
         SetMultiplierText();
-        Globals.speed = baseSpeed;
+        Globals.speed = Globals.baseSpeed;
     }
     public void SetMultiplierText() {
         multiplierText.SetText(multiplierOptions[multiplierIndex].ToString() + "x");

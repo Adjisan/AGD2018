@@ -21,6 +21,12 @@ public class DogChasingBearScript : AIParentScript {
             angrySign.transform.localScale = new Vector3(1, 1);
         }
     }
+    private void Update()
+    {
+        gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = speed;
+        gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().angularSpeed = angularSpeed;
+        gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().acceleration = acceleration;
+    }
     void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "projectile")

@@ -7,7 +7,10 @@ public class AIParentScript : MonoBehaviour {
     public GameObject angrySign;
     protected UnityEngine.AI.NavMeshAgent nav;
     protected Transform player;
-
+    protected float speed;
+    public float speedIncrease = 1.2f;
+    public float angularSpeed = 3.0f;
+    public float acceleration = 80.0f;
 
     // Use this for initialization
     void Start () {
@@ -22,7 +25,12 @@ public class AIParentScript : MonoBehaviour {
         if (gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled == true)
         {
             nav.SetDestination(player.position);
-            Debug.Log("walking");
+            Debug.Log("Globals speed: " + Globals.speed);
+            speed = Globals.speed + speedIncrease;
+            Debug.Log("acceleration: " + acceleration);
+            nav.speed = Globals.speed + speedIncrease;
+            nav.angularSpeed = Globals.speed + angularSpeed;
+            nav.acceleration = Globals.speed + acceleration;
         }
     }
 

@@ -12,6 +12,7 @@ public class ManHittingPlayerMovingScript : AIParentScript {
         angrySign.SetActive(true);
     }
 
+
     void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "projectile")

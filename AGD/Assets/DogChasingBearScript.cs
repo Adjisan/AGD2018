@@ -38,7 +38,7 @@ public class DogChasingBearScript : AIParentScript {
             Destroy(gameObject, destroyTime);
             AlreadyHit = true;
         }
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" || other.gameObject.tag == "playerObj")
         {
             Debug.Log("Death or salary decrease");
             stars.SetActive(true);

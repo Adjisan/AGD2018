@@ -8,7 +8,7 @@ public class AIParentScript : MonoBehaviour {
     protected UnityEngine.AI.NavMeshAgent nav;
     protected Transform player;
     protected float speed;
-    public float speedIncrease = 1.2f;
+    public float speedIncrease = 30f;
     public float angularSpeed = 30.0f;
     public float acceleration = 80.0f;
 
@@ -25,9 +25,7 @@ public class AIParentScript : MonoBehaviour {
         if (gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled == true)
         {
             nav.SetDestination(player.position);
-            Debug.Log("Globals speed: " + Globals.speed);
             speed = Globals.speed + speedIncrease;
-            Debug.Log("acceleration: " + acceleration);
             nav.speed = Globals.speed + speedIncrease;
             nav.angularSpeed = Globals.speed + angularSpeed;
         }

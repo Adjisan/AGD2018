@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
@@ -81,6 +81,9 @@ public class GameManagerScript : MonoBehaviour {
     public void SetMultiplierText() {
         multiplierText.SetText(multiplierOptions[multiplierIndex].ToString() + "x");
     }
+    public float GetMultiplier() {
+        return multiplier;
+    }
     public void SetAmmoText(){
         if (ammoText != null) {
             ammoText.text = /*"Newspapers left: " +*/ ammo.ToString();
@@ -99,7 +102,7 @@ public class GameManagerScript : MonoBehaviour {
         if(ammo <= 0)
         {
             ammoText.text = "You ran out of newspaper! :(";
-            SceneManager.LoadScene(Levelindex);
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }

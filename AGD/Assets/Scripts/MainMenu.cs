@@ -6,25 +6,24 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
-    public Button ButtonPlay;
-    public Button ButtonLevelSelect;
-    public Button ButtonExit;
-    public string newGameSceneName;
 
-    public GameObject loadLevelMenu; 
-    public void NewGame()
+    public void LoadByIndex(int sceneIndex)
     {
-        SceneManager.LoadScene(newGameSceneName);
+        SceneManager.LoadScene(sceneIndex);
     }
 
-    public void LevelSelect()
-    {
-        loadLevelMenu.SetActive(true);
-    }
+    //public void LevelSelect()
+    //{
+    //    loadLevelMenu.SetActive(true);
+    //}
 
     public void Exit()
     {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
         Application.Quit();
+#endif
     }
 
 

@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114445132676413754}
   m_Layer: 9
   m_Name: PlayerCUBE
-  m_TagString: Untagged
+  m_TagString: playerObj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 114211801016003094}
   m_Layer: 9
   m_Name: Bike
-  m_TagString: Untagged
+  m_TagString: Bike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -367,7 +367,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1014272062665834}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -655.7}
+  m_LocalPosition: {x: 0, y: 0, z: -17.2}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4623285264669878}

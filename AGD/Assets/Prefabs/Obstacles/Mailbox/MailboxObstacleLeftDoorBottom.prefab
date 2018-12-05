@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 65700374655831712}
   - component: {fileID: 114427426568958542}
   - component: {fileID: 95728148276285560}
+  - component: {fileID: 114297769838487848}
   m_Layer: 0
   m_Name: MailboxL
   m_TagString: Untagged
@@ -383,6 +384,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114297769838487848
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1237353434044092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
+  SalaryAmount: 1
+  increase: 1
+  collidesWithTrigger: 0
+  collidesWithTag: projectile
+  onlyOnce: 1
+  isMultiplierObject: 1
+  loseMultiplier: 1
 --- !u!114 &114427426568958542
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -199,6 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -372,6 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -846,6 +849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -869,6 +873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -892,6 +897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -965,6 +971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -988,6 +995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -1011,6 +1019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -1034,6 +1043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -1427,6 +1437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -2117,6 +2128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -2190,6 +2202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -2294,6 +2307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -2367,6 +2381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -2490,6 +2505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -2513,6 +2529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -2617,6 +2634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -2640,6 +2658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 0}
   SalaryAmount: 10
   increase: 0
   collidesWithTrigger: 0
@@ -2713,6 +2732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -2867,6 +2887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -3165,6 +3186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 0}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -4848,6 +4870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -4871,6 +4894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -5094,6 +5118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -5253,6 +5278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -5326,6 +5352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -5572,6 +5599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -5847,6 +5875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -5870,6 +5899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -5893,6 +5923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -6120,6 +6151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -6326,6 +6358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
   SalaryAmount: 1
   increase: 1
   collidesWithTrigger: 0
@@ -6421,6 +6454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 0}
   SalaryAmount: 10
   increase: 0
   collidesWithTrigger: 0

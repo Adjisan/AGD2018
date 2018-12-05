@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ManHittingPlayerMovingScript : AIParentScript {
+public class ManHittingPlayerMovingScript : AIParentScript
+{
 
     public bool death = true;
-    public float destroyTime = 3;
+    public int AmountWindowBearSteals = 3;
+
     // Use this for initialization
     void Awake () {
         stars.SetActive(false);
         angrySign.SetActive(true);
+        gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = true;
     }
 
 
@@ -25,7 +28,9 @@ public class ManHittingPlayerMovingScript : AIParentScript {
         }
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("Death or salary decrease");
+            if (AlreadyHit == false)
+            { GM.SubtractAmmo(AmountWindowBearSteals); }
+            AlreadyHit = true;
             stars.SetActive(true);
             angrySign.SetActive(false);
             gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;

@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BearWalkingDogAI : AIParentScript {
-    public bool AlreadyHit = false;
-    public float destroyTime = 3;
+public class BearWalkingDogAI : AIParentScript
+{
+
+    public int amountWalkingBearSteals = 3;
+
     // Use this for initialization
     void Awake () {
         AlreadyHit = false;
@@ -34,9 +36,10 @@ public class BearWalkingDogAI : AIParentScript {
             Destroy(other.gameObject);
             Destroy(gameObject, destroyTime);
         }
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" || other.gameObject.tag == "playerObj")
         {
-            Debug.Log("Death or salary decrease");
+            if (AlreadyHit == false)
+            { GM.SubtractAmmo(amountWalkingBearSteals); }
             AlreadyHit = true;
             stars.SetActive(true);
             angrySign.SetActive(false);

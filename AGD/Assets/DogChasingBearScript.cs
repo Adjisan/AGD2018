@@ -2,17 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DogChasingBearScript : AIParentScript {
-    public bool AlreadyHit = false;
-    public float destroyTime = 3;
-    public GameManagerScript GM;
-    public int amountDogsSteal = 3;
+public class DogChasingBearScript : AIParentScript
+{
+
+    public int amountDogsSteal = 2;
+
     void Awake()
     {
         stars.SetActive(false);
         angrySign.SetActive(false);
         gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
-        GM = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
     }
     private void OnTriggerEnter(Collider other)
     {

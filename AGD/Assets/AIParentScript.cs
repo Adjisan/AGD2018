@@ -9,7 +9,7 @@ public class AIParentScript : MonoBehaviour {
     protected Transform player;
     protected float speed;
     public float speedIncrease = 1.2f;
-    public float angularSpeed = 3.0f;
+    public float angularSpeed = 30.0f;
     public float acceleration = 80.0f;
 
     // Use this for initialization
@@ -30,7 +30,6 @@ public class AIParentScript : MonoBehaviour {
             Debug.Log("acceleration: " + acceleration);
             nav.speed = Globals.speed + speedIncrease;
             nav.angularSpeed = Globals.speed + angularSpeed;
-            nav.acceleration = Globals.speed + acceleration;
         }
     }
 

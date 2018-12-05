@@ -5,12 +5,14 @@ using UnityEngine;
 public class DogChasingBearScript : AIParentScript {
     public bool AlreadyHit = false;
     public float destroyTime = 3;
-
+    public GameManagerScript GM;
+    public int amountDogsSteal = 3;
     void Awake()
     {
         stars.SetActive(false);
         angrySign.SetActive(false);
         gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
+        GM = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -40,7 +42,8 @@ public class DogChasingBearScript : AIParentScript {
         }
         if (other.gameObject.tag == "Player" || other.gameObject.tag == "playerObj")
         {
-            Debug.Log("Death or salary decrease");
+            if(AlreadyHit == false)
+            { GM.SubtractAmmo(amountDogsSteal); }
             stars.SetActive(true);
             angrySign.SetActive(false);
             gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;

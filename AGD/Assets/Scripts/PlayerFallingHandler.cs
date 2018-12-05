@@ -15,8 +15,8 @@ public class PlayerFallingHandler : MonoBehaviour {
             transform.GetComponent<Rigidbody>().isKinematic = false;
             bear.GetComponent<Rigidbody>().isKinematic = false;
 
-            gameObject.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward*600, ForceMode.Impulse);
-            bear.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward*200,ForceMode.Impulse);
+            gameObject.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward*60, ForceMode.Impulse);
+            bear.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward*20,ForceMode.Impulse);
             StartCoroutine(DisableMovement());
             triggered = true;
         }

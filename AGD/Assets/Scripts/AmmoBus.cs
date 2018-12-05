@@ -20,7 +20,7 @@ public class AmmoBus : MonoBehaviour
     public AudioClip hitSound;
     int currentWaypointSpeed = 0;
     int currentWaypoint = 0;
-    private float waypointRadius = 3;    
+    private float waypointRadius = 10;    
     void Start()
     {
         rb = GetComponent<Rigidbody>();

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
@@ -80,6 +80,9 @@ public class GameManagerScript : MonoBehaviour {
     }
     public void SetMultiplierText() {
         multiplierText.SetText(multiplierOptions[multiplierIndex].ToString() + "x");
+    }
+    public float GetMultiplier() {
+        return multiplier;
     }
     public void SetAmmoText(){
         if (ammoText != null) {

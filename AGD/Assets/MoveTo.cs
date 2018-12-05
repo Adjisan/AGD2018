@@ -6,7 +6,7 @@ public class MoveTo : MonoBehaviour {
     public Transform goal;
     [Range(1f, 10f)]
     public float Speed = 1.0f;
-    private float closeEnough;
+    private float closeEnough = 10;
     public float randomRadius;
     bool finalStep = false;
 

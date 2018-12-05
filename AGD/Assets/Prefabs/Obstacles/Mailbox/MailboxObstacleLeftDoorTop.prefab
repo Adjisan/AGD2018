@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 65451721791608950}
   - component: {fileID: 114463716276871546}
   - component: {fileID: 95831009184064614}
+  - component: {fileID: 114714973243550494}
   m_Layer: 0
   m_Name: MailboxL
   m_TagString: Untagged
@@ -399,3 +400,22 @@ MonoBehaviour:
   amountNeeded: 1
   textPrefab: {fileID: 1772028648607178, guid: ad6ecbdf847dbaa429dd11f45ba104f0, type: 2}
   left: 1
+--- !u!114 &114714973243550494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1055817793663658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
+  SalaryAmount: 1
+  increase: 1
+  collidesWithTrigger: 0
+  collidesWithTag: projectile
+  onlyOnce: 1
+  isMultiplierObject: 1
+  loseMultiplier: 1

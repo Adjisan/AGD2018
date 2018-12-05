@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 23963012386049062}
   - component: {fileID: 65920007841978506}
   - component: {fileID: 114243687288469436}
+  - component: {fileID: 114899673461415712}
   m_Layer: 0
   m_Name: MailboxFlat
   m_TagString: Untagged
@@ -347,3 +348,22 @@ MonoBehaviour:
     type: 2}
   Delay: 0
   glass: {fileID: 82210951598206180}
+--- !u!114 &114899673461415712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1232230704319348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
+  SalaryAmount: 10
+  increase: 1
+  collidesWithTrigger: 0
+  collidesWithTag: projectile
+  onlyOnce: 1
+  isMultiplierObject: 0
+  loseMultiplier: 0

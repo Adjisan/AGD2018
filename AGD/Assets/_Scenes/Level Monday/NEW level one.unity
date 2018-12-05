@@ -16689,7 +16689,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 20
+  m_Text: '30
+
+'
 --- !u!222 &1345797126
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19301,7 +19303,7 @@ Prefab:
     - target: {fileID: 114690764091460832, guid: 6df3a7607801341f6a0119dd133e9b2c,
         type: 2}
       propertyPath: ammo
-      value: 5000
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6df3a7607801341f6a0119dd133e9b2c, type: 2}

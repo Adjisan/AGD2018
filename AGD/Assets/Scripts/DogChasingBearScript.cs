@@ -42,7 +42,13 @@ public class DogChasingBearScript : AIParentScript
         if (other.gameObject.tag == "Player" || other.gameObject.tag == "playerObj")
         {
             if(AlreadyHit == false)
-            { GM.SubtractAmmo(amountDogsSteal); }
+            {
+                GM.SubtractAmmo(amountDogsSteal);
+                if (loseNewspaperParticles != null)
+                {
+                    GameObject clone = Instantiate(loseNewspaperParticles, other.transform.position, transform.rotation, null);
+                }
+            }
             stars.SetActive(true);
             angrySign.SetActive(false);
             gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;

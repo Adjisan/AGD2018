@@ -72,11 +72,12 @@ public class GameManagerScript : MonoBehaviour {
     }
     public void ResetMultiplier() {
         Debug.Log("ResetMultiplier");
-        multiplierIndex = 0;
+        multiplierIndex = (int)((float)multiplierIndex / 1.25f);
+        print(multiplierIndex);
         multiplier = multiplierOptions[multiplierIndex];
         timesHit = 0;
         SetMultiplierText();
-        Globals.speed = Globals.baseSpeed;
+        Globals.speed = Globals.baseSpeed + speedAdded[multiplierIndex];
     }
     public void SetMultiplierText() {
         multiplierText.SetText(multiplierOptions[multiplierIndex].ToString() + "x");

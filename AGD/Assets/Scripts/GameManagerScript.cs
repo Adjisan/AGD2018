@@ -81,6 +81,10 @@ public class GameManagerScript : MonoBehaviour {
     }
     public void SetMultiplierText() {
         multiplierText.SetText(multiplierOptions[multiplierIndex].ToString() + "x");
+        float size = (0.05f) * ((100 / multiplierOptions.Length) * (multiplierIndex + 1));
+        size += 1;
+        multiplierText.GetComponent<RectTransform>().localScale = Vector3.one * size;
+
     }
     public float GetMultiplier() {
         return multiplier;

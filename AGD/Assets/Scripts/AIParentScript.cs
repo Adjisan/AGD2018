@@ -7,6 +7,7 @@ public class AIParentScript : MonoBehaviour
     public GameObject stars;
     public GameObject angrySign;
     public GameManagerScript GM;
+    public GameObject loseNewspaperParticles;
     protected UnityEngine.AI.NavMeshAgent nav;
     protected Transform player;
     protected float speed;

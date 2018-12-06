@@ -42,7 +42,7 @@ public class AmmoHandler : MonoBehaviour {
         gmScript.SubtractAmmo(ammo);
         if (ammo > 0) {
             if (loseNewspaperParticles != null) {
-                Instantiate(loseNewspaperParticles, other.transform.position, transform.rotation, null);
+                GameObject clone = Instantiate(loseNewspaperParticles, other.transform.position, transform.rotation, null);
             }
         }
         if (onlyOnce) {

@@ -15,7 +15,7 @@ public class DogChasingBearScript : AIParentScript
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "playerObj" || other.gameObject.tag == "Player" && AlreadyHit == false)
+        if (other.gameObject.tag == "playerObj" && AlreadyHit == false || other.gameObject.tag == "Player" && AlreadyHit == false)
         {
             gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = true;
             angrySign.SetActive(true);

@@ -26,7 +26,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2
+  m_StaticEditorFlags: 10
   m_IsActive: 1
 --- !u!1 &1065461777546710
 GameObject:
@@ -44,7 +44,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2
+  m_StaticEditorFlags: 10
   m_IsActive: 1
 --- !u!1 &1297578475307908
 GameObject:
@@ -61,7 +61,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2
+  m_StaticEditorFlags: 10
   m_IsActive: 1
 --- !u!1 &1340882938843150
 GameObject:
@@ -77,12 +77,14 @@ GameObject:
   - component: {fileID: 114235113122572092}
   - component: {fileID: 95688178315520350}
   - component: {fileID: 114773860858059320}
+  - component: {fileID: 114705625312168378}
+  - component: {fileID: 82662604953454398}
   m_Layer: 0
   m_Name: MailboxR
-  m_TagString: Untagged
+  m_TagString: MailBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2
+  m_StaticEditorFlags: 10
   m_IsActive: 1
 --- !u!1 &1581912630941192
 GameObject:
@@ -97,7 +99,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4008048598111524
 Transform:
@@ -118,8 +120,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1581912630941192}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 373, y: -1.3, z: -859}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4321256360656486}
@@ -366,6 +368,101 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 28.995415, y: 18.843204, z: 31.142952}
   m_Center: {x: -0.0010318756, y: 9.421602, z: 0.16161346}
+--- !u!82 &82662604953454398
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1340882938843150}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b666ebcd3c7535449abb116b0bc5f5ef, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &95688178315520350
 Animator:
   serializedVersion: 3
@@ -399,7 +496,19 @@ MonoBehaviour:
   closeAnimationTrigger: Hit
   amountNeeded: 1
   textPrefab: {fileID: 1772028648607178, guid: ad6ecbdf847dbaa429dd11f45ba104f0, type: 2}
-  left: 0
+  left: 1
+--- !u!114 &114705625312168378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1340882938843150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ff193a1a74ac841812aa5c570c3616, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mailBoxSound: {fileID: 82662604953454398}
 --- !u!114 &114773860858059320
 MonoBehaviour:
   m_ObjectHideFlags: 1

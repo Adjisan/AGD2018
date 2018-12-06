@@ -91,7 +91,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -961,30 +961,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4009607535940782, guid: a5c533296ce6903429c8b2c5c2049838,
     type: 2}
   m_PrefabInternal: {fileID: 88611267}
---- !u!1 &88611269 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 88611267}
---- !u!114 &88611270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 88611269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1001 &93793158
 Prefab:
   m_ObjectHideFlags: 0
@@ -1823,30 +1799,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4009607535940782, guid: a5c533296ce6903429c8b2c5c2049838,
     type: 2}
   m_PrefabInternal: {fileID: 178440953}
---- !u!1 &178440955 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 178440953}
---- !u!114 &178440956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 178440955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1001 &180238890
 Prefab:
   m_ObjectHideFlags: 0
@@ -2149,30 +2101,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &205403994 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 933170748}
---- !u!114 &205404001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 205403994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1001 &205647190
 Prefab:
   m_ObjectHideFlags: 0
@@ -3104,30 +3032,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4521241417364560, guid: e09e201eb9e724445904edef262bbfd9,
     type: 2}
   m_PrefabInternal: {fileID: 1620934239}
---- !u!1 &256875473 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1232230704319348, guid: fc35993d35ea0584185bd146c2f0266e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1171788537}
---- !u!114 &256875479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 256875473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 10
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 0
-  isMultiplierObject: 1
-  loseMultiplier: 0
 --- !u!1 &263694732
 GameObject:
   m_ObjectHideFlags: 0
@@ -4739,30 +4643,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09e201eb9e724445904edef262bbfd9, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &386476310 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 1118260400}
---- !u!114 &386476317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 386476310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1001 &388459036
 Prefab:
   m_ObjectHideFlags: 0
@@ -5714,30 +5594,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09e201eb9e724445904edef262bbfd9, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &465533207 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1948198823344268, guid: 67a543fad812e9c4091ba41931103d07,
-    type: 2}
-  m_PrefabInternal: {fileID: 1247726292}
---- !u!114 &465533213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 465533207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 10
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 0
-  isMultiplierObject: 1
-  loseMultiplier: 0
 --- !u!1 &472725032 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1197838446402138, guid: e09e201eb9e724445904edef262bbfd9,
@@ -6527,30 +6383,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4521241417364560, guid: e09e201eb9e724445904edef262bbfd9,
     type: 2}
   m_PrefabInternal: {fileID: 7934617}
---- !u!1 &539543407 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 891954326}
---- !u!114 &539543409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 539543407}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1 &544046002
 GameObject:
   m_ObjectHideFlags: 0
@@ -8564,54 +8396,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4009607535940782, guid: a5c533296ce6903429c8b2c5c2049838,
     type: 2}
   m_PrefabInternal: {fileID: 697901719}
---- !u!1 &697901721 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 697901719}
---- !u!114 &697901722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 697901721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
---- !u!1 &706315663 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 1157013786}
---- !u!114 &706315665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 706315663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1001 &706760225
 Prefab:
   m_ObjectHideFlags: 0
@@ -8684,30 +8468,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4009607535940782, guid: a5c533296ce6903429c8b2c5c2049838,
     type: 2}
   m_PrefabInternal: {fileID: 706760225}
---- !u!1 &706760227 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 706760225}
---- !u!114 &706760228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 706760227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!4 &707335327 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010181493276, guid: ca4bbed7e347b954c8c6edbe7442f8eb,
@@ -8884,30 +8644,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4009607535940782, guid: a5c533296ce6903429c8b2c5c2049838,
     type: 2}
   m_PrefabInternal: {fileID: 715812060}
---- !u!1 &715812062 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 715812060}
---- !u!114 &715812063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 715812062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1001 &716967081
 Prefab:
   m_ObjectHideFlags: 0
@@ -9922,30 +9658,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f016de9b59d0834f84e726f194c1c24, type: 3}
   m_IsPrefabAsset: 0
---- !u!1 &777788053 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 1078292906}
---- !u!114 &777788060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 777788053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1001 &780447486
 Prefab:
   m_ObjectHideFlags: 0
@@ -11663,30 +11375,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4009607535940782, guid: a5c533296ce6903429c8b2c5c2049838,
     type: 2}
   m_PrefabInternal: {fileID: 903229235}
---- !u!1 &903229237 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 903229235}
---- !u!114 &903229238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 903229237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1001 &906322390
 Prefab:
   m_ObjectHideFlags: 0
@@ -12364,30 +12052,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 970552719}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &971877529 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1232230704319348, guid: fc35993d35ea0584185bd146c2f0266e,
-    type: 2}
-  m_PrefabInternal: {fileID: 807002324}
---- !u!114 &971877535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 971877529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 10
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 0
-  isMultiplierObject: 1
-  loseMultiplier: 0
 --- !u!1001 &978197619
 Prefab:
   m_ObjectHideFlags: 0
@@ -13336,30 +13000,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4009607535940782, guid: a5c533296ce6903429c8b2c5c2049838,
     type: 2}
   m_PrefabInternal: {fileID: 1056710945}
---- !u!1 &1056710947 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 1056710945}
---- !u!114 &1056710948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1056710947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!4 &1056814932 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4348469200019034, guid: 6b6523c5f64a81441a0b9d9c720a358b,
@@ -13689,30 +13329,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5c533296ce6903429c8b2c5c2049838, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1083639238 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 1368328338}
---- !u!114 &1083639245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1083639238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1 &1085099359
 GameObject:
   m_ObjectHideFlags: 0
@@ -14418,30 +14034,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4009607535940782, guid: a5c533296ce6903429c8b2c5c2049838,
     type: 2}
   m_PrefabInternal: {fileID: 1119371038}
---- !u!1 &1119371040 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 1119371038}
---- !u!114 &1119371041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1119371040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1001 &1129152284
 Prefab:
   m_ObjectHideFlags: 0
@@ -15657,30 +15249,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4009607535940782, guid: a5c533296ce6903429c8b2c5c2049838,
     type: 2}
   m_PrefabInternal: {fileID: 1250043030}
---- !u!1 &1250043032 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 1250043030}
---- !u!114 &1250043033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1250043032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1001 &1250624710
 Prefab:
   m_ObjectHideFlags: 0
@@ -16035,54 +15603,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4009607535940782, guid: a5c533296ce6903429c8b2c5c2049838,
     type: 2}
   m_PrefabInternal: {fileID: 1272194363}
---- !u!1 &1272194365 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 1272194363}
---- !u!114 &1272194366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1272194365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
---- !u!1 &1282882839 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1340882938843150, guid: baa23a53449fd42458b9ea698c7961f2,
-    type: 2}
-  m_PrefabInternal: {fileID: 286278176}
---- !u!114 &1282882846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1282882839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1001 &1286461675
 Prefab:
   m_ObjectHideFlags: 0
@@ -16506,30 +16026,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1310898114}
   m_Mesh: {fileID: 4300000, guid: 1a8c7001936919445aa74386002e7885, type: 3}
---- !u!1 &1319397436 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 265002733}
---- !u!114 &1319397443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1319397436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1 &1320646560 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1197838446402138, guid: e09e201eb9e724445904edef262bbfd9,
@@ -16619,30 +16115,6 @@ Transform:
   m_Father: {fileID: 2101174546}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1334023780 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1340882938843150, guid: baa23a53449fd42458b9ea698c7961f2,
-    type: 2}
-  m_PrefabInternal: {fileID: 649466871}
---- !u!114 &1334023787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1334023780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1 &1345797123
 GameObject:
   m_ObjectHideFlags: 0
@@ -16907,30 +16379,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4521241417364560, guid: e09e201eb9e724445904edef262bbfd9,
     type: 2}
   m_PrefabInternal: {fileID: 2032617962}
---- !u!1 &1360754775 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 494249765}
---- !u!114 &1360754782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1360754775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1001 &1368328338
 Prefab:
   m_ObjectHideFlags: 0
@@ -17842,30 +17290,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4009607535940782, guid: a5c533296ce6903429c8b2c5c2049838,
     type: 2}
   m_PrefabInternal: {fileID: 1443825608}
---- !u!1 &1443825610 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 1443825608}
---- !u!114 &1443825611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1443825610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1 &1449770634
 GameObject:
   m_ObjectHideFlags: 0
@@ -19738,30 +19162,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4009607535940782, guid: a5c533296ce6903429c8b2c5c2049838,
     type: 2}
   m_PrefabInternal: {fileID: 1568414238}
---- !u!1 &1568414240 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 1568414238}
---- !u!114 &1568414241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1568414240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1001 &1575968202
 Prefab:
   m_ObjectHideFlags: 0
@@ -20280,30 +19680,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4009607535940782, guid: a5c533296ce6903429c8b2c5c2049838,
     type: 2}
   m_PrefabInternal: {fileID: 1591510300}
---- !u!1 &1591510302 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 1591510300}
---- !u!114 &1591510303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1591510302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1 &1596109112
 GameObject:
   m_ObjectHideFlags: 0
@@ -21176,54 +20552,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4009607535940782, guid: a5c533296ce6903429c8b2c5c2049838,
     type: 2}
   m_PrefabInternal: {fileID: 1687448344}
---- !u!1 &1687448346 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 1687448344}
---- !u!114 &1687448347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1687448346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
---- !u!1 &1689802699 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1340882938843150, guid: baa23a53449fd42458b9ea698c7961f2,
-    type: 2}
-  m_PrefabInternal: {fileID: 237914066}
---- !u!114 &1689802706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1689802699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1001 &1691933957
 Prefab:
   m_ObjectHideFlags: 0
@@ -21435,30 +20763,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4009607535940782, guid: a5c533296ce6903429c8b2c5c2049838,
     type: 2}
   m_PrefabInternal: {fileID: 1705520469}
---- !u!1 &1705520471 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 1705520469}
---- !u!114 &1705520472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1705520471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!4 &1712685379 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010181493276, guid: ca4bbed7e347b954c8c6edbe7442f8eb,
@@ -21959,30 +21263,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09e201eb9e724445904edef262bbfd9, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1776235500 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 1913258130}
---- !u!114 &1776235507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1776235500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1 &1777357629
 GameObject:
   m_ObjectHideFlags: 0
@@ -22560,30 +21840,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1792257570}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1803970516 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1340882938843150, guid: baa23a53449fd42458b9ea698c7961f2,
-    type: 2}
-  m_PrefabInternal: {fileID: 1165539872}
---- !u!114 &1803970523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1803970516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!4 &1819803820 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7f016de9b59d0834f84e726f194c1c24,
@@ -22908,30 +22164,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4009607535940782, guid: a5c533296ce6903429c8b2c5c2049838,
     type: 2}
   m_PrefabInternal: {fileID: 1858799331}
---- !u!1 &1858799333 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 1858799331}
---- !u!114 &1858799334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1858799333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1001 &1858822877
 Prefab:
   m_ObjectHideFlags: 0
@@ -23394,30 +22626,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4009607535940782, guid: a5c533296ce6903429c8b2c5c2049838,
     type: 2}
   m_PrefabInternal: {fileID: 1884883811}
---- !u!1 &1884883813 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1237353434044092, guid: a5c533296ce6903429c8b2c5c2049838,
-    type: 2}
-  m_PrefabInternal: {fileID: 1884883811}
---- !u!114 &1884883814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1884883813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1001 &1890929853
 Prefab:
   m_ObjectHideFlags: 0
@@ -23644,30 +22852,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1925034872}
   m_Mesh: {fileID: 4300000, guid: 916e0d2151e59a344bea28ef471bdfd9, type: 3}
---- !u!1 &1925043194 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1340882938843150, guid: baa23a53449fd42458b9ea698c7961f2,
-    type: 2}
-  m_PrefabInternal: {fileID: 444757407}
---- !u!114 &1925043201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1925043194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 0}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!4 &1928163859 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010181493276, guid: ca4bbed7e347b954c8c6edbe7442f8eb,

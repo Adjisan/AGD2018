@@ -1027,30 +1027,6 @@ MonoBehaviour:
   onlyOnce: 1
   isMultiplierObject: 1
   loseMultiplier: 1
---- !u!1 &387028880 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1781893790220094, guid: 3275ebd4a4115254297a59f9128b348e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1062453382}
---- !u!114 &387028881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 387028880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3318c9be765244a8f02f0988aef2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinObj: {fileID: 1911787879493130, guid: 9e91c1fb0f00eef4c9e59e92b0aec46d, type: 2}
-  SalaryAmount: 1
-  increase: 1
-  collidesWithTrigger: 0
-  collidesWithTag: projectile
-  onlyOnce: 1
-  isMultiplierObject: 1
-  loseMultiplier: 1
 --- !u!1001 &404748450
 Prefab:
   m_ObjectHideFlags: 0
@@ -2778,10 +2754,6 @@ Prefab:
     - target: {fileID: 4775564937243266, guid: 3275ebd4a4115254297a59f9128b348e, type: 2}
       propertyPath: m_RootOrder
       value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1781893790220094, guid: 3275ebd4a4115254297a59f9128b348e, type: 2}
-      propertyPath: m_TagString
-      value: MailBox
       objectReference: {fileID: 0}
     - target: {fileID: 1781893790220094, guid: 3275ebd4a4115254297a59f9128b348e, type: 2}
       propertyPath: m_Name

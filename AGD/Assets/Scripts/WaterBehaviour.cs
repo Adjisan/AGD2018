@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,4 +27,5 @@ public class WaterBehaviour : MonoBehaviour {
         transform.GetComponent<GoToLevel>().Level(LevelIndex);
 
     }
-}
+   
+    }

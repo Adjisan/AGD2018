@@ -1,4 +1,4 @@
-﻿    using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +7,7 @@ public class WaterBehaviour : MonoBehaviour {
     public int LevelIndex = 0;
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 	
 	// Update is called once per frame
@@ -18,7 +18,8 @@ public class WaterBehaviour : MonoBehaviour {
         
         if (collision.transform.tag == "Player" && !triggered) {
             Debug.Log("Triggered");
-            StartCoroutine(Death());
+            Pause();
+            //StartCoroutine(Death());
             triggered = true;
         }
     }
@@ -27,5 +28,8 @@ public class WaterBehaviour : MonoBehaviour {
         transform.GetComponent<GoToLevel>().Level(LevelIndex);
 
     }
-   
+    private void Pause() {
+        Time.timeScale = 0;
+        GameObject.Find("Player").GetComponent<Player>().enabled = false;
+    }
     }

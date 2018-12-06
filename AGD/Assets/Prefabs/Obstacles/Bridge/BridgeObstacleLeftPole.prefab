@@ -85,6 +85,7 @@ GameObject:
   - component: {fileID: 23157653435763294}
   - component: {fileID: 64053789184181904}
   - component: {fileID: 114718905509719366}
+  - component: {fileID: 65977575241597900}
   - component: {fileID: 114477929694851084}
   m_Layer: 0
   m_Name: Water
@@ -1961,6 +1962,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 88.2857, y: 19.652908, z: 5.7524486}
   m_Center: {x: -44.14284, y: 2.4693124, z: 55.84}
+--- !u!65 &65977575241597900
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1097470273938308}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000005, y: 4, z: 10.000005}
+  m_Center: {x: 0, y: 29, z: 0}
 --- !u!65 &65998661762863926
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2040,3 +2053,5 @@ MonoBehaviour:
   ammo: 3
   collidesWithTrigger: 1
   collidesWithTag: Player
+  onlyOnce: 1
+  destroy: 0

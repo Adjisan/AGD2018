@@ -20,7 +20,8 @@ public class AmmoBus : MonoBehaviour
     public AudioClip hitSound;
     int currentWaypointSpeed = 0;
     int currentWaypoint = 0;
-    private float waypointRadius = 10;    
+    private float waypointRadius = 10;
+    public GameObject newspaperParticle;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -67,6 +68,7 @@ public class AmmoBus : MonoBehaviour
                 GameManagerScript gameManager = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
                 Debug.Log("Gained Ammo");
                 gameManager.AddAmmo(ammoAmountGained);
+                SpawnNewspaper();
                 BusCanBeHit = false;
                 GetComponent<AudioSource>().clip = hitSound;
                 GetComponent<AudioSource>().Play();
@@ -113,6 +115,17 @@ public class AmmoBus : MonoBehaviour
             Vector3 relativePos = waypoints[currentWaypoint].transform.position - transform.position;
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(relativePos, Vector3.up), Time.deltaTime * 2);
 
+        }
+    }
+    void SpawnNewspaper() {
+        if (newspaperParticle == null)
+            return;
+        if (ammoAmountGained > 0) {
+            for (int i = 0; i < ammoAmountGained; i++) {
+                GameObject clone = Instantiate(newspaperParticle);
+                clone.transform.position = transform.position;
+
+            }
         }
     }
 }

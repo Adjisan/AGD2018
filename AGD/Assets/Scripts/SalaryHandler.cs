@@ -1,9 +1,10 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 
 public class SalaryHandler : MonoBehaviour {
+    public GameObject coinObj;
     public float SalaryAmount;
     public bool increase = true;
     private GameManagerScript gmScript;
@@ -17,12 +18,15 @@ public class SalaryHandler : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        gmScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+            gmScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
     }
 
     void HandleSalary() {
         if (increase) {
             gmScript.AddSalary(SalaryAmount);
+            for (int i = 0; i < SalaryAmount*gmScript.GetMultiplier(); i++) {
+                SpawnCoin();
+            }
         } else {
             gmScript.SubtractSalary(SalaryAmount);
         }
@@ -63,5 +67,9 @@ public class SalaryHandler : MonoBehaviour {
         if (!other && !onlyOnce) {
             triggered = false;
         }
+    }
+    private void SpawnCoin() {
+        GameObject coin = Instantiate(coinObj);
+        coin.transform.position = transform.position;
     }
 }

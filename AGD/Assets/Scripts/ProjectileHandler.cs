@@ -13,6 +13,8 @@ public class ProjectileHandler : MonoBehaviour {
     private bool shot = false;
     Transform parentTransform;
     Rigidbody rigBody;
+    public AudioSource paperThrow;
+    public AudioSource paperHit;
 
     void Start() {
         rigBody = transform.gameObject.GetComponent<Rigidbody>();
@@ -50,7 +52,7 @@ public class ProjectileHandler : MonoBehaviour {
         rigBody.AddRelativeForce(new Vector3(0, 1, (1 * (force * Vector3.Distance(transform.position, parentTransform.position))) * Globals.speed/100), ForceMode.Impulse);
         rigBody.AddTorque(new Vector3 (0, Random.Range(-1440f, 1440f), 0), ForceMode.Impulse);
         transform.parent = null;
-
+        paperThrow.Play();
         AmmoHandler();
     }
     public void PullBack() {
@@ -80,6 +82,7 @@ public class ProjectileHandler : MonoBehaviour {
         //Destroy(collision.gameObject);
         rigBody.constraints = RigidbodyConstraints.None;
         StartCoroutine(SlowTrailDisable());
+        paperHit.Play();
     }
 
     IEnumerator SlowTrailDisable() {

@@ -19,7 +19,7 @@ public class AmmoBus : MonoBehaviour
     private AudioClip honk;
     public AudioClip hitSound;
     int currentWaypointSpeed = 0;
-    int currentWaypoint = 0;
+    public int currentWaypoint = 0;
     private float waypointRadius = 10;    
     void Start()
     {

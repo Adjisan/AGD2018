@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DogChasingBearScript : AIParentScript {
-    public bool AlreadyHit = false;
-    public float destroyTime = 3;
+public class DogChasingBearScript : AIParentScript
+{
+
+    public int amountDogsSteal = 2;
 
     void Awake()
     {
@@ -14,7 +15,7 @@ public class DogChasingBearScript : AIParentScript {
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "playerObj" || other.gameObject.tag == "Player" && AlreadyHit == false)
+        if (other.gameObject.tag == "playerObj" && AlreadyHit == false || other.gameObject.tag == "Player" && AlreadyHit == false)
         {
             gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = true;
             angrySign.SetActive(true);
@@ -40,7 +41,8 @@ public class DogChasingBearScript : AIParentScript {
         }
         if (other.gameObject.tag == "Player" || other.gameObject.tag == "playerObj")
         {
-            Debug.Log("Death or salary decrease");
+            if(AlreadyHit == false)
+            { GM.SubtractAmmo(amountDogsSteal); }
             stars.SetActive(true);
             angrySign.SetActive(false);
             gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;

@@ -72,14 +72,19 @@ public class GameManagerScript : MonoBehaviour {
     }
     public void ResetMultiplier() {
         Debug.Log("ResetMultiplier");
-        multiplierIndex = 0;
+        multiplierIndex = (int)((float)multiplierIndex / 1.25f);
+        print(multiplierIndex);
         multiplier = multiplierOptions[multiplierIndex];
         timesHit = 0;
         SetMultiplierText();
-        Globals.speed = Globals.baseSpeed;
+        Globals.speed = Globals.baseSpeed + speedAdded[multiplierIndex];
     }
     public void SetMultiplierText() {
         multiplierText.SetText(multiplierOptions[multiplierIndex].ToString() + "x");
+        float size = (0.05f) * ((100 / multiplierOptions.Length) * (multiplierIndex + 1));
+        size += 1;
+        multiplierText.GetComponent<RectTransform>().localScale = Vector3.one * size;
+
     }
     public float GetMultiplier() {
         return multiplier;
@@ -102,7 +107,7 @@ public class GameManagerScript : MonoBehaviour {
         if(ammo <= 0)
         {
             ammoText.text = "You ran out of newspaper! :(";
-            SceneManager.LoadScene(Levelindex);
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }

@@ -30,6 +30,7 @@ public class WaterBehaviour : MonoBehaviour {
     }
     private void Pause() {
         Time.timeScale = 0;
-        GameObject.Find("Player").GetComponent<Player>().enabled = false;
+        GameObject.Find("Main Camera").transform.parent = null;
+        GameObject.Find("Player").SetActive(false);
     }
-    }
+}

@@ -1003,8 +1003,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stars: {fileID: 1545182003703452}
   angrySign: {fileID: 1007857529813640}
-  death: 0
+  GM: {fileID: 114690764091460832, guid: 6df3a7607801341f6a0119dd133e9b2c, type: 2}
+  loseNewspaperParticles: {fileID: 1491332384559578, guid: ccffe4d5a5f58c9429b0116c8a26a96e,
+    type: 2}
+  speedIncrease: 30
+  angularSpeed: 30
+  acceleration: 80
+  AlreadyHit: 0
   destroyTime: 3
+  death: 0
+  AmountWindowBearSteals: 3
 --- !u!135 &135360776404945450
 SphereCollider:
   m_ObjectHideFlags: 1

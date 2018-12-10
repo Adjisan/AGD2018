@@ -29,7 +29,12 @@ public class ManHittingPlayerMovingScript : AIParentScript
         if (other.gameObject.tag == "Player")
         {
             if (AlreadyHit == false)
-            { GM.SubtractAmmo(AmountWindowBearSteals); }
+            { GM.SubtractAmmo(AmountWindowBearSteals);
+                if (loseNewspaperParticles != null)
+                {
+                    GameObject clone = Instantiate(loseNewspaperParticles, other.transform.position, transform.rotation, null);
+                }
+            }
             AlreadyHit = true;
             stars.SetActive(true);
             angrySign.SetActive(false);

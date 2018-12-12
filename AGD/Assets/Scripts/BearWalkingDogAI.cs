@@ -39,7 +39,12 @@ public class BearWalkingDogAI : AIParentScript
         if (other.gameObject.tag == "Player" || other.gameObject.tag == "playerObj")
         {
             if (AlreadyHit == false)
-            { GM.SubtractAmmo(amountWalkingBearSteals); }
+            { GM.SubtractAmmo(amountWalkingBearSteals);
+                if (loseNewspaperParticles != null)
+                {
+                    GameObject clone = Instantiate(loseNewspaperParticles, other.transform.position, transform.rotation, null);
+                }
+            }
             AlreadyHit = true;
             stars.SetActive(true);
             angrySign.SetActive(false);

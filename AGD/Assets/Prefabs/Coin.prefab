@@ -69,8 +69,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 0}
   Speed: 2
-  closeEnough: 10
   randomRadius: 100
+  targetName: SalaryText
+  parentName: SalaryText
 --- !u!222 &222525107707963476
 CanvasRenderer:
   m_ObjectHideFlags: 1

@@ -69,7 +69,7 @@ public class AmmoBus : MonoBehaviour
                 Debug.Log("Gained Ammo");
                 gameManager.AddAmmo(ammoAmountGained);
                 SpawnNewspaper();
-                BusCanBeHit = false;
+                //BusCanBeHit = false;
                 GetComponent<AudioSource>().clip = hitSound;
                 GetComponent<AudioSource>().Play();
                 Destroy(collision.gameObject);
@@ -118,13 +118,10 @@ public class AmmoBus : MonoBehaviour
         }
     }
     void SpawnNewspaper() {
-        if (newspaperParticle == null)
-            return;
+        if (newspaperParticle == null) { Debug.Log("no newspaperParticle assigned to Ammobus"); return;} 
         if (ammoAmountGained > 0) {
             for (int i = 0; i < ammoAmountGained; i++) {
-                GameObject clone = Instantiate(newspaperParticle);
-                clone.transform.position = transform.position;
-
+                GameObject clone = Instantiate(newspaperParticle, transform.position, Quaternion.AngleAxis(Random.Range(0.0f, 360.0f),Vector3.forward));
             }
         }
     }

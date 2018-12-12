@@ -22,6 +22,7 @@ public class GameManagerScript : MonoBehaviour {
     public int ammo;
     public Text ammoText;
     public int Levelindex;
+    public GameObject newspaperParticle;
     //check index foir amount of hits needed
     //if  times hit == amount of hits needed level +
 	// Use this for initialization

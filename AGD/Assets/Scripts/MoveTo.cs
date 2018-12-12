@@ -14,17 +14,19 @@ public class MoveTo : MonoBehaviour {
     private Vector3 currentPosition;
     private RectTransform objTrans;
     private float distanceToTarget;
-
+    public string targetName = "SalaryText";
+    public string parentName = "GUI";
 
     // Use this for initialization
     void Start() {
-        goal = GameObject.Find("SalaryText").transform;
+        goal = GameObject.Find(targetName).transform;
         objTrans = GetComponent<RectTransform>();
         objTrans.position = Camera.main.WorldToScreenPoint(transform.position);
-        transform.SetParent(goal);
+        //transform.SetParent(goal);
+        transform.SetParent(GameObject.Find(parentName).transform);
         //Get its current position
         currentPosition = objTrans.anchoredPosition;
-
+        //transform.rotation = 
         //Get a reference to where we want it to go
         //targetPosition = goal.GetComponent<RectTransform>().anchoredPosition;
         targetPosition = objTrans.anchoredPosition + (Random.insideUnitCircle * randomRadius);

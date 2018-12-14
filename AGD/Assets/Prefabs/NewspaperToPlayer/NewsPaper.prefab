@@ -71,6 +71,7 @@ MonoBehaviour:
   Speed: 6
   randomRadius: 100
   targetName: PlayerPoint
+  parentName: GUI
 --- !u!222 &222525107707963476
 CanvasRenderer:
   m_ObjectHideFlags: 1

@@ -24,6 +24,7 @@ public class MoveTo : MonoBehaviour {
         objTrans.position = Camera.main.WorldToScreenPoint(transform.position);
         //transform.SetParent(goal);
         transform.SetParent(GameObject.Find(parentName).transform);
+        transform.localScale = Vector3.one;
         //Get its current position
         currentPosition = objTrans.anchoredPosition;
         //transform.rotation = 

@@ -12,6 +12,7 @@ TagManager:
   - Bridge
   - MailBox
   - Bike
+  - FenceDoor
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - 
   - 
   - Particle
-  - 
+  - Hat
   - 
   - 
   - 
@@ -46,6 +47,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Hat
+    uniqueID: 2622330421
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

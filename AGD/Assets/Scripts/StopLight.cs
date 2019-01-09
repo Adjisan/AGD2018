@@ -5,16 +5,32 @@ using UnityEngine;
 public class StopLight : MonoBehaviour
 {
     public GameObject arrow;
+    public GameObject bigArrow;
     public int replaceAmount;
     public List<GameObject> replaceWaypoints;
     public List<GameObject> waypoints;
     public bool stopLightHit;
     public bool right;
+    public int changeDirection;
+    public int startDirection;
     public AudioClip hitSound;
     // Use this for initialization
     void Start()
     {
-
+        if(startDirection == 0)
+        {
+            arrow.transform.Rotate(0,0,-90);
+            bigArrow.transform.Rotate(0,0,-90);
+        } else if (startDirection == 1)
+        {
+            arrow.transform.Rotate(0,0,0);
+            bigArrow.transform.Rotate(0,0,0);
+        }
+        else if (startDirection == 2)
+        {
+            arrow.transform.Rotate(0,0,90);
+            bigArrow.transform.Rotate(0,0,90);
+        }
     }
 
     void OnCollisionEnter(Collision collision)
@@ -27,13 +43,25 @@ public class StopLight : MonoBehaviour
             {
                 if (stopLightHit)
                 {
-                    if (right)
-                    {
-                        arrow.transform.Rotate(0, 0, 90);
-                    }
-                    else if (!right)
+                    if (changeDirection == 0)
                     {
                         arrow.transform.Rotate(0, 0, -90);
+                        bigArrow.transform.Rotate(0, 0, -90);
+                    }
+                    else if (changeDirection == 1)
+                    {
+                        arrow.transform.Rotate(0, 0, 90);
+                        bigArrow.transform.Rotate(0, 0, 90);
+                    }
+                    else if (changeDirection == 2)
+                    {
+                        arrow.transform.Rotate(0, 0, -180);
+                        bigArrow.transform.Rotate(0, 0, -180);
+                    }
+                    else if (changeDirection == 3)
+                    {
+                        arrow.transform.Rotate(0, 0, 180);
+                        bigArrow.transform.Rotate(0, 0, 180);
                     }
                     AmmoBus player = GameObject.Find("Player").GetComponent<AmmoBus>();
                     Debug.Log("StopLight Hit True");
@@ -44,13 +72,25 @@ public class StopLight : MonoBehaviour
                 }
                 else if (!stopLightHit)
                 {
-                    if (right)
-                    {
-                        arrow.transform.Rotate(0, 0, -90);
-                    }
-                    else if (!right)
+                    if (changeDirection == 0)
                     {
                         arrow.transform.Rotate(0, 0, 90);
+                        bigArrow.transform.Rotate(0, 0, 90);
+                    }
+                    else if (changeDirection == 1)
+                    {
+                        arrow.transform.Rotate(0, 0, -90);
+                        bigArrow.transform.Rotate(0, 0, -90);
+                    }
+                    else if (changeDirection == 2)
+                    {
+                        arrow.transform.Rotate(0, 0, 180);
+                        bigArrow.transform.Rotate(0, 0, 180);
+                    }
+                    else if (changeDirection == 3)
+                    {
+                        arrow.transform.Rotate(0, 0, -180);
+                        bigArrow.transform.Rotate(0, 0, -180);
                     }
                     AmmoBus player = GameObject.Find("Player").GetComponent<AmmoBus>();
                     Debug.Log("StopLight Hit False");

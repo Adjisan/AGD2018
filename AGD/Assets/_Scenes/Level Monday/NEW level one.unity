@@ -19247,12 +19247,11 @@ Prefab:
       propertyPath: GM
       value: 
       objectReference: {fileID: 1984109973}
-    - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+    - target: {fileID: 82701716421676738, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
-      propertyPath: loseNewspaperParticles
-      value: 
-      objectReference: {fileID: 1491332384559578, guid: e58f121f2ebe60e468654223c9702fed,
-        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_IsPrefabAsset: 0

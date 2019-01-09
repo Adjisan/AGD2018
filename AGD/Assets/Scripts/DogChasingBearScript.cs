@@ -6,6 +6,10 @@ public class DogChasingBearScript : AIParentScript
 {
 
     public int amountDogsSteal = 2;
+    [SerializeField]
+    private AudioSource dogAngry;
+    [SerializeField]
+    private AudioSource dogHit;
 
     void Awake()
     {
@@ -20,6 +24,7 @@ public class DogChasingBearScript : AIParentScript
             gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = true;
             angrySign.SetActive(true);
             angrySign.transform.localScale = new Vector3(1, 1);
+            dogAngry.Play();
         }
     }
    /* private void Update()
@@ -38,6 +43,7 @@ public class DogChasingBearScript : AIParentScript
             Destroy(other.gameObject);
             Destroy(gameObject, destroyTime);
             AlreadyHit = true;
+            dogHit.Play();
         }
         if (other.gameObject.tag == "Player" || other.gameObject.tag == "playerObj")
         {

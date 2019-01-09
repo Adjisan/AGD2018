@@ -360,7 +360,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1772446908339104}
   m_LocalRotation: {x: -0, y: 0.942822, z: -0, w: -0.33329675}
-  m_LocalPosition: {x: -72.8, y: -1.3, z: -925.11816}
+  m_LocalPosition: {x: 570.1, y: -1.3, z: -1042.3}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4962937435354426}
@@ -825,10 +825,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -837,7 +837,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -1354,6 +1354,8 @@ MonoBehaviour:
   AlreadyHit: 0
   destroyTime: 3
   amountDogsSteal: 2
+  dogAngry: {fileID: 82701716421676738}
+  dogHit: {fileID: 82701716421676738}
 --- !u!114 &114158549437761202
 MonoBehaviour:
   m_ObjectHideFlags: 1

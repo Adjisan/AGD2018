@@ -16,6 +16,7 @@ public class ProjectileHandler : MonoBehaviour {
     public AudioSource paperThrow;
     public AudioSource paperHit;
 
+    private Vector3 anchorPoint;
     void Start() {
         rigBody = transform.gameObject.GetComponent<Rigidbody>();
         parentTransform = gameObject.transform.parent;
@@ -44,8 +45,13 @@ public class ProjectileHandler : MonoBehaviour {
             if (shot) { return; }
             Release();
         }
+        Debug.Log(Vector3.Distance(transform.position, anchorPoint));
+        if (Vector3.Distance(transform.position, anchorPoint) < 10) {
+            gameObject.GetComponent<BoxCollider>().enabled = true;
+        }
     }
     public void Release() {
+        anchorPoint = parentTransform.position;
         shot = true;
         rigBody.isKinematic = false;
         transform.gameObject.GetComponent<TrailRenderer>().enabled = true;

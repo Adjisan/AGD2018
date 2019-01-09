@@ -9,12 +9,15 @@ EditorBuildSettings:
     path: Assets/_Scenes/Menu.unity
     guid: 484e4a12b7979f644940bd1f8a0156a4
   - enabled: 1
+    path: Assets/_Scenes/MainMenu.unity
+    guid: 7093bceab60c2a24394bd42108f0deec
+  - enabled: 0
     path: Assets/_Scenes/Level Monday/Level_Tut.unity
     guid: 5459222f0f67b2e48ae135a76be04f37
   - enabled: 1
+    path: Assets/_Scenes/Level Monday/Level_Alpha.unity
+    guid: 0599e7c26704d074c94fcfc9eb355421
+  - enabled: 0
     path: Assets/_Scenes/Level Monday/NEW level one.unity
     guid: 613b5bdca26dd9742becd01b09016fe9
-  - enabled: 1
-    path: Assets/_Scenes/MainMenu.unity
-    guid: 7093bceab60c2a24394bd42108f0deec
   m_configObjects: {}

@@ -18,10 +18,12 @@ public class GameManagerScript : MonoBehaviour {
     public float[] hitsNeeded;
     public float[] speedAdded;
     private int multiplierIndex = 0;
+    private Vector3 baseSizeMultiplier;
 
     public int ammo;
     public Text ammoText;
     public int Levelindex;
+    public GameObject newspaperParticle;
     //check index foir amount of hits needed
     //if  times hit == amount of hits needed level +
 	// Use this for initialization
@@ -31,7 +33,9 @@ public class GameManagerScript : MonoBehaviour {
         SetSalaryText();
         SetAmmoText();
         Globals.speed = Globals.baseSpeed;
-	}
+        baseSizeMultiplier = multiplierText.GetComponent<RectTransform>().localScale;
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -83,7 +87,7 @@ public class GameManagerScript : MonoBehaviour {
         multiplierText.SetText(multiplierOptions[multiplierIndex].ToString() + "x");
         float size = (0.05f) * ((100 / multiplierOptions.Length) * (multiplierIndex + 1));
         size += 1;
-        multiplierText.GetComponent<RectTransform>().localScale = Vector3.one * size;
+        multiplierText.GetComponent<RectTransform>().localScale = baseSizeMultiplier * size;
 
     }
     public float GetMultiplier() {

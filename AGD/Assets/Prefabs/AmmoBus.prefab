@@ -616,6 +616,8 @@ MonoBehaviour:
   ammoAmountGained: 15
   loop: 1
   moving: 1
+  timeLeft: 1
+  wobbleSpeed: 1
   BusPathColor: {r: 0.05032932, g: 0.79233646, b: 0.8207547, a: 1}
   rb: {fileID: 54339206286442446}
   waypoints:
@@ -625,3 +627,5 @@ MonoBehaviour:
   - 50
   - 50
   hitSound: {fileID: 8300000, guid: 055dd2dbb66659b428e7b827de0978f6, type: 3}
+  newspaperParticle: {fileID: 1911787879493130, guid: 4fa1f3e8fe962d345a002a75ee3c69a4,
+    type: 2}

@@ -178,6 +178,7 @@ GameObject:
   - component: {fileID: 114444439463059886}
   - component: {fileID: 135372502339039384}
   - component: {fileID: 195105530841626264}
+  - component: {fileID: 82931470150431714}
   m_Layer: 0
   m_Name: DogLightGrey
   m_TagString: Untagged
@@ -814,6 +815,101 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.1911697, y: 2.618164, z: 2.586298}
   m_Center: {x: -0.59558487, y: 5.2885866, z: 1.7411203}
+--- !u!82 &82931470150431714
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1763977287713464}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &95798352282265274
 Animator:
   serializedVersion: 3
@@ -1250,7 +1346,7 @@ MonoBehaviour:
   stars: {fileID: 1863237656956578}
   angrySign: {fileID: 1441161649460568}
   GM: {fileID: 0}
-  loseNewspaperParticles: {fileID: 1491332384559578, guid: 002b7b998f6ae334cbd31bd0a536f953,
+  loseNewspaperParticles: {fileID: 1491332384559578, guid: e58f121f2ebe60e468654223c9702fed,
     type: 2}
   speedIncrease: 30
   angularSpeed: 30
@@ -1258,6 +1354,8 @@ MonoBehaviour:
   AlreadyHit: 0
   destroyTime: 3
   amountDogsSteal: 2
+  dogAngry: {fileID: 82931470150431714}
+  dogHit: {fileID: 82931470150431714}
 --- !u!114 &114454431133507596
 MonoBehaviour:
   m_ObjectHideFlags: 1

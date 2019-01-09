@@ -30,7 +30,7 @@ public class Target : MonoBehaviour {
         if (collision.transform.tag == "projectile" && open) {
             
             amountNeeded--;
-            textObject.GetComponent<TextMeshPro>().SetText("" + amountNeeded);
+            textObject.GetComponent<TextMeshPro>().SetText(" " + amountNeeded);
           //  updateScore();
             if (amountNeeded < 1) {
                 open = false;

@@ -24,7 +24,10 @@ public class DogChasingBearScript : AIParentScript
             gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = true;
             angrySign.SetActive(true);
             angrySign.transform.localScale = new Vector3(1, 1);
-            dogAngry.Play();
+            if (this.gameObject != null)
+            {
+                dogAngry.Play();
+            }
         }
     }
    /* private void Update()
@@ -61,7 +64,7 @@ public class DogChasingBearScript : AIParentScript
             AlreadyHit = true;
             Destroy(gameObject, destroyTime);
         }
-     //   Physics.IgnoreCollision(GameObject.Find("FenceDoor").GetComponent<Collider>(), this.gameObject.GetComponent<Collider>());
-     //   Physics.IgnoreCollision(GameObject.Find("FlatEnemySpawner").GetComponent<Collider>(), this.gameObject.GetComponent<Collider>());
+        Physics.IgnoreCollision(GameObject.Find("FenceDoor").GetComponent<Collider>(), this.gameObject.GetComponent<Collider>());
+        Physics.IgnoreCollision(GameObject.Find("FlatEnemySpawner").GetComponent<Collider>(), this.gameObject.GetComponent<Collider>());
     }
 }

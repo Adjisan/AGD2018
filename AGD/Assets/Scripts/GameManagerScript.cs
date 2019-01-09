@@ -22,6 +22,9 @@ public class GameManagerScript : MonoBehaviour {
     public int ammo;
     public Text ammoText;
     public int Levelindex;
+
+    public bool gameHasEnded = false;
+
     //check index foir amount of hits needed
     //if  times hit == amount of hits needed level +
 	// Use this for initialization
@@ -102,7 +105,26 @@ public class GameManagerScript : MonoBehaviour {
         if(ammo <= 0)
         {
             ammoText.text = "You ran out of newspaper! :(";
-            SceneManager.LoadScene("MainMenu");
+            Time.timeScale = 0;
+            GameObject.Find("GUI_End").transform.GetChild(0).gameObject.SetActive(true);
+        }
+        else
+        {
+            Time.timeScale = 1;
         }
     }
+
+    public void CallMenu()
+    {
+        if (gameHasEnded)
+        {
+            GameObject.Find("GUI_End").transform.GetChild(0).gameObject.SetActive(true);
+
+
+        }
+        else {
+            Debug.Log("pause Called");
+        }
+    }
+
 }

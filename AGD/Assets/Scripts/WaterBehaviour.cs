@@ -32,5 +32,10 @@ public class WaterBehaviour : MonoBehaviour {
         Time.timeScale = 0;
         GameObject.Find("Main Camera").transform.parent = null;
         GameObject.Find("Player").SetActive(false);
+        FindObjectOfType<GameManagerScript>().gameHasEnded = true;
+
+        FindObjectOfType<GameManagerScript>().CallMenu();
+
+
     }
 }

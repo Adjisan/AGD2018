@@ -19,10 +19,6 @@ public class AmmoHandler : MonoBehaviour {
         gmScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
     private void OnTriggerStay(Collider other) {
         if (!collidesWithTrigger)
             return;
@@ -42,6 +38,7 @@ public class AmmoHandler : MonoBehaviour {
         gmScript.SubtractAmmo(ammo);
         if (ammo > 0) {
             if (loseNewspaperParticles != null) {
+                gmScript.ShakeScreen();
                 GameObject clone = Instantiate(loseNewspaperParticles, other.transform.position, transform.rotation, null);
             }
         }

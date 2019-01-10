@@ -10,10 +10,12 @@ public class Target : MonoBehaviour {
     public GameObject textPrefab;
     public bool left = true;
     private GameObject textObject;
-   
+    string[] sayings = { "PAWsome", "PAWmazing", "RAWRsome", "FURtastic", "FURbulous", "BEARilliant", "FURrific" };
+
 
     private void Start() {
-        if (textPrefab != null) {
+        if (textPrefab != null)
+        {
             textObject = Instantiate(textPrefab);
             textObject.transform.SetParent(gameObject.transform, false);
 
@@ -21,7 +23,7 @@ public class Target : MonoBehaviour {
                 textObject.transform.localScale = new Vector3(0.5f,0.5f,0.5f);
                 textObject.transform.Rotate(new Vector3(0,180,0),Space.World);
             }
-            textObject.GetComponent<TextMeshPro>().SetText( "" + amountNeeded);
+            textObject.GetComponent<TextMeshPro>().SetText( "!" /*+ amountNeeded*/);
         }
     }
 
@@ -30,7 +32,7 @@ public class Target : MonoBehaviour {
         if (collision.transform.tag == "projectile" && open) {
             
             amountNeeded--;
-            textObject.GetComponent<TextMeshPro>().SetText("" + amountNeeded);
+            textObject.GetComponent<TextMeshPro>().SetText(sayings.RandomItem() /*+ amountNeeded*/);
           //  updateScore();
             if (amountNeeded < 1) {
                 open = false;
@@ -48,6 +50,7 @@ public class Target : MonoBehaviour {
             gameObject.GetComponent<Animator>().SetTrigger(closeAnimationTrigger);
         }    
     }
+    
     /*public void updateScore(){
         if (GameObject.Find("GameManager") != null) {
             GameObject gameManager = GameObject.Find("GameManager");
@@ -55,4 +58,14 @@ public class Target : MonoBehaviour {
             gameManager.GetComponent<GameManagerScript>().setScoreCountText();
         }
     }*/
+
+}
+// From the following tutorial: https://answers.unity.com/questions/1087916/pick-a-random-string-from-a-string-array-c.html
+public static class ArrayExtensions
+{
+    // This is an extension method. RandomItem() will now exist on all arrays.
+    public static T RandomItem<T>(this T[] array)
+    {
+        return array[Random.Range(0, array.Length)];
+    }
 }

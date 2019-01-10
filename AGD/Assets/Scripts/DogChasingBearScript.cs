@@ -52,6 +52,7 @@ public class DogChasingBearScript : AIParentScript
         {
             if(AlreadyHit == false)
             {
+                GM.ShakeScreen();
                 GM.SubtractAmmo(amountDogsSteal);
                 if (loseNewspaperParticles != null)
                 {

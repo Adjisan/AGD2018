@@ -24,6 +24,7 @@ public class GameManagerScript : MonoBehaviour {
     public Text ammoText;
     public int Levelindex;
     public GameObject newspaperParticle;
+    GameObject camera;
     //check index foir amount of hits needed
     //if  times hit == amount of hits needed level +
 	// Use this for initialization
@@ -34,7 +35,7 @@ public class GameManagerScript : MonoBehaviour {
         SetAmmoText();
         Globals.speed = Globals.baseSpeed;
         baseSizeMultiplier = multiplierText.GetComponent<RectTransform>().localScale;
-
+        camera = GameObject.Find("Main Camera");
     }
 	
 	// Update is called once per frame
@@ -113,5 +114,8 @@ public class GameManagerScript : MonoBehaviour {
             ammoText.text = "You ran out of newspaper! :(";
             SceneManager.LoadScene("MainMenu");
         }
+    }
+    public void ShakeScreen() {
+        camera.GetComponent<Shaker>().Shake(.1f);
     }
 }

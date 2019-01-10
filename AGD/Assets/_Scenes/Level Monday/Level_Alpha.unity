@@ -12975,12 +12975,12 @@ Prefab:
     - target: {fileID: 114532420794789536, guid: b7f69f92c71a746ea9f802ec1976b2d4,
         type: 2}
       propertyPath: waypoints.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114532420794789536, guid: b7f69f92c71a746ea9f802ec1976b2d4,
         type: 2}
       propertyPath: waypointSpeed.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4133651518188376, guid: b7f69f92c71a746ea9f802ec1976b2d4, type: 2}
       propertyPath: m_LocalPosition.x
@@ -13032,12 +13032,12 @@ Prefab:
     - target: {fileID: 114532420794789536, guid: b7f69f92c71a746ea9f802ec1976b2d4,
         type: 2}
       propertyPath: waypointSpeed.Array.data[0]
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114532420794789536, guid: b7f69f92c71a746ea9f802ec1976b2d4,
         type: 2}
       propertyPath: waypointSpeed.Array.data[1]
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114532420794789536, guid: b7f69f92c71a746ea9f802ec1976b2d4,
         type: 2}
@@ -13090,6 +13090,11 @@ Prefab:
     - target: {fileID: 1890484807199900, guid: b7f69f92c71a746ea9f802ec1976b2d4, type: 2}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114532420794789536, guid: b7f69f92c71a746ea9f802ec1976b2d4,
+        type: 2}
+      propertyPath: currentWaypoint
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7f69f92c71a746ea9f802ec1976b2d4, type: 2}

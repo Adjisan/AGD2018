@@ -280,6 +280,8 @@ MonoBehaviour:
   collidesWithTag: Player
   onlyOnce: 1
   destroy: 0
+  loseNewspaperParticles: {fileID: 1934633201484996, guid: 556b12457e2ca8642983dcab7f6a08d4,
+    type: 2}
 --- !u!114 &114801311400084796
 MonoBehaviour:
   m_ObjectHideFlags: 1

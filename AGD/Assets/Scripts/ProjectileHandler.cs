@@ -13,7 +13,10 @@ public class ProjectileHandler : MonoBehaviour {
     private bool shot = false;
     Transform parentTransform;
     Rigidbody rigBody;
+    public AudioSource paperThrow;
+    public AudioSource paperHit;
 
+    private Vector3 anchorPoint;
     void Start() {
         rigBody = transform.gameObject.GetComponent<Rigidbody>();
         parentTransform = gameObject.transform.parent;
@@ -42,15 +45,20 @@ public class ProjectileHandler : MonoBehaviour {
             if (shot) { return; }
             Release();
         }
+        Debug.Log(Vector3.Distance(transform.position, anchorPoint));
+        if (Vector3.Distance(transform.position, anchorPoint) < 10) {
+            gameObject.GetComponent<BoxCollider>().enabled = true;
+        }
     }
     public void Release() {
+        anchorPoint = parentTransform.position;
         shot = true;
         rigBody.isKinematic = false;
         transform.gameObject.GetComponent<TrailRenderer>().enabled = true;
         rigBody.AddRelativeForce(new Vector3(0, 1, (1 * (force * Vector3.Distance(transform.position, parentTransform.position))) * Globals.speed/100), ForceMode.Impulse);
         rigBody.AddTorque(new Vector3 (0, Random.Range(-1440f, 1440f), 0), ForceMode.Impulse);
         transform.parent = null;
-
+        paperThrow.Play();
         AmmoHandler();
     }
     public void PullBack() {
@@ -80,6 +88,7 @@ public class ProjectileHandler : MonoBehaviour {
         //Destroy(collision.gameObject);
         rigBody.constraints = RigidbodyConstraints.None;
         StartCoroutine(SlowTrailDisable());
+        paperHit.Play();
     }
 
     IEnumerator SlowTrailDisable() {

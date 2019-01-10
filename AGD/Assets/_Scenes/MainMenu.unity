@@ -112,7 +112,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: c9bec1d21b1fb1c45999cef2efc9a6ef, type: 2}
 --- !u!1 &15181286
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,6 +229,11 @@ Prefab:
     - target: {fileID: 4883143883148058, guid: a5c533296ce6903429c8b2c5c2049838, type: 2}
       propertyPath: m_LocalPosition.z
       value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 114297769838487848, guid: a5c533296ce6903429c8b2c5c2049838,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5c533296ce6903429c8b2c5c2049838, type: 2}
@@ -593,6 +598,11 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 21.9
       objectReference: {fileID: 0}
+    - target: {fileID: 114773860858059320, guid: baa23a53449fd42458b9ea698c7961f2,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baa23a53449fd42458b9ea698c7961f2, type: 2}
   m_IsPrefabAsset: 0
@@ -792,6 +802,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4088142837579262, guid: baa23a53449fd42458b9ea698c7961f2, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114773860858059320, guid: baa23a53449fd42458b9ea698c7961f2,
+        type: 2}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1240,6 +1255,11 @@ Prefab:
     - target: {fileID: 1969127855328402, guid: a5c533296ce6903429c8b2c5c2049838, type: 2}
       propertyPath: m_Name
       value: MailboxObstacleLeftDoorBottom (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114297769838487848, guid: a5c533296ce6903429c8b2c5c2049838,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5c533296ce6903429c8b2c5c2049838, type: 2}
@@ -1775,6 +1795,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114000785849582790, guid: 67a543fad812e9c4091ba41931103d07,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114717501245613580, guid: 67a543fad812e9c4091ba41931103d07,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67a543fad812e9c4091ba41931103d07, type: 2}
   m_IsPrefabAsset: 0
@@ -1808,7 +1838,7 @@ RectTransform:
   m_GameObject: {fileID: 319079057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 1470761876}
   m_RootOrder: 0
@@ -2162,6 +2192,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114773860858059320, guid: baa23a53449fd42458b9ea698c7961f2,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baa23a53449fd42458b9ea698c7961f2, type: 2}
   m_IsPrefabAsset: 0
@@ -2315,6 +2350,15 @@ Prefab:
       propertyPath: waypoints.Array.data[2]
       value: 
       objectReference: {fileID: 778320360}
+    - target: {fileID: 114532420794789536, guid: b7f69f92c71a746ea9f802ec1976b2d4,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946437652157874, guid: b7f69f92c71a746ea9f802ec1976b2d4, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7f69f92c71a746ea9f802ec1976b2d4, type: 2}
   m_IsPrefabAsset: 0
@@ -3081,6 +3125,11 @@ Prefab:
       propertyPath: m_Name
       value: MailboxObstacleLeftDoorBottom (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114297769838487848, guid: a5c533296ce6903429c8b2c5c2049838,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5c533296ce6903429c8b2c5c2049838, type: 2}
   m_IsPrefabAsset: 0
@@ -3291,6 +3340,11 @@ Prefab:
     - target: {fileID: 4709022635150498, guid: aa42fd9631e736442b631911aea95dd9, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114387123013619102, guid: aa42fd9631e736442b631911aea95dd9,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa42fd9631e736442b631911aea95dd9, type: 2}
@@ -3648,6 +3702,11 @@ Prefab:
       propertyPath: m_Name
       value: MailboxObstacleRightDoorBottom (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114773860858059320, guid: baa23a53449fd42458b9ea698c7961f2,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baa23a53449fd42458b9ea698c7961f2, type: 2}
   m_IsPrefabAsset: 0
@@ -3931,6 +3990,11 @@ Prefab:
     - target: {fileID: 4321256360656486, guid: baa23a53449fd42458b9ea698c7961f2, type: 2}
       propertyPath: m_LocalPosition.x
       value: -10.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114773860858059320, guid: baa23a53449fd42458b9ea698c7961f2,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baa23a53449fd42458b9ea698c7961f2, type: 2}
@@ -4233,6 +4297,16 @@ Prefab:
     - target: {fileID: 4189741256546158, guid: 67a543fad812e9c4091ba41931103d07, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000785849582790, guid: 67a543fad812e9c4091ba41931103d07,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114717501245613580, guid: 67a543fad812e9c4091ba41931103d07,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67a543fad812e9c4091ba41931103d07, type: 2}
@@ -4677,6 +4751,15 @@ Prefab:
       propertyPath: waypointSpeed.Array.data[2]
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 114532420794789536, guid: b7f69f92c71a746ea9f802ec1976b2d4,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946437652157874, guid: b7f69f92c71a746ea9f802ec1976b2d4, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7f69f92c71a746ea9f802ec1976b2d4, type: 2}
   m_IsPrefabAsset: 0
@@ -4870,6 +4953,16 @@ Prefab:
     - target: {fileID: 4215960863915274, guid: fc35993d35ea0584185bd146c2f0266e, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114899673461415712, guid: fc35993d35ea0584185bd146c2f0266e,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114243687288469436, guid: fc35993d35ea0584185bd146c2f0266e,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc35993d35ea0584185bd146c2f0266e, type: 2}
@@ -5475,6 +5568,11 @@ Prefab:
       propertyPath: m_Name
       value: MailboxObstacleRightDoorBottom (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114773860858059320, guid: baa23a53449fd42458b9ea698c7961f2,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baa23a53449fd42458b9ea698c7961f2, type: 2}
   m_IsPrefabAsset: 0
@@ -6018,12 +6116,12 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1440, y: 2960}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -6595,6 +6693,11 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 34
       objectReference: {fileID: 0}
+    - target: {fileID: 114297769838487848, guid: a5c533296ce6903429c8b2c5c2049838,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5c533296ce6903429c8b2c5c2049838, type: 2}
   m_IsPrefabAsset: 0
@@ -6894,6 +6997,11 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: -35.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114773860858059320, guid: baa23a53449fd42458b9ea698c7961f2,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baa23a53449fd42458b9ea698c7961f2, type: 2}
   m_IsPrefabAsset: 0
@@ -6960,7 +7068,7 @@ RectTransform:
   m_GameObject: {fileID: 1080579200}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 0.13261104, y: 0.13261104, z: 0.13261104}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 1470761876}
   m_RootOrder: 1
@@ -7461,6 +7569,11 @@ Prefab:
       propertyPath: m_Name
       value: PotholeObstacle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7505135279bf4e043b1e3af729b1995c, type: 2}
   m_IsPrefabAsset: 0
@@ -7508,6 +7621,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 114000785849582790, guid: 67a543fad812e9c4091ba41931103d07,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114717501245613580, guid: 67a543fad812e9c4091ba41931103d07,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67a543fad812e9c4091ba41931103d07, type: 2}
   m_IsPrefabAsset: 0
@@ -7553,6 +7676,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4519955229709330, guid: 7505135279bf4e043b1e3af729b1995c, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7661,6 +7789,11 @@ Prefab:
     - target: {fileID: 1364708510626276, guid: 7505135279bf4e043b1e3af729b1995c, type: 2}
       propertyPath: m_Name
       value: PotholeObstacle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7505135279bf4e043b1e3af729b1995c, type: 2}
@@ -8007,6 +8140,15 @@ Prefab:
     - target: {fileID: 114532420794789536, guid: b7f69f92c71a746ea9f802ec1976b2d4,
         type: 2}
       propertyPath: loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114532420794789536, guid: b7f69f92c71a746ea9f802ec1976b2d4,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946437652157874, guid: b7f69f92c71a746ea9f802ec1976b2d4, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9009,6 +9151,11 @@ Prefab:
       propertyPath: m_Name
       value: PotholeObstacle (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7505135279bf4e043b1e3af729b1995c, type: 2}
   m_IsPrefabAsset: 0
@@ -9644,6 +9791,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114297769838487848, guid: a5c533296ce6903429c8b2c5c2049838,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5c533296ce6903429c8b2c5c2049838, type: 2}
   m_IsPrefabAsset: 0
@@ -9976,6 +10128,15 @@ Prefab:
       propertyPath: waypointSpeed.Array.data[0]
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114532420794789536, guid: b7f69f92c71a746ea9f802ec1976b2d4,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946437652157874, guid: b7f69f92c71a746ea9f802ec1976b2d4, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7f69f92c71a746ea9f802ec1976b2d4, type: 2}
   m_IsPrefabAsset: 0
@@ -10289,6 +10450,11 @@ Prefab:
       propertyPath: m_Name
       value: MailboxObstacleRightDoorBottom (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114773860858059320, guid: baa23a53449fd42458b9ea698c7961f2,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baa23a53449fd42458b9ea698c7961f2, type: 2}
   m_IsPrefabAsset: 0
@@ -10439,6 +10605,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114947426731556038, guid: 0c890f871a1f57e458e13d7c0b3522a2,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c890f871a1f57e458e13d7c0b3522a2, type: 2}
   m_IsPrefabAsset: 0
@@ -10517,6 +10688,11 @@ Prefab:
     - target: {fileID: 1969127855328402, guid: a5c533296ce6903429c8b2c5c2049838, type: 2}
       propertyPath: m_Name
       value: MailboxObstacleLeftDoorBottom (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114297769838487848, guid: a5c533296ce6903429c8b2c5c2049838,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5c533296ce6903429c8b2c5c2049838, type: 2}
@@ -11232,6 +11408,11 @@ Prefab:
       propertyPath: m_Name
       value: MailboxObstacleLeftDoorBottom (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114297769838487848, guid: a5c533296ce6903429c8b2c5c2049838,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5c533296ce6903429c8b2c5c2049838, type: 2}
   m_IsPrefabAsset: 0
@@ -11405,6 +11586,15 @@ Prefab:
       propertyPath: waypointSpeed.Array.data[4]
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 114532420794789536, guid: b7f69f92c71a746ea9f802ec1976b2d4,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946437652157874, guid: b7f69f92c71a746ea9f802ec1976b2d4, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7f69f92c71a746ea9f802ec1976b2d4, type: 2}
   m_IsPrefabAsset: 0
@@ -11499,7 +11689,7 @@ RectTransform:
   m_GameObject: {fileID: 2036809063}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 883350488}
   - {fileID: 1287814693}
@@ -12036,6 +12226,11 @@ Prefab:
     - target: {fileID: 4321256360656486, guid: baa23a53449fd42458b9ea698c7961f2, type: 2}
       propertyPath: m_LocalPosition.z
       value: 21.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114773860858059320, guid: baa23a53449fd42458b9ea698c7961f2,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baa23a53449fd42458b9ea698c7961f2, type: 2}

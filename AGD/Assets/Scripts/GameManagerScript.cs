@@ -18,10 +18,13 @@ public class GameManagerScript : MonoBehaviour {
     public float[] hitsNeeded;
     public float[] speedAdded;
     private int multiplierIndex = 0;
+    private Vector3 baseSizeMultiplier;
 
     public int ammo;
     public Text ammoText;
     public int Levelindex;
+    public GameObject newspaperParticle;
+    GameObject camera;
 
     public bool gameHasEnded = false;
 
@@ -34,7 +37,9 @@ public class GameManagerScript : MonoBehaviour {
         SetSalaryText();
         SetAmmoText();
         Globals.speed = Globals.baseSpeed;
-	}
+        baseSizeMultiplier = multiplierText.GetComponent<RectTransform>().localScale;
+        camera = GameObject.Find("Main Camera");
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -75,14 +80,19 @@ public class GameManagerScript : MonoBehaviour {
     }
     public void ResetMultiplier() {
         Debug.Log("ResetMultiplier");
-        multiplierIndex = 0;
+        multiplierIndex = (int)((float)multiplierIndex / 1.25f);
+        print(multiplierIndex);
         multiplier = multiplierOptions[multiplierIndex];
         timesHit = 0;
         SetMultiplierText();
-        Globals.speed = Globals.baseSpeed;
+        Globals.speed = Globals.baseSpeed + speedAdded[multiplierIndex];
     }
     public void SetMultiplierText() {
         multiplierText.SetText(multiplierOptions[multiplierIndex].ToString() + "x");
+        float size = (0.05f) * ((100 / multiplierOptions.Length) * (multiplierIndex + 1));
+        size += 1;
+        multiplierText.GetComponent<RectTransform>().localScale = baseSizeMultiplier * size;
+
     }
     public float GetMultiplier() {
         return multiplier;
@@ -112,6 +122,9 @@ public class GameManagerScript : MonoBehaviour {
         {
             Time.timeScale = 1;
         }
+    }
+    public void ShakeScreen() {
+        camera.GetComponent<Shaker>().Shake(.1f);
     }
 
     public void CallMenu()

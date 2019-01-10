@@ -7,7 +7,7 @@ public class WaterBehaviour : MonoBehaviour {
     public int LevelIndex = 0;
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 	
 	// Update is called once per frame
@@ -18,13 +18,24 @@ public class WaterBehaviour : MonoBehaviour {
         
         if (collision.transform.tag == "Player" && !triggered) {
             Debug.Log("Triggered");
-            StartCoroutine(Death());
+            Pause();
+            //StartCoroutine(Death());
             triggered = true;
         }
     }
     IEnumerator Death() {
         yield return new WaitForSeconds(2);
         transform.GetComponent<GoToLevel>().Level(LevelIndex);
+
+    }
+    private void Pause() {
+        Time.timeScale = 0;
+        GameObject.Find("Main Camera").transform.parent = null;
+        GameObject.Find("Player").SetActive(false);
+        FindObjectOfType<GameManagerScript>().gameHasEnded = true;
+
+        FindObjectOfType<GameManagerScript>().CallMenu();
+
 
     }
 }

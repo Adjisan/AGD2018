@@ -26,5 +26,13 @@ public class MainMenu : MonoBehaviour {
 #endif
     }
 
+    public void Retry()
+    {
+        SceneManager.LoadScene(2);
+    }
 
+    public void Home()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

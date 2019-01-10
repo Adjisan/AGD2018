@@ -123,7 +123,7 @@ public class GameManagerScript : MonoBehaviour {
 
         }
         else {
-            Debug.Log("pause Called");
+            GameObject.Find("GUI_Pause").transform.GetChild(0).gameObject.SetActive(false);
         }
     }
 

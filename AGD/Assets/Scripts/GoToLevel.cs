@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class GoToLevel : MonoBehaviour {
 
 
-    public void Level(int index) {
+    public void Level(int index)
+    {
         SceneManager.LoadScene(index);
     }
 
@@ -14,5 +15,6 @@ public class GoToLevel : MonoBehaviour {
     {
         FindObjectOfType<GameManagerScript>().gameHasEnded = false;
         FindObjectOfType<GameManagerScript>().CallMenu();
+
     }
 }

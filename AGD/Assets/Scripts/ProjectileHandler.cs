@@ -45,7 +45,7 @@ public class ProjectileHandler : MonoBehaviour {
             if (shot) { return; }
             Release();
         }
-        Debug.Log(Vector3.Distance(transform.position, anchorPoint));
+        //Debug.Log(Vector3.Distance(transform.position, anchorPoint));
         if (Vector3.Distance(transform.position, anchorPoint) < 10) {
             gameObject.GetComponent<BoxCollider>().enabled = true;
         }

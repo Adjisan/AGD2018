@@ -18,7 +18,9 @@ public class SalaryHandler : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        if (GameObject.Find("GameManager")) {
             gmScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+        }
     }
 
     void HandleSalary() {

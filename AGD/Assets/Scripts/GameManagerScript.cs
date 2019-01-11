@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameManagerScript : MonoBehaviour {
+    bool ExampleRunning = false;
     private float baseSpeed;
 	public float salary;
     public TextMeshProUGUI salaryText;
@@ -79,9 +80,8 @@ public class GameManagerScript : MonoBehaviour {
         }
     }
     public void ResetMultiplier() {
-        Debug.Log("ResetMultiplier");
+        //Debug.Log("ResetMultiplier");
         multiplierIndex = (int)((float)multiplierIndex / 1.25f);
-        print(multiplierIndex);
         multiplier = multiplierOptions[multiplierIndex];
         timesHit = 0;
         SetMultiplierText();
@@ -112,11 +112,14 @@ public class GameManagerScript : MonoBehaviour {
     }
     public void AmmoDepletionCheck()
     {
-        if(ammo <= 0)
+        if(ammo <= 0 && !ExampleRunning)
         {
             ammoText.text = "You ran out of newspaper! :(";
             Time.timeScale = 0;
-            GameObject.Find("GUI_End").transform.GetChild(0).gameObject.SetActive(true);
+            if (GameObject.Find("GUI_End")) {
+                GameObject.Find("GUI_End").transform.GetChild(0).gameObject.SetActive(true);
+            }
+            StartCoroutine(Example());
         }
         else
         {
@@ -125,6 +128,15 @@ public class GameManagerScript : MonoBehaviour {
     }
     public void ShakeScreen() {
         camera.GetComponent<Shaker>().Shake(.1f);
+    }
+    
+    IEnumerator Example() {
+        ExampleRunning = true;
+        yield return new WaitForSeconds(3);
+        if (ammo <= 0) {
+            SceneManager.LoadScene("MainMenu");
+        }
+        ExampleRunning = false;
     }
 
     public void CallMenu()

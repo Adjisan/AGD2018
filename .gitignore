@@ -36,3 +36,7 @@ sysinfo.txt
 *.unitypackage
 
 *.meta
+
+AGD/Assets/SimpleCloudSystem by RM\.meta
+
+AGD/Assets/SimpleCloudSystem by RM/SceneComponents\.meta

@@ -20448,6 +20448,11 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: d86e51d7fb8834e919af95e6b6ca8917, type: 3}
+    - target: {fileID: 114690764091460832, guid: 6df3a7607801341f6a0119dd133e9b2c,
+        type: 2}
+      propertyPath: ammo
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6df3a7607801341f6a0119dd133e9b2c, type: 2}
   m_IsPrefabAsset: 0
@@ -26815,6 +26820,28 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca4bbed7e347b954c8c6edbe7442f8eb, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &2040771159 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1340882938843150, guid: baa23a53449fd42458b9ea698c7961f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 286278176}
+--- !u!114 &2040771169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2040771159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7b87b6c12cfd14dac08c060d55a5f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammo: -1
+  collidesWithTrigger: 0
+  collidesWithTag: projectile
+  onlyOnce: 1
+  destroy: 0
+  loseNewspaperParticles: {fileID: 0}
 --- !u!4 &2059477527 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010181493276, guid: ca4bbed7e347b954c8c6edbe7442f8eb,

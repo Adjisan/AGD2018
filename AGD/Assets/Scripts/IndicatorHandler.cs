@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class IndicatorHandler : MonoBehaviour {
     public LayerMask clickMask;
+    private GameManagerScript gmScript;
+
     // Use this for initialization
     void Start () {
         gameObject.GetComponent<MeshRenderer>().enabled = false;
-	}
+        gmScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetMouseButton(0)) {
+        if (Input.GetMouseButton(0) && gmScript.ammo > 0) {
             gameObject.GetComponent<MeshRenderer>().enabled = true;
             Vector3 clickposition = -Vector3.one;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

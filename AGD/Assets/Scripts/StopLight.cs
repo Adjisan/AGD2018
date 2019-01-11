@@ -37,11 +37,11 @@ public class StopLight : MonoBehaviour
     {
         if (collision.transform.tag == "projectile")
         {
-            stopLightHit = !stopLightHit;
+            // stopLightHit = !stopLightHit;
 
             if (GameObject.Find("Player") != null)
             {
-                if (stopLightHit)
+                if (!stopLightHit)
                 {
                     if (changeDirection == 0)
                     {
@@ -69,37 +69,39 @@ public class StopLight : MonoBehaviour
                     player.waypoints.RemoveRange(player.currentWaypoint, replaceAmount);
                     player.waypoints.InsertRange(player.currentWaypoint, waypoints);
                     player.waypoints[player.currentWaypoint] = waypoints[0];
+
                 }
-                else if (!stopLightHit)
-                {
-                    if (changeDirection == 0)
-                    {
-                        arrow.transform.Rotate(0, 0, 90);
-                        bigArrow.transform.Rotate(0, 0, 90);
-                    }
-                    else if (changeDirection == 1)
-                    {
-                        arrow.transform.Rotate(0, 0, -90);
-                        bigArrow.transform.Rotate(0, 0, -90);
-                    }
-                    else if (changeDirection == 2)
-                    {
-                        arrow.transform.Rotate(0, 0, 180);
-                        bigArrow.transform.Rotate(0, 0, 180);
-                    }
-                    else if (changeDirection == 3)
-                    {
-                        arrow.transform.Rotate(0, 0, -180);
-                        bigArrow.transform.Rotate(0, 0, -180);
-                    }
-                    AmmoBus player = GameObject.Find("Player").GetComponent<AmmoBus>();
-                    Debug.Log("StopLight Hit False");
-                    player.waypoints.RemoveRange(player.currentWaypoint, waypoints.Count);
-                    player.waypoints.InsertRange(player.currentWaypoint, replaceWaypoints);
-                    player.waypoints[player.currentWaypoint] = replaceWaypoints[0];
-                }
+                // else if (!stopLightHit)
+                // {
+                //     if (changeDirection == 0)
+                //     {
+                //         arrow.transform.Rotate(0, 0, 90);
+                //         bigArrow.transform.Rotate(0, 0, 90);
+                //     }
+                //     else if (changeDirection == 1)
+                //     {
+                //         arrow.transform.Rotate(0, 0, -90);
+                //         bigArrow.transform.Rotate(0, 0, -90);
+                //     }
+                //     else if (changeDirection == 2)
+                //     {
+                //         arrow.transform.Rotate(0, 0, 180);
+                //         bigArrow.transform.Rotate(0, 0, 180);
+                //     }
+                //     else if (changeDirection == 3)
+                //     {
+                //         arrow.transform.Rotate(0, 0, -180);
+                //         bigArrow.transform.Rotate(0, 0, -180);
+                //     }
+                //     AmmoBus player = GameObject.Find("Player").GetComponent<AmmoBus>();
+                //     Debug.Log("StopLight Hit False");
+                //     player.waypoints.RemoveRange(player.currentWaypoint, waypoints.Count);
+                //     player.waypoints.InsertRange(player.currentWaypoint, replaceWaypoints);
+                //     player.waypoints[player.currentWaypoint] = replaceWaypoints[0];
+                // }
                 GetComponent<AudioSource>().clip = hitSound;
                 GetComponent<AudioSource>().Play();
+                stopLightHit = true;
                 // Destroy(collision.gameObject);
             }
         }

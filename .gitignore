@@ -34,3 +34,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+AGD/Assets/SimpleCloudSystem by RM\.meta
+
+AGD/Assets/SimpleCloudSystem by RM/SceneComponents\.meta

@@ -9,6 +9,7 @@ public class AmmoHandler : MonoBehaviour {
     public bool onlyOnce = true;
     public bool destroy = false;
     public AudioSource PlayerHitsSign;
+    public AudioSource PlayerHurt;
 
     public GameObject loseNewspaperParticles;
 
@@ -40,6 +41,7 @@ public class AmmoHandler : MonoBehaviour {
         if (ammo > 0) {
             if (loseNewspaperParticles != null) {
                 gmScript.ShakeScreen();
+                PlayerHurt.Play();
                 PlayerHitsSign.Play();
                 GameObject clone = Instantiate(loseNewspaperParticles, other.transform.position, transform.rotation, null);
             }

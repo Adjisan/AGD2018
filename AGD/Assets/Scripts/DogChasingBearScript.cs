@@ -10,6 +10,8 @@ public class DogChasingBearScript : AIParentScript
     private AudioSource dogAngry;
     [SerializeField]
     private AudioSource dogHit;
+    [SerializeField]
+    private AudioSource PlayerHurt;
 
     void Awake()
     {
@@ -50,6 +52,7 @@ public class DogChasingBearScript : AIParentScript
             if(AlreadyHit == false)
             {
                 GM.ShakeScreen();
+                PlayerHurt.Play();
                 GM.SubtractAmmo(amountDogsSteal);
                 if (loseNewspaperParticles != null)
                 {

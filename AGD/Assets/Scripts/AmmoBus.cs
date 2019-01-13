@@ -69,9 +69,9 @@ public class AmmoBus : MonoBehaviour
                 Debug.Log("Gained Ammo");
                 gameManager.AddAmmo(ammoAmountGained);
                 SpawnNewspaper();
-                //BusCanBeHit = false;
                 GetComponent<AudioSource>().clip = hitSound;
                 GetComponent<AudioSource>().Play();
+                BusCanBeHit = false;
                 Destroy(collision.gameObject);
             }
         }

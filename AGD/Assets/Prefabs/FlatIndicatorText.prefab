@@ -24,8 +24,7 @@ GameObject:
   - component: {fileID: 222061768152458280}
   - component: {fileID: 114523563314497396}
   - component: {fileID: 95776812029492988}
-  - component: {fileID: 114155086317902868}
-  - component: {fileID: 114506173989360154}
+  - component: {fileID: 114592483183477986}
   m_Layer: 0
   m_Name: FlatIndicatorText
   m_TagString: Untagged
@@ -93,28 +92,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114155086317902868
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1645558342931616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5159b1ed1b3c381409dc106ce484849c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114506173989360154
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1645558342931616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544590cf20694334f801fd1b730d4fb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114523563314497396
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -228,6 +205,17 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   m_maskType: 0
+--- !u!114 &114592483183477986
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1645558342931616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1912ead556fd3724bbac5eb45128de4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &222061768152458280
 CanvasRenderer:
   m_ObjectHideFlags: 1

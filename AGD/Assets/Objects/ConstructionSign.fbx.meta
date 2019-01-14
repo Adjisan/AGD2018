@@ -15,6 +15,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100004, guid: afa0ed8acc472284096756e5c28e5d03, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RedAlert
+    second: {fileID: 2100000, guid: 5b0040dfcdabf9c4eb07d833353542e9, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Wood
     second: {fileID: 2100000, guid: 940a45e48f0880049b7d5c17d6007ee7, type: 2}
   materials:

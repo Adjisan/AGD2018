@@ -103,7 +103,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1364708510626276}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 180.7, y: -0.4290226, z: -1702}
+  m_LocalPosition: {x: 4604.728, y: 1.0311, z: -1761.4944}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4879150915444404}
@@ -153,8 +153,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 5b0040dfcdabf9c4eb07d833353542e9, type: 3}
-  - {fileID: 2100002, guid: 5b0040dfcdabf9c4eb07d833353542e9, type: 3}
+  - {fileID: 2100000, guid: bdf03364d9ceb584c89fe212f3cf885a, type: 2}
+  - {fileID: 2100000, guid: c24baefa28d4e42409e01ac92c9c9db1, type: 2}
   - {fileID: 2100000, guid: 940a45e48f0880049b7d5c17d6007ee7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -258,7 +258,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 684fcdc77cde65940b95f642553ccfa5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -448,7 +448,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 00cb10cfb32855b4c889bf7c4ec9bc15, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b3f60e81f52f7704c945543adee7cd3b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -568,8 +568,8 @@ MonoBehaviour:
   collidesWithTag: Player
   onlyOnce: 1
   destroy: 0
-  PlayerHitsSign: {fileID: 82856180395735532}
-  PlayerHurt: {fileID: 82318921751399102}
+  PlayerHitsSign: {fileID: 0}
+  PlayerHurt: {fileID: 0}
   loseNewspaperParticles: {fileID: 1934633201484996, guid: 556b12457e2ca8642983dcab7f6a08d4,
     type: 2}
 --- !u!114 &114801311400084796

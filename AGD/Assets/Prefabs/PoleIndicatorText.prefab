@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 222164134601654110}
   - component: {fileID: 114989058342246036}
   - component: {fileID: 95945788012923812}
-  - component: {fileID: 114685255859109642}
+  - component: {fileID: 114096606773632606}
   m_Layer: 0
   m_Name: PoleIndicatorText
   m_TagString: Untagged
@@ -92,7 +92,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114685255859109642
+--- !u!114 &114096606773632606
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1375448406102490}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544590cf20694334f801fd1b730d4fb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 1912ead556fd3724bbac5eb45128de4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114989058342246036

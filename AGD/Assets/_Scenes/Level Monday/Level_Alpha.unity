@@ -776,12 +776,12 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1996278624}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114444439463059886, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1996278623}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82638231962100774, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: m_PlayOnAwake
@@ -795,8 +795,19 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
-    m_RemovedComponents: []
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &12779874 stripped
@@ -955,7 +966,7 @@ Prefab:
         type: 2}
       propertyPath: Opening
       value: 
-      objectReference: {fileID: 233138999}
+      objectReference: {fileID: 391930533}
     - target: {fileID: 82701496996393046, guid: 0c890f871a1f57e458e13d7c0b3522a2,
         type: 2}
       propertyPath: m_PlayOnAwake
@@ -1001,6 +1012,11 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 7.4754395
       objectReference: {fileID: 0}
+    - target: {fileID: 82701496996393046, guid: 0c890f871a1f57e458e13d7c0b3522a2,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
     m_RemovedComponents:
     - {fileID: 82174119719466886, guid: 0c890f871a1f57e458e13d7c0b3522a2, type: 2}
     - {fileID: 82717002633964990, guid: 0c890f871a1f57e458e13d7c0b3522a2, type: 2}
@@ -1965,6 +1981,36 @@ Prefab:
       propertyPath: m_Name
       value: PotholeObstacle (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 82856180395735532, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b3f60e81f52f7704c945543adee7cd3b, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHitsSign
+      value: 
+      objectReference: {fileID: 2044663377}
+    - target: {fileID: 82318921751399102, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 2044663373}
+    - target: {fileID: 82699650147687764, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
+    - target: {fileID: 114801311400084796, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: Opening
+      value: 
+      objectReference: {fileID: 1723639412}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7505135279bf4e043b1e3af729b1995c, type: 2}
   m_IsPrefabAsset: 0
@@ -7423,7 +7469,7 @@ Prefab:
         type: 2}
       propertyPath: Opening
       value: 
-      objectReference: {fileID: 565008277}
+      objectReference: {fileID: 391930533}
     - target: {fileID: 82701496996393046, guid: 0c890f871a1f57e458e13d7c0b3522a2,
         type: 2}
       propertyPath: m_PlayOnAwake
@@ -7461,6 +7507,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 2.1836972
       objectReference: {fileID: 0}
+    - target: {fileID: 82701496996393046, guid: 0c890f871a1f57e458e13d7c0b3522a2,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
     m_RemovedComponents:
     - {fileID: 82717002633964990, guid: 0c890f871a1f57e458e13d7c0b3522a2, type: 2}
     - {fileID: 82174119719466886, guid: 0c890f871a1f57e458e13d7c0b3522a2, type: 2}
@@ -8552,7 +8603,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -8840,12 +8891,12 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1208554161}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114959468595220998, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1208554162}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 1008738409242048, guid: 22f8f35d468164446929560592045953, type: 2}
       propertyPath: m_Name
       value: DogDarkGrey (2)
@@ -8854,13 +8905,24 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 22f8f35d468164446929560592045953, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &196915463
@@ -9360,11 +9422,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09e201eb9e724445904edef262bbfd9, type: 2}
   m_IsPrefabAsset: 0
---- !u!82 &208725959 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 82701496996393046, guid: 0c890f871a1f57e458e13d7c0b3522a2,
-    type: 2}
-  m_PrefabInternal: {fileID: 1899153238}
 --- !u!1 &211589005
 GameObject:
   m_ObjectHideFlags: 0
@@ -9584,23 +9641,34 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1208554161}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114959468595220998, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1208554162}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 22f8f35d468164446929560592045953, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &211813174 stripped
@@ -10429,12 +10497,12 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 684fcdc77cde65940b95f642553ccfa5, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: dogAngry
@@ -10444,17 +10512,23 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 397948863}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 397948862}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 1772446908339104, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &231985745 stripped
@@ -10462,11 +10536,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4348469200019034, guid: 6b6523c5f64a81441a0b9d9c720a358b,
     type: 2}
   m_PrefabInternal: {fileID: 231985744}
---- !u!82 &233138999 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 82701496996393046, guid: 0c890f871a1f57e458e13d7c0b3522a2,
-    type: 2}
-  m_PrefabInternal: {fileID: 13249040}
 --- !u!1001 &234988276
 Prefab:
   m_ObjectHideFlags: 0
@@ -10925,7 +10994,43 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114959468595220998, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: dogAngry
+      value: 
+      objectReference: {fileID: 1996278613}
+    - target: {fileID: 114959468595220998, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 1996278624}
+    - target: {fileID: 114959468595220998, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: dogHit
+      value: 
+      objectReference: {fileID: 1996278613}
+    m_RemovedComponents:
+    - {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 22f8f35d468164446929560592045953, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &251424957
@@ -11343,12 +11448,12 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1996278624}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114444439463059886, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1996278623}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 1763977287713464, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
       propertyPath: m_Name
       value: DogLightGrey (2)
@@ -11361,13 +11466,24 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82638231962100774, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &266930679 stripped
@@ -13713,23 +13829,34 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1208554161}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114959468595220998, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1208554162}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 22f8f35d468164446929560592045953, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &328274556 stripped
@@ -15707,12 +15834,12 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 684fcdc77cde65940b95f642553ccfa5, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: dogAngry
@@ -15722,17 +15849,23 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 397948863}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 397948862}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 1772446908339104, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &389663076 stripped
@@ -15999,7 +16132,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 47a2825814a93f841b95b6d82d6c6042, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -16389,16 +16522,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000010181493276, guid: ca4bbed7e347b954c8c6edbe7442f8eb,
     type: 2}
   m_PrefabInternal: {fileID: 1866130152}
---- !u!82 &397948862 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1917074922}
---- !u!82 &397948863 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 82191132525431150, guid: 6b6523c5f64a81441a0b9d9c720a358b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1917074922}
 --- !u!1 &398815137
 GameObject:
   m_ObjectHideFlags: 0
@@ -17128,7 +17251,43 @@ Prefab:
       propertyPath: m_Name
       value: DogBrown (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82191132525431150, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82191132525431150, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: dogAngry
+      value: 
+      objectReference: {fileID: 1996278613}
+    - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 1996278624}
+    - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: dogHit
+      value: 
+      objectReference: {fileID: 1996278613}
+    m_RemovedComponents:
+    - {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &424243748
@@ -17848,12 +18007,12 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1208554161}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114444439463059886, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1208554162}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82638231962100774, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: m_PlayOnAwake
@@ -17867,8 +18026,19 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
-    m_RemovedComponents: []
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &444389274
@@ -20317,7 +20487,43 @@ Prefab:
       propertyPath: m_Name
       value: DogDarkGrey (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114959468595220998, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: dogAngry
+      value: 
+      objectReference: {fileID: 1996278613}
+    - target: {fileID: 114959468595220998, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 1996278624}
+    - target: {fileID: 114959468595220998, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: dogHit
+      value: 
+      objectReference: {fileID: 1996278613}
+    m_RemovedComponents:
+    - {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 22f8f35d468164446929560592045953, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &495326508
@@ -21631,7 +21837,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -23199,30 +23405,36 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1208554161}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114959468595220998, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1208554162}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 22f8f35d468164446929560592045953, type: 2}
   m_IsPrefabAsset: 0
---- !u!82 &565008277 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 82701496996393046, guid: 0c890f871a1f57e458e13d7c0b3522a2,
-    type: 2}
-  m_PrefabInternal: {fileID: 169439334}
 --- !u!1 &569301772
 GameObject:
   m_ObjectHideFlags: 0
@@ -23431,7 +23643,32 @@ Prefab:
         type: 2}
       propertyPath: Opening
       value: 
-      objectReference: {fileID: 890977680}
+      objectReference: {fileID: 1723639412}
+    - target: {fileID: 82856180395735532, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b3f60e81f52f7704c945543adee7cd3b, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHitsSign
+      value: 
+      objectReference: {fileID: 2044663377}
+    - target: {fileID: 82318921751399102, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 2044663373}
+    - target: {fileID: 82699650147687764, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7505135279bf4e043b1e3af729b1995c, type: 2}
   m_IsPrefabAsset: 0
@@ -29413,7 +29650,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -30830,12 +31067,12 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1208554161}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114444439463059886, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1208554162}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82638231962100774, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: m_PlayOnAwake
@@ -30849,8 +31086,19 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
-    m_RemovedComponents: []
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &812983794 stripped
@@ -31654,6 +31902,36 @@ Prefab:
       propertyPath: m_Name
       value: PotholeObstacle (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 82856180395735532, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b3f60e81f52f7704c945543adee7cd3b, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHitsSign
+      value: 
+      objectReference: {fileID: 2044663377}
+    - target: {fileID: 82318921751399102, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 2044663373}
+    - target: {fileID: 82699650147687764, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
+    - target: {fileID: 114801311400084796, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: Opening
+      value: 
+      objectReference: {fileID: 1723639412}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7505135279bf4e043b1e3af729b1995c, type: 2}
   m_IsPrefabAsset: 0
@@ -34103,23 +34381,34 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1208554161}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114959468595220998, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1208554162}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 22f8f35d468164446929560592045953, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &910076988 stripped
@@ -35759,7 +36048,43 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82638231962100774, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82638231962100774, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114444439463059886, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: dogAngry
+      value: 
+      objectReference: {fileID: 1996278613}
+    - target: {fileID: 114444439463059886, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 1996278624}
+    - target: {fileID: 114444439463059886, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: dogHit
+      value: 
+      objectReference: {fileID: 1996278613}
+    m_RemovedComponents:
+    - {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &965595614
@@ -35805,7 +36130,43 @@ Prefab:
       propertyPath: m_Name
       value: DogBrown (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82191132525431150, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82191132525431150, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: dogAngry
+      value: 
+      objectReference: {fileID: 1996278613}
+    - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 1996278624}
+    - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: dogHit
+      value: 
+      objectReference: {fileID: 1996278613}
+    m_RemovedComponents:
+    - {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &966748072
@@ -36377,12 +36738,12 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1996278624}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114444439463059886, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1996278623}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82638231962100774, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: m_PlayOnAwake
@@ -36396,8 +36757,19 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
-    m_RemovedComponents: []
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &981003775 stripped
@@ -36868,12 +37240,12 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 397948863}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 397948862}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 1772446908339104, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
       propertyPath: m_Name
       value: DogBrown (1)
@@ -36886,13 +37258,24 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82191132525431150, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &987019944 stripped
@@ -37177,23 +37560,34 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1208554161}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114959468595220998, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1208554162}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 22f8f35d468164446929560592045953, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &997596677
@@ -38998,7 +39392,43 @@ Prefab:
       propertyPath: m_Name
       value: DogBrown (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82191132525431150, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82191132525431150, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: dogAngry
+      value: 
+      objectReference: {fileID: 1996278613}
+    - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 1996278624}
+    - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: dogHit
+      value: 
+      objectReference: {fileID: 1996278613}
+    m_RemovedComponents:
+    - {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1049532181
@@ -40145,12 +40575,12 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1996278624}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114444439463059886, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1996278623}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82638231962100774, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: m_PlayOnAwake
@@ -40164,8 +40594,19 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
-    m_RemovedComponents: []
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1074094410
@@ -40410,12 +40851,12 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 684fcdc77cde65940b95f642553ccfa5, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: dogAngry
@@ -40425,17 +40866,23 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 397948863}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 397948862}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 1772446908339104, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1079856233
@@ -41576,12 +42023,12 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 397948863}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 397948862}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82191132525431150, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: m_PlayOnAwake
@@ -41595,10 +42042,21 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 0}
+    - {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1112694049
@@ -43722,13 +44180,23 @@ Prefab:
         type: 2}
       propertyPath: textPrefab
       value: 
-      objectReference: {fileID: 1772028648607178, guid: 35ebcc1ab8a1ecf44b5e3b49036c3d6c,
+      objectReference: {fileID: 1772028648607178, guid: d21cb8368eff724429281eb8e005138a,
         type: 2}
     - target: {fileID: 65440657102254848, guid: 58fd30d59369a2345829c84d32a56ee5,
         type: 2}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114606160134520084, guid: 58fd30d59369a2345829c84d32a56ee5,
+        type: 2}
+      propertyPath: CountDownAlarm
+      value: 
+      objectReference: {fileID: 1266204311}
+    - target: {fileID: 114606160134520084, guid: 58fd30d59369a2345829c84d32a56ee5,
+        type: 2}
+      propertyPath: ThrowPaper
+      value: 
+      objectReference: {fileID: 1266204321}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58fd30d59369a2345829c84d32a56ee5, type: 2}
   m_IsPrefabAsset: 0
@@ -44402,7 +44870,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -47173,7 +47641,32 @@ Prefab:
         type: 2}
       propertyPath: Opening
       value: 
-      objectReference: {fileID: 890977680}
+      objectReference: {fileID: 1723639412}
+    - target: {fileID: 82856180395735532, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b3f60e81f52f7704c945543adee7cd3b, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHitsSign
+      value: 
+      objectReference: {fileID: 2044663377}
+    - target: {fileID: 82318921751399102, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 2044663373}
+    - target: {fileID: 82699650147687764, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7505135279bf4e043b1e3af729b1995c, type: 2}
   m_IsPrefabAsset: 0
@@ -47279,6 +47772,101 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1472512192574354, guid: 58fd30d59369a2345829c84d32a56ee5,
     type: 2}
   m_PrefabInternal: {fileID: 1154083625}
+--- !u!82 &1266204311
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1266204310}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b28cb0dccf539e545a4ea657af1705a3, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!82 &1266204321
 AudioSource:
   m_ObjectHideFlags: 0
@@ -47288,9 +47876,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 684fcdc77cde65940b95f642553ccfa5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e89a82170f95767489e62110bcb7c809, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.231
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -47480,11 +48068,16 @@ Prefab:
         type: 2}
       propertyPath: Opening
       value: 
-      objectReference: {fileID: 1527123079}
+      objectReference: {fileID: 391930533}
     - target: {fileID: 1107660668554318, guid: 0c890f871a1f57e458e13d7c0b3522a2, type: 2}
       propertyPath: m_Name
       value: BridgeObstacleLeftPole (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 82701496996393046, guid: 0c890f871a1f57e458e13d7c0b3522a2,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
     m_RemovedComponents:
     - {fileID: 82174119719466886, guid: 0c890f871a1f57e458e13d7c0b3522a2, type: 2}
     - {fileID: 82717002633964990, guid: 0c890f871a1f57e458e13d7c0b3522a2, type: 2}
@@ -50327,7 +50920,43 @@ Prefab:
       propertyPath: m_Name
       value: DogBrown (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82191132525431150, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82191132525431150, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: dogAngry
+      value: 
+      objectReference: {fileID: 1996278613}
+    - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 1996278624}
+    - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: dogHit
+      value: 
+      objectReference: {fileID: 1996278613}
+    m_RemovedComponents:
+    - {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1335001886 stripped
@@ -52045,7 +52674,32 @@ Prefab:
         type: 2}
       propertyPath: Opening
       value: 
-      objectReference: {fileID: 890977680}
+      objectReference: {fileID: 1723639412}
+    - target: {fileID: 82856180395735532, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b3f60e81f52f7704c945543adee7cd3b, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHitsSign
+      value: 
+      objectReference: {fileID: 2044663377}
+    - target: {fileID: 82318921751399102, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 2044663373}
+    - target: {fileID: 82699650147687764, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7505135279bf4e043b1e3af729b1995c, type: 2}
   m_IsPrefabAsset: 0
@@ -55278,12 +55932,12 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 684fcdc77cde65940b95f642553ccfa5, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: dogAngry
@@ -55293,17 +55947,23 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1208554161}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1208554162}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 1772446908339104, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1475929693
@@ -56301,23 +56961,34 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1208554161}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114959468595220998, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1208554162}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 22f8f35d468164446929560592045953, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1500766296
@@ -56458,7 +57129,43 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82191132525431150, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82191132525431150, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: dogAngry
+      value: 
+      objectReference: {fileID: 1996278613}
+    - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 1996278624}
+    - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: dogHit
+      value: 
+      objectReference: {fileID: 1996278613}
+    m_RemovedComponents:
+    - {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1504657612 stripped
@@ -57546,12 +58253,12 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1996278624}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114444439463059886, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1996278623}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82638231962100774, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: m_PlayOnAwake
@@ -57565,8 +58272,19 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
-    m_RemovedComponents: []
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1525338775 stripped
@@ -57668,11 +58386,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1526562753}
   m_Mesh: {fileID: 4300000, guid: 916e0d2151e59a344bea28ef471bdfd9, type: 3}
---- !u!82 &1527123079 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 82701496996393046, guid: 0c890f871a1f57e458e13d7c0b3522a2,
-    type: 2}
-  m_PrefabInternal: {fileID: 1269397343}
 --- !u!4 &1533277636 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7f016de9b59d0834f84e726f194c1c24,
@@ -58455,7 +59168,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -59900,7 +60613,7 @@ Prefab:
         type: 2}
       propertyPath: Opening
       value: 
-      objectReference: {fileID: 1610494785}
+      objectReference: {fileID: 391930533}
     - target: {fileID: 1107660668554318, guid: 0c890f871a1f57e458e13d7c0b3522a2, type: 2}
       propertyPath: m_Name
       value: BridgeObstacleLeftPole (2)
@@ -59954,6 +60667,11 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82701496996393046, guid: 0c890f871a1f57e458e13d7c0b3522a2,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
     m_RemovedComponents:
     - {fileID: 82174119719466886, guid: 0c890f871a1f57e458e13d7c0b3522a2, type: 2}
     - {fileID: 82717002633964990, guid: 0c890f871a1f57e458e13d7c0b3522a2, type: 2}
@@ -60596,11 +61314,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000010181493276, guid: ca4bbed7e347b954c8c6edbe7442f8eb,
     type: 2}
   m_PrefabInternal: {fileID: 1393278164}
---- !u!82 &1607135540 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 82701496996393046, guid: 0c890f871a1f57e458e13d7c0b3522a2,
-    type: 2}
-  m_PrefabInternal: {fileID: 1966522138}
 --- !u!1 &1607466061
 GameObject:
   m_ObjectHideFlags: 0
@@ -60644,11 +61357,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7f016de9b59d0834f84e726f194c1c24,
     type: 3}
   m_PrefabInternal: {fileID: 881223587}
---- !u!82 &1610494785 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 82701496996393046, guid: 0c890f871a1f57e458e13d7c0b3522a2,
-    type: 2}
-  m_PrefabInternal: {fileID: 1582708425}
 --- !u!4 &1612659890 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010181493276, guid: ca4bbed7e347b954c8c6edbe7442f8eb,
@@ -61729,7 +62437,32 @@ Prefab:
         type: 2}
       propertyPath: Opening
       value: 
-      objectReference: {fileID: 890977680}
+      objectReference: {fileID: 1723639412}
+    - target: {fileID: 82856180395735532, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b3f60e81f52f7704c945543adee7cd3b, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHitsSign
+      value: 
+      objectReference: {fileID: 2044663377}
+    - target: {fileID: 82318921751399102, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 2044663373}
+    - target: {fileID: 82699650147687764, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7505135279bf4e043b1e3af729b1995c, type: 2}
   m_IsPrefabAsset: 0
@@ -64305,6 +65038,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09e201eb9e724445904edef262bbfd9, type: 2}
   m_IsPrefabAsset: 0
+--- !u!82 &1723639412 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 82699650147687764, guid: 7505135279bf4e043b1e3af729b1995c,
+    type: 2}
+  m_PrefabInternal: {fileID: 2120954072}
 --- !u!4 &1724918651 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4133651518188376, guid: b7f69f92c71a746ea9f802ec1976b2d4,
@@ -65395,12 +66133,12 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 684fcdc77cde65940b95f642553ccfa5, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: dogAngry
@@ -65410,17 +66148,23 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 397948863}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 397948862}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 1772446908339104, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1759314612
@@ -65466,6 +66210,36 @@ Prefab:
       propertyPath: m_Name
       value: PotholeObstacle (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 82856180395735532, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b3f60e81f52f7704c945543adee7cd3b, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHitsSign
+      value: 
+      objectReference: {fileID: 2044663377}
+    - target: {fileID: 82318921751399102, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 2044663373}
+    - target: {fileID: 82699650147687764, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
+    - target: {fileID: 114801311400084796, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: Opening
+      value: 
+      objectReference: {fileID: 1723639412}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7505135279bf4e043b1e3af729b1995c, type: 2}
   m_IsPrefabAsset: 0
@@ -65535,7 +66309,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -67762,12 +68536,12 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1996278624}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114444439463059886, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1996278623}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82638231962100774, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: m_PlayOnAwake
@@ -67781,8 +68555,19 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
-    m_RemovedComponents: []
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1812858259
@@ -69024,7 +69809,32 @@ Prefab:
         type: 2}
       propertyPath: Opening
       value: 
-      objectReference: {fileID: 890977680}
+      objectReference: {fileID: 1723639412}
+    - target: {fileID: 82856180395735532, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b3f60e81f52f7704c945543adee7cd3b, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHitsSign
+      value: 
+      objectReference: {fileID: 2044663377}
+    - target: {fileID: 82318921751399102, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 2044663373}
+    - target: {fileID: 82699650147687764, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7505135279bf4e043b1e3af729b1995c, type: 2}
   m_IsPrefabAsset: 0
@@ -70487,12 +71297,12 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 684fcdc77cde65940b95f642553ccfa5, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: dogAngry
@@ -70502,12 +71312,12 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82191132525431150, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: m_PlayOnAwake
@@ -70517,9 +71327,15 @@ Prefab:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 0}
+    - {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1888491756 stripped
@@ -70881,12 +71697,17 @@ Prefab:
         type: 2}
       propertyPath: Opening
       value: 
-      objectReference: {fileID: 208725959}
+      objectReference: {fileID: 391930533}
     - target: {fileID: 82701496996393046, guid: 0c890f871a1f57e458e13d7c0b3522a2,
         type: 2}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82701496996393046, guid: 0c890f871a1f57e458e13d7c0b3522a2,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
     m_RemovedComponents:
     - {fileID: 82174119719466886, guid: 0c890f871a1f57e458e13d7c0b3522a2, type: 2}
     - {fileID: 82717002633964990, guid: 0c890f871a1f57e458e13d7c0b3522a2, type: 2}
@@ -71175,23 +71996,34 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1208554161}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114959468595220998, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1208554162}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 22f8f35d468164446929560592045953, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1910179561 stripped
@@ -71543,12 +72375,12 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 684fcdc77cde65940b95f642553ccfa5, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: dogAngry
@@ -71558,17 +72390,23 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 397948863}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114114103191241574, guid: 6b6523c5f64a81441a0b9d9c720a358b,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 397948862}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 1772446908339104, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82312824488335592, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 6b6523c5f64a81441a0b9d9c720a358b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1917901558 stripped
@@ -72879,12 +73717,12 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1996278624}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114444439463059886, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1996278623}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82638231962100774, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: m_PlayOnAwake
@@ -72898,8 +73736,19 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
-    m_RemovedComponents: []
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1962019050
@@ -73220,12 +74069,17 @@ Prefab:
         type: 2}
       propertyPath: Opening
       value: 
-      objectReference: {fileID: 1607135540}
+      objectReference: {fileID: 391930533}
     - target: {fileID: 82701496996393046, guid: 0c890f871a1f57e458e13d7c0b3522a2,
         type: 2}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82701496996393046, guid: 0c890f871a1f57e458e13d7c0b3522a2,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
     m_RemovedComponents:
     - {fileID: 82174119719466886, guid: 0c890f871a1f57e458e13d7c0b3522a2, type: 2}
     - {fileID: 82717002633964990, guid: 0c890f871a1f57e458e13d7c0b3522a2, type: 2}
@@ -73536,6 +74390,36 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 82856180395735532, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b3f60e81f52f7704c945543adee7cd3b, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHitsSign
+      value: 
+      objectReference: {fileID: 2044663377}
+    - target: {fileID: 82318921751399102, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 2044663373}
+    - target: {fileID: 82699650147687764, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
+    - target: {fileID: 114801311400084796, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: Opening
+      value: 
+      objectReference: {fileID: 1723639412}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7505135279bf4e043b1e3af729b1995c, type: 2}
   m_IsPrefabAsset: 0
@@ -74064,11 +74948,6 @@ MeshFilter:
 --- !u!82 &1996278613 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 82931470150431714, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
-    type: 2}
-  m_PrefabInternal: {fileID: 2099844135}
---- !u!82 &1996278623 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
     type: 2}
   m_PrefabInternal: {fileID: 2099844135}
 --- !u!82 &1996278624 stripped
@@ -74842,23 +75721,34 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1208554161}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114959468595220998, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1208554162}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
     - target: {fileID: 82982794865519500, guid: 22f8f35d468164446929560592045953,
         type: 2}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82230613312064218, guid: 22f8f35d468164446929560592045953, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 22f8f35d468164446929560592045953, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &2027022714
@@ -75380,7 +76270,32 @@ Prefab:
         type: 2}
       propertyPath: Opening
       value: 
-      objectReference: {fileID: 890977680}
+      objectReference: {fileID: 1723639412}
+    - target: {fileID: 82856180395735532, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b3f60e81f52f7704c945543adee7cd3b, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHitsSign
+      value: 
+      objectReference: {fileID: 2044663377}
+    - target: {fileID: 82318921751399102, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 114391556499956326, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: PlayerHurt
+      value: 
+      objectReference: {fileID: 2044663373}
+    - target: {fileID: 82699650147687764, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7505135279bf4e043b1e3af729b1995c, type: 2}
   m_IsPrefabAsset: 0
@@ -75600,6 +76515,16 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09e201eb9e724445904edef262bbfd9, type: 2}
   m_IsPrefabAsset: 0
+--- !u!82 &2044663373 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 82318921751399102, guid: 7505135279bf4e043b1e3af729b1995c,
+    type: 2}
+  m_PrefabInternal: {fileID: 2120954072}
+--- !u!82 &2044663377 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 82856180395735532, guid: 7505135279bf4e043b1e3af729b1995c,
+    type: 2}
+  m_PrefabInternal: {fileID: 2120954072}
 --- !u!1 &2044812235
 GameObject:
   m_ObjectHideFlags: 0
@@ -77649,12 +78574,12 @@ Prefab:
         type: 2}
       propertyPath: dogHit
       value: 
-      objectReference: {fileID: 1996278624}
+      objectReference: {fileID: 1996278613}
     - target: {fileID: 114444439463059886, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: PlayerHurt
       value: 
-      objectReference: {fileID: 1996278623}
+      objectReference: {fileID: 1996278624}
     - target: {fileID: 82638231962100774, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
         type: 2}
       propertyPath: m_PlayOnAwake
@@ -77673,8 +78598,19 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8d2117b082abc5940a5efe2f59140072, type: 3}
-    m_RemovedComponents: []
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82240282801394542, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 582b7f810bd57ac4d99bfe2b5ae7908c, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &2099844136 stripped
@@ -78511,6 +79447,26 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 82856180395735532, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b3f60e81f52f7704c945543adee7cd3b, type: 3}
+    - target: {fileID: 82318921751399102, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f700999c94dbf024b95ff35440206bbd, type: 3}
+    - target: {fileID: 82699650147687764, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cac2cc60597e5bb44afb90bc53df8573, type: 3}
+    - target: {fileID: 114801311400084796, guid: 7505135279bf4e043b1e3af729b1995c,
+        type: 2}
+      propertyPath: Opening
+      value: 
+      objectReference: {fileID: 1723639412}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7505135279bf4e043b1e3af729b1995c, type: 2}
   m_IsPrefabAsset: 0

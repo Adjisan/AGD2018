@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 222257144883974864}
   - component: {fileID: 114713172760417698}
   - component: {fileID: 95487583406495344}
-  - component: {fileID: 114678579115085830}
+  - component: {fileID: 114889402823797806}
   m_Layer: 0
   m_Name: BusIndicatorText
   m_TagString: Untagged
@@ -92,17 +92,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114678579115085830
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1164684484903748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544590cf20694334f801fd1b730d4fb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114713172760417698
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -216,6 +205,17 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   m_maskType: 0
+--- !u!114 &114889402823797806
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1164684484903748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1912ead556fd3724bbac5eb45128de4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &222257144883974864
 CanvasRenderer:
   m_ObjectHideFlags: 1

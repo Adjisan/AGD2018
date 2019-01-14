@@ -116,9 +116,9 @@ public class GameManagerScript : MonoBehaviour {
         {
             ammoText.text = "You ran out of newspaper! :(";
             Time.timeScale = 0;
-            if (GameObject.Find("GUI_End")) {
+            /*if (GameObject.Find("GUI_End")) {
                 GameObject.Find("GUI_End").transform.GetChild(0).gameObject.SetActive(true);
-            }
+            }*/
             StartCoroutine(Example());
         }
         else
@@ -134,7 +134,10 @@ public class GameManagerScript : MonoBehaviour {
         ExampleRunning = true;
         yield return new WaitForSeconds(3);
         if (ammo <= 0) {
-            SceneManager.LoadScene("MainMenu");
+            //SceneManager.LoadScene("MainMenu");
+            if (GameObject.Find("GUI_End")) {
+                GameObject.Find("GUI_End").transform.GetChild(0).gameObject.SetActive(true);
+            }
         }
         ExampleRunning = false;
     }

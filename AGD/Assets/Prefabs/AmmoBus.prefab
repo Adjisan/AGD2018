@@ -24,7 +24,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1326811168429166
 GameObject:
@@ -39,7 +39,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1352181415518232
 GameObject:
@@ -56,7 +56,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1404441169744768
 GameObject:
@@ -73,7 +73,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1449958104036974
 GameObject:
@@ -90,7 +90,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1594286528787378
 GameObject:
@@ -107,7 +107,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1890484807199900
 GameObject:
@@ -124,7 +124,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1946437652157874
 GameObject:
@@ -139,12 +139,13 @@ GameObject:
   - component: {fileID: 54339206286442446}
   - component: {fileID: 82940604004815066}
   - component: {fileID: 65981281991401134}
+  - component: {fileID: 114667472236588686}
   m_Layer: 0
   m_Name: AmmoBus
   m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4070043807049628
 Transform:
@@ -167,8 +168,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1946437652157874}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.8, y: 5.4711027, z: -214}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3509.98, y: 7.202203, z: -1383}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 4070043807049628}
@@ -624,8 +625,23 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   waypointSpeed:
-  - 50
-  - 50
+  - 5
+  - 5
   hitSound: {fileID: 8300000, guid: 055dd2dbb66659b428e7b827de0978f6, type: 3}
+  currentWaypoint: 0
   newspaperParticle: {fileID: 1911787879493130, guid: 4fa1f3e8fe962d345a002a75ee3c69a4,
     type: 2}
+--- !u!114 &114667472236588686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1946437652157874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f67a2f85531dac4f8d3476d65fb25ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  open: 1
+  textPrefab: {fileID: 1164684484903748, guid: bb97359e8082b8a4685c9c0ff7809071, type: 2}
+  left: 1

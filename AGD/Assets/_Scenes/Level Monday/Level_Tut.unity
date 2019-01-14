@@ -1254,6 +1254,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114606160134520084, guid: 58fd30d59369a2345829c84d32a56ee5,
+        type: 2}
+      propertyPath: textPrefab
+      value: 
+      objectReference: {fileID: 1772028648607178, guid: 35ebcc1ab8a1ecf44b5e3b49036c3d6c,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58fd30d59369a2345829c84d32a56ee5, type: 2}
   m_IsPrefabAsset: 0
@@ -1438,6 +1444,11 @@ Prefab:
         type: 2}
       propertyPath: ammo
       value: 99999
+      objectReference: {fileID: 0}
+    - target: {fileID: 114690764091460832, guid: 6df3a7607801341f6a0119dd133e9b2c,
+        type: 2}
+      propertyPath: ammoText
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6df3a7607801341f6a0119dd133e9b2c, type: 2}

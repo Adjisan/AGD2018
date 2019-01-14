@@ -8,6 +8,10 @@ public class Player : MonoBehaviour {
     public GameObject textPrefab;
     private GameObject countDownClone;
     private GameManagerScript gmScript;
+    [SerializeField]
+    private AudioSource ThrowPaper;
+    [SerializeField]
+    private AudioSource CountDownAlarm;
     public int maxCountDown = 5;
     private int lastAmmo;
     private void Start() {
@@ -32,8 +36,10 @@ public class Player : MonoBehaviour {
         if (gmScript.ammo > maxCountDown) {
             countDownClone.SetActive(false);
             lastAmmo = gmScript.ammo;
+            ThrowPaper.Play();
         } else {
             countDownClone.SetActive(true);
+            CountDownAlarm.Play();
             if (gmScript.ammo <= 0) {
                 countDownClone.GetComponent<TextMeshPro>().SetText("Empty!");
                 countDownClone.transform.localScale = textPrefab.transform.localScale / 2;

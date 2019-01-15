@@ -14,6 +14,9 @@ public class StopLight : MonoBehaviour
     public int changeDirection;
     public int startDirection;
     public AudioClip hitSound;
+    private bool timerstart = false;
+
+    float elapsedTime;
     // Use this for initialization
     void Start()
     {
@@ -102,14 +105,43 @@ public class StopLight : MonoBehaviour
                 GetComponent<AudioSource>().clip = hitSound;
                 GetComponent<AudioSource>().Play();
                 stopLightHit = true;
+                timerstart = true;
                 // Destroy(collision.gameObject);
             }
+
+
         }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(timerstart){
 
+ elapsedTime += Time.deltaTime;
+
+    if (elapsedTime >= 10)
+    {
+        elapsedTime -= 10;
+        // insert logic for changing color below:
+        if(startDirection == 0)
+        {
+            arrow.transform.Rotate(0,0,-90);
+            bigArrow.transform.Rotate(0,0,-90);
+        } else if (startDirection == 1)
+        {
+            arrow.transform.Rotate(0,0,0);
+            bigArrow.transform.Rotate(0,0,0);
+        }
+        else if (startDirection == 2)
+        {
+            arrow.transform.Rotate(0,0,90);
+            bigArrow.transform.Rotate(0,0,90);
+        }
+           timerstart = false;
+    }
+     
+        }
+        
     }
 }

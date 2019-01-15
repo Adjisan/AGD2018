@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using TMPro;
 
 public class AmmoBus : MonoBehaviour
 {
@@ -22,8 +23,24 @@ public class AmmoBus : MonoBehaviour
     public int currentWaypoint = 0;
     private float waypointRadius = 10;
     public GameObject newspaperParticle;
+    public GameObject textPrefab;
+    private GameObject textObject;
     void Start()
     {
+        if (textPrefab != null)
+        {
+            textObject = Instantiate(textPrefab);
+            textObject.transform.SetParent(gameObject.transform, false);
+            Vector3 temp = transform.position;
+            temp.y += 40;
+            textObject.transform.position = temp;
+
+           
+               textObject.transform.localScale = new Vector3(0.3f,0.3f,0.3f);
+               textObject.transform.Rotate(new Vector3(0,90,0),Space.World);
+            
+            textObject.GetComponent<TextMeshPro>().SetText( "¡" /*+ amountNeeded*/);
+        }
         rb = GetComponent<Rigidbody>();
         if (moving)
         {
@@ -63,6 +80,8 @@ public class AmmoBus : MonoBehaviour
     {
         if (collision.transform.tag == "projectile" && BusCanBeHit)
         {
+            Destroy(textObject);
+
             if (GameObject.Find("GameManager") != null)
             {
                 GameManagerScript gameManager = GameObject.Find("GameManager").GetComponent<GameManagerScript>();

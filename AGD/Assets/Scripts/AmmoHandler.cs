@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class AmmoHandler : MonoBehaviour {
     public int ammo;
@@ -15,10 +16,26 @@ public class AmmoHandler : MonoBehaviour {
 
     private bool triggered = false;
     private GameManagerScript gmScript;
+    public GameObject textPrefab;
+    private GameObject textObject;
 
     // Use this for initialization
     void Start () {
         gmScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+        if (textPrefab != null)
+        {
+            textObject = Instantiate(textPrefab);
+            textObject.transform.SetParent(gameObject.transform, false);
+            Vector3 temp = transform.position;
+            temp.y += 40;
+            textObject.transform.position = temp;
+
+           
+               textObject.transform.localScale = new Vector3(0.8f,0.8f,0.8f);
+               textObject.transform.Rotate(new Vector3(0,90,0),Space.World);
+            
+            textObject.GetComponent<TextMeshPro>().SetText( "¡" /*+ amountNeeded*/);
+        }
 	}
 	
     private void OnTriggerStay(Collider other) {
@@ -32,6 +49,7 @@ public class AmmoHandler : MonoBehaviour {
         if (collidesWithTrigger)
             return;
         if (other.transform.tag == collidesWithTag && !triggered) {
+            Destroy(textObject);
             HandleAmmo(other.gameObject);
         }
     }

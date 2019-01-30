@@ -14,6 +14,7 @@ public class AmmoBus : MonoBehaviour
     public float wobbleSpeed = 1;
     public Color BusPathColor = Color.white;
     public Rigidbody rb;
+    public SetAmmoText ammoManager;
     public List<GameObject> waypoints;
     public List<float> waypointSpeed;
     private AudioClip honk;
@@ -63,17 +64,16 @@ public class AmmoBus : MonoBehaviour
     {
         if (collision.transform.tag == "projectile" && BusCanBeHit)
         {
-            if (GameObject.Find("GameManager") != null)
-            {
-                GameManagerScript gameManager = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+ //           if (GameObject.Find("GameManager") != null)
+    //        {
                 Debug.Log("Gained Ammo");
-                gameManager.AddAmmo(ammoAmountGained);
+                ammoManager.AddAmmo(ammoAmountGained);
                 SpawnNewspaper();
                 GetComponent<AudioSource>().clip = hitSound;
                 GetComponent<AudioSource>().Play();
                 BusCanBeHit = false;
                 Destroy(collision.gameObject);
-            }
+       //     }
         }
     }
     void OnTriggerEnter(Collider other)

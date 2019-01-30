@@ -3,152 +3,30 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 public class GameManagerScript : MonoBehaviour {
-    bool ExampleRunning = false;
+
     private float baseSpeed;
-	public float salary;
-    public TextMeshProUGUI salaryText;
-    public TextMeshProUGUI multiplierText;
-
-    private float multiplier;
-    public float timesHit = 0;
-
-    public float[] multiplierOptions;
-    public float[] hitsNeeded;
-    public float[] speedAdded;
-    private int multiplierIndex = 0;
-    private Vector3 baseSizeMultiplier;
-
-    public int ammo;
-    public Text ammoText;
-    public int Levelindex;
-    public GameObject newspaperParticle;
     GameObject camera;
-
     public bool gameHasEnded = false;
 
-    //check index foir amount of hits needed
-    //if  times hit == amount of hits needed level +
+    //check index fair amount of hits needed
+    //if  times hit == amount of hits needed Multiplier level +
 	// Use this for initialization
 	void Start () {
-		salary = 0f;
-        multiplier = multiplierOptions[multiplierIndex];
-        SetSalaryText();
-        SetAmmoText();
         Globals.speed = Globals.baseSpeed;
-        baseSizeMultiplier = multiplierText.GetComponent<RectTransform>().localScale;
         camera = GameObject.Find("Main Camera");
     }
 	
-	// Update is called once per frame
-	void Update () {
-        //	levelCompleteCheck();
-        AmmoDepletionCheck();
-	}
-
-	public void SetSalaryText(){
-        //salaryText.text = "$$ " + salary.ToString(); 
-        //salaryText.GetComponent<TextMeshPro>().SetText( "$$ " + salary.ToString() );
-        salaryText.SetText( "$ " + salary.ToString() );
-    }
-    public void AddSalary(float amount){
-        salary = salary + (amount * multiplier);
-        SetSalaryText();
-    }
-    public void SubtractSalary(float amount) {
-        if ((salary - amount) >= 0) {
-            salary = salary - amount;
-        } else {
-            salary = 0;
-        }
-        SetSalaryText();
-    }
-
-    public void IncreaseMultiplier() {
-        if (timesHit < hitsNeeded[multiplierIndex]) {
-            timesHit += 1;
-        } else {
-            if (multiplierIndex < (multiplierOptions.Length - 1)) {
-                multiplierIndex += 1;
-                Globals.speed = Globals.baseSpeed + speedAdded[multiplierIndex];
-                multiplier = multiplierOptions[multiplierIndex];
-                SetMultiplierText();
-            }
-            timesHit = 0;
-        }
-    }
-    public void ResetMultiplier() {
-        //Debug.Log("ResetMultiplier");
-        multiplierIndex = (int)((float)multiplierIndex / 1.25f);
-        multiplier = multiplierOptions[multiplierIndex];
-        timesHit = 0;
-        SetMultiplierText();
-        Globals.speed = Globals.baseSpeed + speedAdded[multiplierIndex];
-    }
-    public void SetMultiplierText() {
-        multiplierText.SetText(multiplierOptions[multiplierIndex].ToString() + "x");
-        float size = (0.05f) * ((100 / multiplierOptions.Length) * (multiplierIndex + 1));
-        size += 1;
-        multiplierText.GetComponent<RectTransform>().localScale = baseSizeMultiplier * size;
-
-    }
-    public float GetMultiplier() {
-        return multiplier;
-    }
-    public void SetAmmoText(){
-        if (ammoText != null) {
-            ammoText.text = /*"Newspapers left: " +*/ ammo.ToString();
-        }
-    }
-    public void AddAmmo(int amount) {
-        ammo = ammo + amount;
-        SetAmmoText();
-    }
-    public void SubtractAmmo(int amount){
-        ammo = ammo - amount;
-        SetAmmoText();
-    }
-    public void AmmoDepletionCheck()
-    {
-        if(ammo <= 0 && !ExampleRunning)
-        {
-            ammoText.text = "You ran out of newspaper! :(";
-            Time.timeScale = 0;
-            /*if (GameObject.Find("GUI_End")) {
-                GameObject.Find("GUI_End").transform.GetChild(0).gameObject.SetActive(true);
-            }*/
-            StartCoroutine(Example());
-        }
-        else
-        {
-            Time.timeScale = 1;
-        }
-    }
     public void ShakeScreen() {
         camera.GetComponent<Shaker>().Shake(.1f);
     }
     
-    IEnumerator Example() {
-        ExampleRunning = true;
-        yield return new WaitForSeconds(3);
-        if (ammo <= 0) {
-            //SceneManager.LoadScene("MainMenu");
-            if (GameObject.Find("GUI_End")) {
-                GameObject.Find("GUI_End").transform.GetChild(0).gameObject.SetActive(true);
-            }
-        }
-        ExampleRunning = false;
-    }
-
     public void CallMenu()
     {
         if (gameHasEnded)
         {
             GameObject.Find("GUI_End").transform.GetChild(0).gameObject.SetActive(true);
-
-
         }
         else {
             GameObject.Find("GUI_Pause").transform.GetChild(0).gameObject.SetActive(false);

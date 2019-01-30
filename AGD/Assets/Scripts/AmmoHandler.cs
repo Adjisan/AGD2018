@@ -10,17 +10,13 @@ public class AmmoHandler : MonoBehaviour {
     public bool destroy = false;
     public AudioSource PlayerHitsSign;
     public AudioSource PlayerHurt;
+    private SetAmmoText ammoManager;
 
     public GameObject loseNewspaperParticles;
 
     private bool triggered = false;
     private GameManagerScript gmScript;
 
-    // Use this for initialization
-    void Start () {
-        gmScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
-	}
-	
     private void OnTriggerStay(Collider other) {
         if (!collidesWithTrigger)
             return;
@@ -37,7 +33,7 @@ public class AmmoHandler : MonoBehaviour {
     }
 
     void HandleAmmo(GameObject other) {
-        gmScript.SubtractAmmo(ammo);
+        ammoManager.SubtractAmmo(ammo);
         if (ammo > 0) {
             if (loseNewspaperParticles != null) {
                 gmScript.ShakeScreen();
@@ -53,4 +49,5 @@ public class AmmoHandler : MonoBehaviour {
             Destroy(other);
         }
     }
+
 }
